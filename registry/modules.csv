@@ -1,0 +1,1137 @@
+id,name,category,bus,api_function,unit,board_min,dependency,example,status,description
+A0001,MQ-2 Gas Sensor,ANALOG,ANALOG,mq2,ratio / ppm,ALL,None,MQ2.ino,IMPLEMENTED,"MQ-2 semiconductor gas sensor (LPG, Smoke)"
+A0002,MQ-3 Gas Sensor,ANALOG,ANALOG,mq3,ratio / ppm,ALL,None,MQ3.ino,IMPLEMENTED,MQ-3 semiconductor gas sensor (Alcohol)
+A0003,MQ-4 Gas Sensor,ANALOG,ANALOG,mq4,ratio / ppm,ALL,None,MQ4.ino,IMPLEMENTED,MQ-4 semiconductor gas sensor (Methane)
+A0004,MQ-5 Gas Sensor,ANALOG,ANALOG,mq5,ratio / ppm,ALL,None,MQ5.ino,IMPLEMENTED,"MQ-5 semiconductor gas sensor (LPG, NatGas)"
+A0005,MQ-6 Gas Sensor,ANALOG,ANALOG,mq6,ratio / ppm,ALL,None,MQ6.ino,IMPLEMENTED,"MQ-6 semiconductor gas sensor (LPG, Butane)"
+A0006,MQ-7 Gas Sensor,ANALOG,ANALOG,mq7,ratio / ppm,ALL,None,MQ7.ino,IMPLEMENTED,MQ-7 semiconductor gas sensor (Carbon Monoxide)
+A0007,MQ-8 Gas Sensor,ANALOG,ANALOG,mq8,ratio / ppm,ALL,None,MQ8.ino,IMPLEMENTED,MQ-8 semiconductor gas sensor (Hydrogen)
+A0008,MQ-9 Gas Sensor,ANALOG,ANALOG,mq9,ratio / ppm,ALL,None,MQ9.ino,IMPLEMENTED,"MQ-9 semiconductor gas sensor (CO, Flammable)"
+A0009,MQ-131 Gas Sensor,ANALOG,ANALOG,mq131,ratio / ppm,ALL,None,MQ131.ino,IMPLEMENTED,MQ-131 semiconductor gas sensor (Ozone)
+A0010,MQ-135 Gas Sensor,ANALOG,ANALOG,mq135,ratio / ppm,ALL,None,MQ135.ino,IMPLEMENTED,MQ-135 semiconductor gas sensor (Air Quality)
+A0011,MQ-136 Gas Sensor,ANALOG,ANALOG,mq136,ratio / ppm,ALL,None,MQ136.ino,IMPLEMENTED,MQ-136 semiconductor gas sensor (Hydrogen Sulfide)
+A0012,MQ-137 Gas Sensor,ANALOG,ANALOG,mq137,ratio / ppm,ALL,None,MQ137.ino,IMPLEMENTED,MQ-137 semiconductor gas sensor (Ammonia)
+A0013,MQ-138 Gas Sensor,ANALOG,ANALOG,mq138,ratio / ppm,ALL,None,MQ138.ino,IMPLEMENTED,MQ-138 semiconductor gas sensor (Benzene/Toluene)
+A0014,MQ-214 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ214.ino,IMPLEMENTED,MQ-214 semiconductor gas sensor (Methane)
+A0015,MQ-303A Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ303A.ino,IMPLEMENTED,MQ-303A semiconductor gas sensor (Alcohol)
+A0016,MQ-306A Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ306A.ino,IMPLEMENTED,MQ-306A semiconductor gas sensor (LPG)
+A0017,MQ-307A Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ307A.ino,IMPLEMENTED,MQ-307A semiconductor gas sensor (CO)
+A0018,MQ-309A Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ309A.ino,IMPLEMENTED,MQ-309A semiconductor gas sensor (CO)
+A0019,MQ-403 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ403.ino,IMPLEMENTED,MQ-403 semiconductor gas sensor (Ozone)
+A0020,MQ-501 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ501.ino,IMPLEMENTED,MQ-501 semiconductor gas sensor (CO)
+A0021,MQ-601 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ601.ino,IMPLEMENTED,MQ-601 semiconductor gas sensor (LPG)
+A0022,MQ-701 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ701.ino,IMPLEMENTED,MQ-701 semiconductor gas sensor (CO)
+A0023,MQ-801 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ801.ino,IMPLEMENTED,MQ-801 semiconductor gas sensor (H2)
+A0024,MQ-901 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ901.ino,IMPLEMENTED,MQ-901 semiconductor gas sensor (CO)
+A0025,MQ-201 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ201.ino,IMPLEMENTED,MQ-201 semiconductor gas sensor (LPG)
+A0026,MQ-202 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ202.ino,IMPLEMENTED,MQ-202 semiconductor gas sensor (CO)
+A0027,MQ-203 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ203.ino,IMPLEMENTED,MQ-203 semiconductor gas sensor (Alcohol)
+A0028,MQ-204 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ204.ino,IMPLEMENTED,MQ-204 semiconductor gas sensor (H2)
+A0029,MQ-205 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ205.ino,IMPLEMENTED,MQ-205 semiconductor gas sensor (LPG)
+A0030,MQ-206 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ206.ino,IMPLEMENTED,MQ-206 semiconductor gas sensor (CO)
+A0031,MQ-207 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ207.ino,IMPLEMENTED,MQ-207 semiconductor gas sensor (NH3)
+A0032,MQ-208 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ208.ino,IMPLEMENTED,MQ-208 semiconductor gas sensor (H2S)
+A0033,MQ-209 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ209.ino,IMPLEMENTED,MQ-209 semiconductor gas sensor (Ozone)
+A0034,MQ-210 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ210.ino,IMPLEMENTED,MQ-210 semiconductor gas sensor (VOC)
+A0035,MQ-211 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ211.ino,IMPLEMENTED,MQ-211 semiconductor gas sensor (NH3)
+A0036,MQ-212 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ212.ino,IMPLEMENTED,MQ-212 semiconductor gas sensor (CO)
+A0037,MQ-213 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ213.ino,IMPLEMENTED,MQ-213 semiconductor gas sensor (Alcohol)
+A0038,MQ-215 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ215.ino,IMPLEMENTED,MQ-215 semiconductor gas sensor (LPG)
+A0039,MQ-216 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ216.ino,IMPLEMENTED,MQ-216 semiconductor gas sensor (H2)
+A0040,MQ-217 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ217.ino,IMPLEMENTED,MQ-217 semiconductor gas sensor (CO)
+A0041,MQ-218 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ218.ino,IMPLEMENTED,MQ-218 semiconductor gas sensor (H2S)
+A0042,MQ-219 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ219.ino,IMPLEMENTED,MQ-219 semiconductor gas sensor (Ozone)
+A0043,MQ-220 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ220.ino,IMPLEMENTED,MQ-220 semiconductor gas sensor (VOC)
+A0044,MQ-301 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ301.ino,IMPLEMENTED,MQ-301 semiconductor gas sensor (CO)
+A0045,MQ-302 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ302.ino,IMPLEMENTED,MQ-302 semiconductor gas sensor (Alcohol)
+A0046,MQ-304 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ304.ino,IMPLEMENTED,MQ-304 semiconductor gas sensor (LPG)
+A0047,MQ-305 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ305.ino,IMPLEMENTED,MQ-305 semiconductor gas sensor (H2)
+A0048,MQ-308 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ308.ino,IMPLEMENTED,MQ-308 semiconductor gas sensor (NH3)
+A0049,MQ-310 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ310.ino,IMPLEMENTED,MQ-310 semiconductor gas sensor (CO)
+A0050,MQ-401 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ401.ino,IMPLEMENTED,MQ-401 semiconductor gas sensor (Ozone)
+A0051,MQ-402 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ402.ino,IMPLEMENTED,MQ-402 semiconductor gas sensor (CO)
+A0052,MQ-404 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ404.ino,IMPLEMENTED,MQ-404 semiconductor gas sensor (NH3)
+A0053,MQ-502 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ502.ino,IMPLEMENTED,MQ-502 semiconductor gas sensor (H2)
+A0054,MQ-503 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ503.ino,IMPLEMENTED,MQ-503 semiconductor gas sensor (LPG)
+A0055,MQ-702 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ702.ino,IMPLEMENTED,MQ-702 semiconductor gas sensor (CO)
+A0056,MQ-703 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ703.ino,IMPLEMENTED,MQ-703 semiconductor gas sensor (NH3)
+A0057,MQ-802 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ802.ino,IMPLEMENTED,MQ-802 semiconductor gas sensor (H2)
+A0058,MQ-902 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ902.ino,IMPLEMENTED,MQ-902 semiconductor gas sensor (CO)
+A0059,MQ-101 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ101.ino,IMPLEMENTED,MQ-101 semiconductor gas sensor (LPG)
+A0060,MQ-102 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ102.ino,IMPLEMENTED,MQ-102 semiconductor gas sensor (CO)
+A0061,MQ-103 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ103.ino,IMPLEMENTED,MQ-103 semiconductor gas sensor (Alcohol)
+A0062,MQ-104 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ104.ino,IMPLEMENTED,MQ-104 semiconductor gas sensor (H2)
+A0063,MQ-105 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ105.ino,IMPLEMENTED,MQ-105 semiconductor gas sensor (LPG)
+A0064,MQ-106 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ106.ino,IMPLEMENTED,MQ-106 semiconductor gas sensor (CO)
+A0065,MQ-107 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ107.ino,IMPLEMENTED,MQ-107 semiconductor gas sensor (NH3)
+A0066,MQ-108 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ108.ino,IMPLEMENTED,MQ-108 semiconductor gas sensor (H2S)
+A0067,MQ-109 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ109.ino,IMPLEMENTED,MQ-109 semiconductor gas sensor (Ozone)
+A0068,MQ-110 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ110.ino,IMPLEMENTED,MQ-110 semiconductor gas sensor (VOC)
+A0069,MQ-511 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ511.ino,IMPLEMENTED,MQ-511 semiconductor gas sensor (LPG)
+A0070,MQ-512 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ512.ino,IMPLEMENTED,MQ-512 semiconductor gas sensor (CO)
+A0071,MQ-513 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ513.ino,IMPLEMENTED,MQ-513 semiconductor gas sensor (Alcohol)
+A0072,MQ-514 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ514.ino,IMPLEMENTED,MQ-514 semiconductor gas sensor (H2)
+A0073,MQ-515 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ515.ino,IMPLEMENTED,MQ-515 semiconductor gas sensor (LPG)
+A0074,MQ-516 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ516.ino,IMPLEMENTED,MQ-516 semiconductor gas sensor (CO)
+A0075,MQ-517 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ517.ino,IMPLEMENTED,MQ-517 semiconductor gas sensor (NH3)
+A0076,MQ-518 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ518.ino,IMPLEMENTED,MQ-518 semiconductor gas sensor (H2S)
+A0077,MQ-611 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ611.ino,IMPLEMENTED,MQ-611 semiconductor gas sensor (LPG)
+A0078,MQ-612 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ612.ino,IMPLEMENTED,MQ-612 semiconductor gas sensor (CO)
+A0079,MQ-613 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ613.ino,IMPLEMENTED,MQ-613 semiconductor gas sensor (Alcohol)
+A0080,MQ-614 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ614.ino,IMPLEMENTED,MQ-614 semiconductor gas sensor (H2)
+A0081,MQ-615 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ615.ino,IMPLEMENTED,MQ-615 semiconductor gas sensor (LPG)
+A0082,MQ-711 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ711.ino,IMPLEMENTED,MQ-711 semiconductor gas sensor (CO)
+A0083,MQ-712 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ712.ino,IMPLEMENTED,MQ-712 semiconductor gas sensor (NH3)
+A0084,MQ-811 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ811.ino,IMPLEMENTED,MQ-811 semiconductor gas sensor (H2)
+A0085,MQ-812 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ812.ino,IMPLEMENTED,MQ-812 semiconductor gas sensor (H2S)
+A0086,MQ-911 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ911.ino,IMPLEMENTED,MQ-911 semiconductor gas sensor (CO)
+A0087,MQ-912 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ912.ino,IMPLEMENTED,MQ-912 semiconductor gas sensor (NH3)
+A0088,MQ-1011 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ1011.ino,IMPLEMENTED,MQ-1011 semiconductor gas sensor (LPG)
+A0089,MQ-1012 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ1012.ino,IMPLEMENTED,MQ-1012 semiconductor gas sensor (CO)
+A0090,MQ-1013 Gas Sensor,ANALOG,ANALOG,genericMQ,ratio / ppm,ALL,None,MQ1013.ino,IMPLEMENTED,MQ-1013 semiconductor gas sensor (Alcohol)
+A0091,CO Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,coElectro.ino,IMPLEMENTED,Electrochemical CO gas sensor
+A0092,NO2 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,no2Electro.ino,IMPLEMENTED,Electrochemical NO2 gas sensor
+A0093,SO2 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,so2Electro.ino,IMPLEMENTED,Electrochemical SO2 gas sensor
+A0094,O3 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,o3Electro.ino,IMPLEMENTED,Electrochemical O3 gas sensor
+A0095,H2S Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,h2sElectro.ino,IMPLEMENTED,Electrochemical H2S gas sensor
+A0096,Cl2 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,cl2Electro.ino,IMPLEMENTED,Electrochemical Cl2 gas sensor
+A0097,NH3 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,nh3Electro.ino,IMPLEMENTED,Electrochemical NH3 gas sensor
+A0098,CH4 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,ch4Electro.ino,IMPLEMENTED,Electrochemical CH4 gas sensor
+A0099,H2 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,h2Electro.ino,IMPLEMENTED,Electrochemical H2 gas sensor
+A0100,C2H5OH Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,ethanolElectro.ino,IMPLEMENTED,Electrochemical Ethanol gas sensor
+A0101,PH3 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,ph3Electro.ino,IMPLEMENTED,Electrochemical PH3 gas sensor
+A0102,HCN Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,hcnElectro.ino,IMPLEMENTED,Electrochemical HCN gas sensor
+A0103,HF Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,hfElectro.ino,IMPLEMENTED,Electrochemical HF gas sensor
+A0104,HCl Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,hclElectro.ino,IMPLEMENTED,Electrochemical HCl gas sensor
+A0105,ClO2 Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,clo2Electro.ino,IMPLEMENTED,Electrochemical ClO2 gas sensor
+A0106,NO Electrochemical,ANALOG,ANALOG,analogSensor,ppm,ALL,None,noElectro.ino,IMPLEMENTED,Electrochemical NO gas sensor
+A0107,CO2 NDIR,ANALOG,ANALOG,analogSensor,ppm,ALL,None,co2NDIR.ino,IMPLEMENTED,NDIR CO2 gas sensor
+A0108,CH4 NDIR,ANALOG,ANALOG,analogSensor,ppm,ALL,None,ch4NDIR.ino,IMPLEMENTED,NDIR CH4 gas sensor
+A0109,CO NDIR,ANALOG,ANALOG,analogSensor,ppm,ALL,None,coNDIR.ino,IMPLEMENTED,NDIR CO gas sensor
+A0110,HC NDIR,ANALOG,ANALOG,analogSensor,ppm,ALL,None,hydrocarbonNDIR.ino,IMPLEMENTED,NDIR Hydrocarbon gas sensor
+A0111,Refrigerant NDIR,ANALOG,ANALOG,analogSensor,ppm,ALL,None,r290/r600aNDIR.ino,IMPLEMENTED,NDIR R290/R600a gas sensor
+A0112,PID VOC Sensor,ANALOG,ANALOG,analogSensor,ppb,ALL,None,vocPID.ino,IMPLEMENTED,Photoionization VOC sensor
+A0113,PID Benzene,ANALOG,ANALOG,analogSensor,ppb,ALL,None,benzenePID.ino,IMPLEMENTED,Photoionization Benzene sensor
+A0114,PID Toluene,ANALOG,ANALOG,analogSensor,ppb,ALL,None,toluenePID.ino,IMPLEMENTED,Photoionization Toluene sensor
+A0115,PID Xylene,ANALOG,ANALOG,analogSensor,ppb,ALL,None,xylenePID.ino,IMPLEMENTED,Photoionization Xylene sensor
+A0116,LM35,ANALOG,ANALOG,analogSensor,°C,ALL,None,LM35.ino,IMPLEMENTED,LM35 temperature sensor
+A0117,TMP36,ANALOG,ANALOG,analogSensor,°C,ALL,None,TMP36.ino,IMPLEMENTED,TMP36 temperature sensor
+A0118,LM335,ANALOG,ANALOG,analogSensor,°C,ALL,None,LM335.ino,IMPLEMENTED,LM335 temperature sensor
+A0119,LM34,ANALOG,ANALOG,analogSensor,°F,ALL,None,LM34.ino,IMPLEMENTED,LM34 temperature sensor
+A0120,NTC 10K Beta,ANALOG,ANALOG,analogSensor,°C,ALL,None,NTC10KBeta.ino,IMPLEMENTED,NTC 10K Beta temperature sensor
+A0121,NTC 100K Beta,ANALOG,ANALOG,analogSensor,°C,ALL,None,NTC100KBeta.ino,IMPLEMENTED,NTC 100K Beta temperature sensor
+A0122,NTC 10K Steinhart,ANALOG,ANALOG,analogSensor,°C,ALL,None,NTC10KSteinhart.ino,IMPLEMENTED,NTC 10K Steinhart temperature sensor
+A0123,Thermocouple K Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleKType.ino,IMPLEMENTED,Thermocouple K Type temperature sensor
+A0124,Thermocouple J Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleJType.ino,IMPLEMENTED,Thermocouple J Type temperature sensor
+A0125,Thermocouple T Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleTType.ino,IMPLEMENTED,Thermocouple T Type temperature sensor
+A0126,Thermocouple E Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleEType.ino,IMPLEMENTED,Thermocouple E Type temperature sensor
+A0127,Thermocouple N Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleNType.ino,IMPLEMENTED,Thermocouple N Type temperature sensor
+A0128,Thermocouple R Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleRType.ino,IMPLEMENTED,Thermocouple R Type temperature sensor
+A0129,Thermocouple S Type,ANALOG,ANALOG,analogSensor,°C,ALL,None,ThermocoupleSType.ino,IMPLEMENTED,Thermocouple S Type temperature sensor
+A0130,RTD PT100,ANALOG,ANALOG,analogSensor,°C,ALL,None,RTDPT100.ino,IMPLEMENTED,RTD PT100 temperature sensor
+A0131,RTD PT1000,ANALOG,ANALOG,analogSensor,°C,ALL,None,RTDPT1000.ino,IMPLEMENTED,RTD PT1000 temperature sensor
+A0132,DS18B20 Analog,ANALOG,ANALOG,analogSensor,°C,ALL,None,DS18B20Analog.ino,IMPLEMENTED,DS18B20 Analog temperature sensor
+A0133,DS18S20 Analog,ANALOG,ANALOG,analogSensor,°C,ALL,None,DS18S20Analog.ino,IMPLEMENTED,DS18S20 Analog temperature sensor
+A0134,SHT31,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,SHT31.ino,IMPLEMENTED,SHT31 temperature sensor
+A0135,SHT40,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,SHT40.ino,IMPLEMENTED,SHT40 temperature sensor
+A0136,SHT45,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,SHT45.ino,IMPLEMENTED,SHT45 temperature sensor
+A0137,AHT10,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,AHT10.ino,IMPLEMENTED,AHT10 temperature sensor
+A0138,AHT20,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,AHT20.ino,IMPLEMENTED,AHT20 temperature sensor
+A0139,AHT21,ANALOG,I2C,analogSensor,°C/%RH,ALL,None,AHT21.ino,IMPLEMENTED,AHT21 temperature sensor
+A0140,MCP9808,ANALOG,I2C,analogSensor,°C,ALL,None,MCP9808.ino,IMPLEMENTED,MCP9808 temperature sensor
+A0141,TMP117,ANALOG,I2C,analogSensor,°C,ALL,None,TMP117.ino,IMPLEMENTED,TMP117 temperature sensor
+A0142,LM75,ANALOG,I2C,analogSensor,°C,ALL,None,LM75.ino,IMPLEMENTED,LM75 temperature sensor
+A0143,TMP102,ANALOG,I2C,analogSensor,°C,ALL,None,TMP102.ino,IMPLEMENTED,TMP102 temperature sensor
+A0144,TMP116,ANALOG,I2C,analogSensor,°C,ALL,None,TMP116.ino,IMPLEMENTED,TMP116 temperature sensor
+A0145,MAX31855 Thermocouple,ANALOG,SPI,analogSensor,°C,ALL,None,MAX31855Thermocouple.ino,IMPLEMENTED,MAX31855 Thermocouple temperature sensor
+A0146,MAX31856 Thermocouple,ANALOG,SPI,analogSensor,°C,ALL,None,MAX31856Thermocouple.ino,IMPLEMENTED,MAX31856 Thermocouple temperature sensor
+A0147,MAX31865 RTD,ANALOG,SPI,analogSensor,°C,ALL,None,MAX31865RTD.ino,IMPLEMENTED,MAX31865 RTD temperature sensor
+A0148,MAX6675 Thermocouple,ANALOG,SPI,analogSensor,°C,ALL,None,MAX6675Thermocouple.ino,IMPLEMENTED,MAX6675 Thermocouple temperature sensor
+A0149,BMP280,ANALOG,I2C,analogSensor,hPa,ALL,None,BMP280.ino,IMPLEMENTED,BMP280 pressure sensor
+A0150,BMP388,ANALOG,I2C,analogSensor,hPa,ALL,None,BMP388.ino,IMPLEMENTED,BMP388 pressure sensor
+A0151,BME280,ANALOG,I2C,analogSensor,hPa,ALL,None,BME280.ino,IMPLEMENTED,BME280 pressure sensor
+A0152,BME680,ANALOG,I2C,analogSensor,hPa,ALL,None,BME680.ino,IMPLEMENTED,BME680 pressure sensor
+A0153,BME688,ANALOG,I2C,analogSensor,hPa,ALL,None,BME688.ino,IMPLEMENTED,BME688 pressure sensor
+A0154,LPS22HB,ANALOG,I2C,analogSensor,hPa,ALL,None,LPS22HB.ino,IMPLEMENTED,LPS22HB pressure sensor
+A0155,LPS25HB,ANALOG,I2C,analogSensor,hPa,ALL,None,LPS25HB.ino,IMPLEMENTED,LPS25HB pressure sensor
+A0156,LPS33HW,ANALOG,I2C,analogSensor,hPa,ALL,None,LPS33HW.ino,IMPLEMENTED,LPS33HW pressure sensor
+A0157,LPS35HW,ANALOG,I2C,analogSensor,hPa,ALL,None,LPS35HW.ino,IMPLEMENTED,LPS35HW pressure sensor
+A0158,DPS310,ANALOG,I2C,analogSensor,hPa,ALL,None,DPS310.ino,IMPLEMENTED,DPS310 pressure sensor
+A0159,MPL3115A2,ANALOG,I2C,analogSensor,hPa,ALL,None,MPL3115A2.ino,IMPLEMENTED,MPL3115A2 pressure sensor
+A0160,MS5611,ANALOG,I2C,analogSensor,hPa,ALL,None,MS5611.ino,IMPLEMENTED,MS5611 pressure sensor
+A0161,MS5837,ANALOG,I2C,analogSensor,hPa,ALL,None,MS5837.ino,IMPLEMENTED,MS5837 pressure sensor
+A0162,MS5803,ANALOG,I2C,analogSensor,hPa,ALL,None,MS5803.ino,IMPLEMENTED,MS5803 pressure sensor
+A0163,PRESSURE 0-5V,ANALOG,ANALOG,analogSensor,bar,ALL,None,PRESSURE0-5V.ino,IMPLEMENTED,PRESSURE 0-5V pressure sensor
+A0164,PRESSURE 4-20mA,ANALOG,ANALOG,analogSensor,bar,ALL,None,PRESSURE4-20mA.ino,IMPLEMENTED,PRESSURE 4-20mA pressure sensor
+A0165,Vacuum Sensor,ANALOG,ANALOG,analogSensor,kPa,ALL,None,VacuumSensor.ino,IMPLEMENTED,Vacuum Sensor pressure sensor
+A0166,Differential Pressure,ANALOG,ANALOG,analogSensor,Pa,ALL,None,DifferentialPressure.ino,IMPLEMENTED,Differential Pressure pressure sensor
+A0167,Blood Pressure,ANALOG,ANALOG,analogSensor,mmHg,ALL,None,BloodPressure.ino,IMPLEMENTED,Blood Pressure pressure sensor
+A0168,LDR Photoresistor,ANALOG,ANALOG,analogSensor,raw/%,ALL,None,LDRPhotoresistor.ino,IMPLEMENTED,LDR Photoresistor light sensor
+A0169,BH1750,ANALOG,I2C,analogSensor,lux,ALL,None,BH1750.ino,IMPLEMENTED,BH1750 light sensor
+A0170,TSL2561,ANALOG,I2C,analogSensor,lux,ALL,None,TSL2561.ino,IMPLEMENTED,TSL2561 light sensor
+A0171,TSL2591,ANALOG,I2C,analogSensor,lux,ALL,None,TSL2591.ino,IMPLEMENTED,TSL2591 light sensor
+A0172,VEML7700,ANALOG,I2C,analogSensor,lux,ALL,None,VEML7700.ino,IMPLEMENTED,VEML7700 light sensor
+A0173,OPT3001,ANALOG,I2C,analogSensor,lux,ALL,None,OPT3001.ino,IMPLEMENTED,OPT3001 light sensor
+A0174,VEML6070,ANALOG,I2C,analogSensor,UV index,ALL,None,VEML6070.ino,IMPLEMENTED,VEML6070 light sensor
+A0175,GUVA-S12SD,ANALOG,I2C,analogSensor,UV index,ALL,None,GUVAS12SD.ino,IMPLEMENTED,GUVA-S12SD light sensor
+A0176,SI1145,ANALOG,I2C,analogSensor,UV/IR/vis,ALL,None,SI1145.ino,IMPLEMENTED,SI1145 light sensor
+A0177,TSL2572,ANALOG,I2C,analogSensor,lux,ALL,None,TSL2572.ino,IMPLEMENTED,TSL2572 light sensor
+A0178,TCS34725,ANALOG,I2C,analogSensor,RGB/C,ALL,None,TCS34725.ino,IMPLEMENTED,TCS34725 light sensor
+A0179,TCS3200,ANALOG,I2C,analogSensor,RGB,ALL,None,TCS3200.ino,IMPLEMENTED,TCS3200 light sensor
+A0180,APDS9960,ANALOG,I2C,analogSensor,RGB/Gesture,ALL,None,APDS9960.ino,IMPLEMENTED,APDS9960 light sensor
+A0181,VCNL4010,ANALOG,I2C,analogSensor,Prox/Lux,ALL,None,VCNL4010.ino,IMPLEMENTED,VCNL4010 light sensor
+A0182,VCNL4040,ANALOG,I2C,analogSensor,Prox/Lux,ALL,None,VCNL4040.ino,IMPLEMENTED,VCNL4040 light sensor
+A0183,LTR-303ALS,ANALOG,I2C,analogSensor,lux,ALL,None,LTR303ALS.ino,IMPLEMENTED,LTR-303ALS light sensor
+A0184,LTR-329ALS,ANALOG,I2C,analogSensor,lux,ALL,None,LTR329ALS.ino,IMPLEMENTED,LTR-329ALS light sensor
+A0185,Sound Sensor KY-038,ANALOG,ANALOG,analogSensor,%,ALL,None,SoundSensorKY038.ino,IMPLEMENTED,Sound Sensor KY-038 sensor
+A0186,Sound Sensor KY-037,ANALOG,ANALOG,analogSensor,%,ALL,None,SoundSensorKY037.ino,IMPLEMENTED,Sound Sensor KY-037 sensor
+A0187,Microphone MAX4466,ANALOG,ANALOG,analogSensor,mV,ALL,None,MicrophoneMAX4466.ino,IMPLEMENTED,Microphone MAX4466 sensor
+A0188,Microphone MAX9814,ANALOG,ANALOG,analogSensor,mV,ALL,None,MicrophoneMAX9814.ino,IMPLEMENTED,Microphone MAX9814 sensor
+A0189,Electret Mic,ANALOG,ANALOG,analogSensor,mV,ALL,None,ElectretMic.ino,IMPLEMENTED,Electret Mic sensor
+A0190,MEMS Mic INMP441,ANALOG,I2S,analogSensor,I2S,ALL,None,MEMSMicINMP441.ino,IMPLEMENTED,MEMS Mic INMP441 sensor
+A0191,MEMS Mic SPH0645,ANALOG,I2S,analogSensor,I2S,ALL,None,MEMSMicSPH0645.ino,IMPLEMENTED,MEMS Mic SPH0645 sensor
+A0192,Vibration SW-420,ANALOG,GPIO,analogSensor,on/off,ALL,None,VibrationSW420.ino,IMPLEMENTED,Vibration SW-420 sensor
+A0193,Vibration Piezo,ANALOG,ANALOG,analogSensor,mV,ALL,None,VibrationPiezo.ino,IMPLEMENTED,Vibration Piezo sensor
+A0194,Shock SW-18010P,ANALOG,GPIO,analogSensor,on/off,ALL,None,ShockSW18010P.ino,IMPLEMENTED,Shock SW-18010P sensor
+A0195,Tilt Switch,ANALOG,GPIO,analogSensor,on/off,ALL,None,TiltSwitch.ino,IMPLEMENTED,Tilt Switch sensor
+A0196,Mercury Tilt,ANALOG,GPIO,analogSensor,on/off,ALL,None,MercuryTilt.ino,IMPLEMENTED,Mercury Tilt sensor
+A0197,Piezo Knock,ANALOG,ANALOG,analogSensor,mV,ALL,None,PiezoKnock.ino,IMPLEMENTED,Piezo Knock sensor
+A0198,Accelerometer Analog,ANALOG,SPI,analogSensor,g,ALL,None,AccelerometerAnalog.ino,IMPLEMENTED,Accelerometer Analog sensor
+A0199,FSR Force Sensor,ANALOG,ANALOG,analogSensor,%,ALL,None,FSRForceSensor.ino,IMPLEMENTED,FSR Force Sensor sensor
+A0200,Load Cell HX711,ANALOG,SPI,analogSensor,kg,ALL,HX711,LoadCellHX711.ino,IMPLEMENTED,Load Cell HX711 sensor
+A0201,Load Cell HX711 Multi,ANALOG,SPI,analogSensor,kg,ALL,HX711,LoadCellHX711Multi.ino,IMPLEMENTED,Load Cell HX711 Multi sensor
+A0202,Load Cell NAU7802,ANALOG,SPI,analogSensor,kg,ALL,NAU7802,LoadCellNAU7802.ino,IMPLEMENTED,Load Cell NAU7802 sensor
+A0203,Pressure 0-5V,ANALOG,ANALOG,analogSensor,bar,ALL,None,Pressure0-5V.ino,IMPLEMENTED,Pressure 0-5V sensor
+A0204,Pressure 4-20mA,ANALOG,ANALOG,analogSensor,bar,ALL,None,Pressure4-20mA.ino,IMPLEMENTED,Pressure 4-20mA sensor
+A0205,Weight Scale 1kg,ANALOG,ANALOG,analogSensor,kg,ALL,None,WeightScale1kg.ino,IMPLEMENTED,Weight Scale 1kg sensor
+A0206,Weight Scale 5kg,ANALOG,ANALOG,analogSensor,kg,ALL,None,WeightScale5kg.ino,IMPLEMENTED,Weight Scale 5kg sensor
+A0207,Weight Scale 50kg,ANALOG,ANALOG,analogSensor,kg,ALL,None,WeightScale50kg.ino,IMPLEMENTED,Weight Scale 50kg sensor
+A0208,Weight Scale 100kg,ANALOG,ANALOG,analogSensor,kg,ALL,None,WeightScale100kg.ino,IMPLEMENTED,Weight Scale 100kg sensor
+A0209,Weight Scale 500kg,ANALOG,ANALOG,analogSensor,kg,ALL,None,WeightScale500kg.ino,IMPLEMENTED,Weight Scale 500kg sensor
+A0210,ACS712 5A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS7125A.ino,IMPLEMENTED,ACS712 5A sensor
+A0211,ACS712 20A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS71220A.ino,IMPLEMENTED,ACS712 20A sensor
+A0212,ACS712 30A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS71230A.ino,IMPLEMENTED,ACS712 30A sensor
+A0213,ACS758 50A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS75850A.ino,IMPLEMENTED,ACS758 50A sensor
+A0214,ACS758 100A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS758100A.ino,IMPLEMENTED,ACS758 100A sensor
+A0215,ACS758 200A,ANALOG,ANALOG,analogSensor,A,ALL,None,ACS758200A.ino,IMPLEMENTED,ACS758 200A sensor
+A0216,INA219,ANALOG,I2C,analogSensor,A/V/W,ALL,None,INA219.ino,IMPLEMENTED,INA219 sensor
+A0217,INA226,ANALOG,I2C,analogSensor,A/V/W,ALL,None,INA226.ino,IMPLEMENTED,INA226 sensor
+A0218,INA260,ANALOG,I2C,analogSensor,A/V/W,ALL,None,INA260.ino,IMPLEMENTED,INA260 sensor
+A0219,INA3221,ANALOG,I2C,analogSensor,A/V/W,ALL,None,INA3221.ino,IMPLEMENTED,INA3221 sensor
+A0220,Voltage Divider,ANALOG,ANALOG,analogSensor,V,ALL,None,VoltageDivider.ino,IMPLEMENTED,Voltage Divider sensor
+A0221,AC Voltage ZMPT101B,ANALOG,ANALOG,analogSensor,V,ALL,None,ACVoltageZMPT101B.ino,IMPLEMENTED,AC Voltage ZMPT101B sensor
+A0222,AC Current SCT-013,ANALOG,ANALOG,analogSensor,A,ALL,None,ACCurrentSCT013.ino,IMPLEMENTED,AC Current SCT-013 sensor
+A0223,AC Current SCT-006,ANALOG,ANALOG,analogSensor,A,ALL,None,ACCurrentSCT006.ino,IMPLEMENTED,AC Current SCT-006 sensor
+A0224,DC Current Shunt,ANALOG,ANALOG,analogSensor,A,ALL,None,DCCurrentShunt.ino,IMPLEMENTED,DC Current Shunt sensor
+A0225,PZEM-004T,ANALOG,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM004T.ino,IMPLEMENTED,PZEM-004T sensor
+A0226,PZEM-017,ANALOG,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM017.ino,IMPLEMENTED,PZEM-017 sensor
+A0227,HLW8012,ANALOG,ANALOG,analogSensor,W/V/A,ALL,None,HLW8012.ino,IMPLEMENTED,HLW8012 sensor
+A0228,BL0937,ANALOG,ANALOG,analogSensor,W/V/A,ALL,None,BL0937.ino,IMPLEMENTED,BL0937 sensor
+A0229,CSE7766,ANALOG,ANALOG,analogSensor,W/V/A,ALL,None,CSE7766.ino,IMPLEMENTED,CSE7766 sensor
+A0230,Energy ATM90E32,ANALOG,SPI,analogSensor,Wh,ALL,None,EnergyATM90E32.ino,IMPLEMENTED,Energy ATM90E32 sensor
+A0231,Energy ADE7753,ANALOG,SPI,analogSensor,Wh,ALL,None,EnergyADE7753.ino,IMPLEMENTED,Energy ADE7753 sensor
+A0232,Energy ADE7758,ANALOG,SPI,analogSensor,Wh,ALL,None,EnergyADE7758.ino,IMPLEMENTED,Energy ADE7758 sensor
+A0233,Energy ADE7763,ANALOG,SPI,analogSensor,Wh,ALL,None,EnergyADE7763.ino,IMPLEMENTED,Energy ADE7763 sensor
+A0234,pH Meter Analog,ANALOG,ANALOG,analogSensor,pH,ALL,None,pHMeterAnalog.ino,IMPLEMENTED,pH Meter Analog sensor
+A0235,pH Meter Digital,ANALOG,ANALOG,analogSensor,pH,ALL,None,pHMeterDigital.ino,IMPLEMENTED,pH Meter Digital sensor
+A0236,EC Meter Analog,ANALOG,ANALOG,analogSensor,µS/cm,ALL,None,ECMeterAnalog.ino,IMPLEMENTED,EC Meter Analog sensor
+A0237,EC Meter Digital,ANALOG,ANALOG,analogSensor,µS/cm,ALL,None,ECMeterDigital.ino,IMPLEMENTED,EC Meter Digital sensor
+A0238,TDS Meter Analog,ANALOG,ANALOG,analogSensor,ppm,ALL,None,TDSMeterAnalog.ino,IMPLEMENTED,TDS Meter Analog sensor
+A0239,TDS Meter Digital,ANALOG,ANALOG,analogSensor,ppm,ALL,None,TDSMeterDigital.ino,IMPLEMENTED,TDS Meter Digital sensor
+A0240,ORP Meter Analog,ANALOG,ANALOG,analogSensor,mV,ALL,None,ORPMeterAnalog.ino,IMPLEMENTED,ORP Meter Analog sensor
+A0241,ORP Meter Digital,ANALOG,ANALOG,analogSensor,mV,ALL,None,ORPMeterDigital.ino,IMPLEMENTED,ORP Meter Digital sensor
+A0242,DO Dissolved Oxygen,ANALOG,ANALOG,analogSensor,mg/L,ALL,None,DODissolvedOxygen.ino,IMPLEMENTED,DO Dissolved Oxygen sensor
+A0243,Turbidity Sensor,ANALOG,ANALOG,analogSensor,NTU,ALL,None,TurbiditySensor.ino,IMPLEMENTED,Turbidity Sensor sensor
+A0244,Water Temp DS18B20,ANALOG,ONEWIRE,ds18b20,°C,ALL,None,WaterTempDS18B20.ino,IMPLEMENTED,Water Temp DS18B20 sensor
+A0245,Water Level Analog,ANALOG,ANALOG,analogSensor,%,ALL,None,WaterLevelAnalog.ino,IMPLEMENTED,Water Level Analog sensor
+A0246,Water Flow YF-S201,ANALOG,GPIO,flowSensor,L/min,ALL,None,WaterFlowYF-S201.ino,IMPLEMENTED,Water Flow YF-S201 sensor
+A0247,Water Flow YF-S401,ANALOG,GPIO,flowSensor,L/min,ALL,None,WaterFlowYF-S401.ino,IMPLEMENTED,Water Flow YF-S401 sensor
+A0248,Water Flow G1/2,ANALOG,GPIO,flowSensor,L/min,ALL,None,WaterFlowG12.ino,IMPLEMENTED,Water Flow G1/2 sensor
+A0249,Dust GP2Y10,ANALOG,ANALOG,analogSensor,µg/m³,ALL,None,DustGP2Y10.ino,IMPLEMENTED,Dust GP2Y10 sensor
+A0250,Dust GP2Y1010,ANALOG,ANALOG,analogSensor,µg/m³,ALL,None,DustGP2Y1010.ino,IMPLEMENTED,Dust GP2Y1010 sensor
+A0251,PM PMS5003,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMPMS5003.ino,IMPLEMENTED,PM PMS5003 sensor
+A0252,PM PMS7003,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMPMS7003.ino,IMPLEMENTED,PM PMS7003 sensor
+A0253,PM PMS1003,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMPMS1003.ino,IMPLEMENTED,PM PMS1003 sensor
+A0254,PM SDS011,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMSDS011.ino,IMPLEMENTED,PM SDS011 sensor
+A0255,PM HPMA115S0,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMHPMA115S0.ino,IMPLEMENTED,PM HPMA115S0 sensor
+A0256,PM PMSA003,ANALOG,UART,analogSensor,µg/m³,ALL,None,PMPMSA003.ino,IMPLEMENTED,PM PMSA003 sensor
+A0257,Air Quality SGP30,ANALOG,I2C,analogSensor,TVOC/eCO2,ALL,None,AirQualitySGP30.ino,IMPLEMENTED,Air Quality SGP30 sensor
+A0258,Air Quality SGP40,ANALOG,I2C,analogSensor,VOC Index,ALL,None,AirQualitySGP40.ino,IMPLEMENTED,Air Quality SGP40 sensor
+A0259,Air Quality BME680,ANALOG,I2C,analogSensor,IAQ,ALL,None,AirQualityBME680.ino,IMPLEMENTED,Air Quality BME680 sensor
+A0260,Air Quality BME688,ANALOG,I2C,analogSensor,IAQ,ALL,None,AirQualityBME688.ino,IMPLEMENTED,Air Quality BME688 sensor
+A0261,Air Quality CCS811,ANALOG,I2C,analogSensor,TVOC/eCO2,ALL,None,AirQualityCCS811.ino,IMPLEMENTED,Air Quality CCS811 sensor
+A0262,Air Quality MICS-5524,ANALOG,I2C,analogSensor,ratio,ALL,None,AirQualityMICS-5524.ino,IMPLEMENTED,Air Quality MICS-5524 sensor
+A0263,Air Quality MICS-6814,ANALOG,I2C,analogSensor,ratio,ALL,None,AirQualityMICS-6814.ino,IMPLEMENTED,Air Quality MICS-6814 sensor
+A0264,Air Quality ZMOD4410,ANALOG,I2C,analogSensor,IAQ,ALL,None,AirQualityZMOD4410.ino,IMPLEMENTED,Air Quality ZMOD4410 sensor
+A0265,Pulse Sensor,ANALOG,ANALOG,analogSensor,BPM,ALL,None,PulseSensor.ino,IMPLEMENTED,Pulse Sensor sensor
+A0266,GSR Skin Conductance,ANALOG,ANALOG,analogSensor,µS,ALL,None,GSRSkinConductance.ino,IMPLEMENTED,GSR Skin Conductance sensor
+A0267,EMG Muscle,ANALOG,ANALOG,analogSensor,mV,ALL,None,EMGMuscle.ino,IMPLEMENTED,EMG Muscle sensor
+A0268,ECG Analog,ANALOG,ANALOG,analogSensor,mV,ALL,None,ECGAnalog.ino,IMPLEMENTED,ECG Analog sensor
+A0269,Hall Effect Linear,ANALOG,ANALOG,analogSensor,mV,ALL,None,HallEffectLinear.ino,IMPLEMENTED,Hall Effect Linear sensor
+A0270,Hall Effect Switch,ANALOG,ANALOG,analogSensor,on/off,ALL,None,HallEffectSwitch.ino,IMPLEMENTED,Hall Effect Switch sensor
+A0271,Angle Sensor,ANALOG,ANALOG,analogSensor,degrees,ALL,None,AngleSensor.ino,IMPLEMENTED,Angle Sensor sensor
+A0272,Slide Potentiometer,ANALOG,ANALOG,analogSensor,raw/%,ALL,None,SlidePotentiometer.ino,IMPLEMENTED,Slide Potentiometer sensor
+A0273,Rotary Potentiometer,ANALOG,ANALOG,analogSensor,raw/%,ALL,None,RotaryPotentiometer.ino,IMPLEMENTED,Rotary Potentiometer sensor
+A0274,Joystick X,ANALOG,ANALOG,analogSensor,raw/%,ALL,None,JoystickX.ino,IMPLEMENTED,Joystick X sensor
+A0275,Joystick Y,ANALOG,ANALOG,analogSensor,raw/%,ALL,None,JoystickY.ino,IMPLEMENTED,Joystick Y sensor
+A0276,Wind Speed Analog,ANALOG,ANALOG,analogSensor,m/s,ALL,None,WindSpeedAnalog.ino,IMPLEMENTED,Wind Speed Analog sensor
+A0277,Wind Direction Analog,ANALOG,ANALOG,analogSensor,degrees,ALL,None,WindDirectionAnalog.ino,IMPLEMENTED,Wind Direction Analog sensor
+A0278,Rain Sensor Analog,ANALOG,ANALOG,analogSensor,%,ALL,None,RainSensorAnalog.ino,IMPLEMENTED,Rain Sensor Analog sensor
+A0279,Soil Moisture Analog,ANALOG,ANALOG,analogSensor,%,ALL,None,SoilMoistureAnalog.ino,IMPLEMENTED,Soil Moisture Analog sensor
+A0280,Soil Moisture Capacitive,ANALOG,ANALOG,analogSensor,%,ALL,None,SoilMoistureCapacitive.ino,IMPLEMENTED,Soil Moisture Capacitive sensor
+A0281,Soil NPK,ANALOG,I2C,analogSensor,N/P/K,ALL,None,SoilNPK.ino,IMPLEMENTED,Soil NPK sensor
+A0282,Gas Generic MQ,ANALOG,ANALOG,analogSensor,ppm,ALL,None,GasGenericMQ.ino,IMPLEMENTED,Gas Generic MQ sensor
+A0283,PIR HC-SR501,DIGITAL,GPIO,pir,on/off,ALL,None,PIRHCSR501.ino,IMPLEMENTED,PIR HC-SR501 sensor
+A0284,PIR HC-SR505,DIGITAL,GPIO,pir,on/off,ALL,None,PIRHCSR505.ino,IMPLEMENTED,PIR HC-SR505 sensor
+A0285,RCWL-0516 Radar,DIGITAL,GPIO,radarRCWL,on/off,ALL,None,RCWL0516Radar.ino,IMPLEMENTED,RCWL-0516 Radar sensor
+A0286,HLK-LD2410 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,HLKLD2410Radar.ino,IMPLEMENTED,HLK-LD2410 Radar sensor
+A0287,HLK-LD2450 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,HLKLD2450Radar.ino,IMPLEMENTED,HLK-LD2450 Radar sensor
+A0288,MR60BHA1 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,MR60BHA1Radar.ino,IMPLEMENTED,MR60BHA1 Radar sensor
+A0289,IR Obstacle,DIGITAL,GPIO,analogSensor,on/off,ALL,None,IRObstacle.ino,IMPLEMENTED,IR Obstacle sensor
+A0290,IR Line Follower,DIGITAL,GPIO,analogSensor,on/off,ALL,None,IRLineFollower.ino,IMPLEMENTED,IR Line Follower sensor
+A0291,Laser Receiver,DIGITAL,GPIO,analogSensor,on/off,ALL,None,LaserReceiver.ino,IMPLEMENTED,Laser Receiver sensor
+A0292,IR Beam Break,DIGITAL,GPIO,analogSensor,on/off,ALL,None,IRBeamBreak.ino,IMPLEMENTED,IR Beam Break sensor
+A0293,Ultrasonic HC-SR04,DIGITAL,GPIO,ultrasonic,cm,ALL,None,UltrasonicHCSR04.ino,IMPLEMENTED,Ultrasonic HC-SR04 sensor
+A0294,Ultrasonic HC-SR04P,DIGITAL,GPIO,ultrasonic,cm,ALL,None,UltrasonicHCSR04P.ino,IMPLEMENTED,Ultrasonic HC-SR04P sensor
+A0295,Ultrasonic JSN-SR04T,DIGITAL,GPIO,ultrasonic,cm,ALL,None,UltrasonicJSNSR04T.ino,IMPLEMENTED,Ultrasonic JSN-SR04T sensor
+A0296,Ultrasonic SRF05,DIGITAL,GPIO,ultrasonic,cm,ALL,None,UltrasonicSRF05.ino,IMPLEMENTED,Ultrasonic SRF05 sensor
+A0297,Ultrasonic SRF08,DIGITAL,GPIO,ultrasonic,cm,ALL,None,UltrasonicSRF08.ino,IMPLEMENTED,Ultrasonic SRF08 sensor
+A0298,TOF VL53L0X,DIGITAL,I2C,analogSensor,mm,ALL,None,TOFVL53L0X.ino,IMPLEMENTED,TOF VL53L0X sensor
+A0299,TOF VL53L1X,DIGITAL,I2C,analogSensor,mm,ALL,None,TOFVL53L1X.ino,IMPLEMENTED,TOF VL53L1X sensor
+A0300,TOF VL6180X,DIGITAL,I2C,analogSensor,mm,ALL,None,TOFVL6180X.ino,IMPLEMENTED,TOF VL6180X sensor
+A0301,TOF TMF8801,DIGITAL,I2C,analogSensor,mm,ALL,None,TOFTMF8801.ino,IMPLEMENTED,TOF TMF8801 sensor
+A0302,Flame Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,FlameDigital.ino,IMPLEMENTED,Flame Digital sensor
+A0303,Smoke MQ-2 Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,SmokeMQ-2Digital.ino,IMPLEMENTED,Smoke MQ-2 Digital sensor
+A0304,Gas MQ Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,GasMQDigital.ino,IMPLEMENTED,Gas MQ Digital sensor
+A0305,CO Alarm Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,COAlarmDigital.ino,IMPLEMENTED,CO Alarm Digital sensor
+A0306,Smoke Alarm Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,SmokeAlarmDigital.ino,IMPLEMENTED,Smoke Alarm Digital sensor
+A0307,Gas Leak Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,GasLeakDigital.ino,IMPLEMENTED,Gas Leak Digital sensor
+A0308,Touch TTP223,DIGITAL,GPIO,touchTTP223,on/off,ALL,None,TouchTTP223.ino,IMPLEMENTED,Touch TTP223 sensor
+A0309,Touch TTP224,DIGITAL,GPIO,touchTTP223,on/off,ALL,None,TouchTTP224.ino,IMPLEMENTED,Touch TTP224 sensor
+A0310,Touch TTP229,DIGITAL,GPIO,touchTTP223,on/off,ALL,None,TouchTTP229.ino,IMPLEMENTED,Touch TTP229 sensor
+A0311,Capacitive MPR121,DIGITAL,I2C,touchTTP223,12 ch,ALL,None,CapacitiveMPR121.ino,IMPLEMENTED,Capacitive MPR121 sensor
+A0312,Capacitive MPR121QR2,DIGITAL,I2C,touchTTP223,12 ch,ALL,None,CapacitiveMPR121QR2.ino,IMPLEMENTED,Capacitive MPR121QR2 sensor
+A0313,Capacitive STMPE610,DIGITAL,I2C,touchTTP223,touch,ALL,None,CapacitiveSTMPE610.ino,IMPLEMENTED,Capacitive STMPE610 sensor
+A0314,Capacitive FT6206,DIGITAL,I2C,touchTTP223,touch,ALL,None,CapacitiveFT6206.ino,IMPLEMENTED,Capacitive FT6206 sensor
+A0315,Capacitive GT911,DIGITAL,I2C,touchTTP223,touch,ALL,None,CapacitiveGT911.ino,IMPLEMENTED,Capacitive GT911 sensor
+A0316,Hall Digital A3144,DIGITAL,GPIO,hallDigital,on/off,ALL,None,HallDigitalA3144.ino,IMPLEMENTED,Hall Digital A3144 sensor
+A0317,Hall Digital SS49E,DIGITAL,GPIO,hallDigital,on/off,ALL,None,HallDigitalSS49E.ino,IMPLEMENTED,Hall Digital SS49E sensor
+A0318,Reed Switch,DIGITAL,GPIO,hallDigital,on/off,ALL,None,ReedSwitch.ino,IMPLEMENTED,Reed Switch sensor
+A0319,Reed Magnetic,DIGITAL,GPIO,hallDigital,on/off,ALL,None,ReedMagnetic.ino,IMPLEMENTED,Reed Magnetic sensor
+A0320,Limit Switch,DIGITAL,GPIO,hallDigital,on/off,ALL,None,LimitSwitch.ino,IMPLEMENTED,Limit Switch sensor
+A0321,Endstop,DIGITAL,GPIO,hallDigital,on/off,ALL,None,Endstop.ino,IMPLEMENTED,Endstop sensor
+A0322,Magnetic Door Sensor,DIGITAL,GPIO,hallDigital,on/off,ALL,None,MagneticDoorSensor.ino,IMPLEMENTED,Magnetic Door Sensor sensor
+A0323,Magnetic Window Sensor,DIGITAL,GPIO,hallDigital,on/off,ALL,None,MagneticWindowSensor.ino,IMPLEMENTED,Magnetic Window Sensor sensor
+A0324,Linear Hall SS49E,DIGITAL,GPIO,hallDigital,mV,ALL,None,LinearHallSS49E.ino,IMPLEMENTED,Linear Hall SS49E sensor
+A0325,Omnipolar Hall,DIGITAL,GPIO,hallDigital,on/off,ALL,None,OmnipolarHall.ino,IMPLEMENTED,Omnipolar Hall sensor
+A0326,Unipolar Hall,DIGITAL,GPIO,hallDigital,on/off,ALL,None,UnipolarHall.ino,IMPLEMENTED,Unipolar Hall sensor
+A0327,Latching Hall,DIGITAL,GPIO,hallDigital,on/off,ALL,None,LatchingHall.ino,IMPLEMENTED,Latching Hall sensor
+A0328,Vibration SW-420,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,VibrationSW420.ino,IMPLEMENTED,Vibration SW-420 sensor
+A0329,Vibration SW-18015P,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,VibrationSW18015P.ino,IMPLEMENTED,Vibration SW-18015P sensor
+A0330,Shock SW-18010P,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,ShockSW18010P.ino,IMPLEMENTED,Shock SW-18010P sensor
+A0331,Shock SW-420,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,ShockSW420.ino,IMPLEMENTED,Shock SW-420 sensor
+A0332,Tilt Ball Switch,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,TiltBallSwitch.ino,IMPLEMENTED,Tilt Ball Switch sensor
+A0333,Tilt Mercury,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,TiltMercury.ino,IMPLEMENTED,Tilt Mercury sensor
+A0334,Tilt SW-520D,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,TiltSW520D.ino,IMPLEMENTED,Tilt SW-520D sensor
+A0335,Vibration Piezo Digital,DIGITAL,GPIO,vibrationSW420,on/off,ALL,None,VibrationPiezoDigital.ino,IMPLEMENTED,Vibration Piezo Digital sensor
+A0336,Pulse Counter,DIGITAL,GPIO,pulseCounter,count,ALL,None,PulseCounter.ino,IMPLEMENTED,Pulse Counter sensor
+A0337,Flow Sensor YF-S201,DIGITAL,GPIO,flowSensor,L/min,ALL,None,FlowSensorYF-S201.ino,IMPLEMENTED,Flow Sensor YF-S201 sensor
+A0338,Flow Sensor YF-S401,DIGITAL,GPIO,flowSensor,L/min,ALL,None,FlowSensorYF-S401.ino,IMPLEMENTED,Flow Sensor YF-S401 sensor
+A0339,Flow Sensor G1/2,DIGITAL,GPIO,flowSensor,L/min,ALL,None,FlowSensorG1/2.ino,IMPLEMENTED,Flow Sensor G1/2 sensor
+A0340,Flow Sensor DN15,DIGITAL,GPIO,flowSensor,L/min,ALL,None,FlowSensorDN15.ino,IMPLEMENTED,Flow Sensor DN15 sensor
+A0341,Flow Sensor DN20,DIGITAL,GPIO,flowSensor,L/min,ALL,None,FlowSensorDN20.ino,IMPLEMENTED,Flow Sensor DN20 sensor
+A0342,Tachometer,DIGITAL,GPIO,tachometer,RPM,ALL,None,Tachometer.ino,IMPLEMENTED,Tachometer sensor
+A0343,RPM Sensor,DIGITAL,GPIO,tachometer,RPM,ALL,None,RPMSensor.ino,IMPLEMENTED,RPM Sensor sensor
+A0344,Flow Totalizer,DIGITAL,GPIO,flowSensor,L,ALL,None,FlowTotalizer.ino,IMPLEMENTED,Flow Totalizer sensor
+A0345,Energy Pulse,DIGITAL,GPIO,pulseCounter,Wh,ALL,None,EnergyPulse.ino,IMPLEMENTED,Energy Pulse sensor
+A0346,Sound Detect Digital,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,SoundDetectDigital.ino,IMPLEMENTED,Sound Detect Digital sensor
+A0347,Clap Sensor,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,ClapSensor.ino,IMPLEMENTED,Clap Sensor sensor
+A0348,Sound Trigger,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,SoundTrigger.ino,IMPLEMENTED,Sound Trigger sensor
+A0349,Voice Detect,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,VoiceDetect.ino,IMPLEMENTED,Voice Detect sensor
+A0350,Noise Detect,DIGITAL,GPIO,digitalSensor,on/off,ALL,None,NoiseDetect.ino,IMPLEMENTED,Noise Detect sensor
+A0351,Keypad 4x4,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad4x4.ino,IMPLEMENTED,Keypad 4x4
+A0352,Keypad 4x3,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad4x3.ino,IMPLEMENTED,Keypad 4x3
+A0353,Keypad 3x4,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad3x4.ino,IMPLEMENTED,Keypad 3x4
+A0354,Keypad 16-key,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad16key.ino,IMPLEMENTED,Keypad 16-key
+A0355,Keypad 20-key,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad20key.ino,IMPLEMENTED,Keypad 20-key
+A0356,Keypad 12-button,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad12button.ino,IMPLEMENTED,Keypad 12-button
+A0357,Keypad 4-button,DIGITAL,GPIO,keypad4x4,char,ALL,None,Keypad4button.ino,IMPLEMENTED,Keypad 4-button
+A0358,Button Active High,DIGITAL,GPIO,button,events,ALL,None,ButtonActiveHigh.ino,IMPLEMENTED,Button Active High
+A0359,Button Active Low,DIGITAL,GPIO,button,events,ALL,None,ButtonActiveLow.ino,IMPLEMENTED,Button Active Low
+A0360,Tactile Button,DIGITAL,GPIO,button,events,ALL,None,TactileButton.ino,IMPLEMENTED,Tactile Button
+A0361,Push Button,DIGITAL,GPIO,button,events,ALL,None,PushButton.ino,IMPLEMENTED,Push Button
+A0362,Momentary Button,DIGITAL,GPIO,button,events,ALL,None,MomentaryButton.ino,IMPLEMENTED,Momentary Button
+A0363,Latching Button,DIGITAL,GPIO,button,events,ALL,None,LatchingButton.ino,IMPLEMENTED,Latching Button
+A0364,IR Receiver NEC,DIGITAL,GPIO,irReceiver,code,ALL,None,IRReceiverNEC.ino,IMPLEMENTED,IR Receiver NEC
+A0365,IR Receiver Sony,DIGITAL,GPIO,irReceiver,code,ALL,None,IRReceiverSony.ino,IMPLEMENTED,IR Receiver Sony
+A0366,IR Receiver RC5,DIGITAL,GPIO,irReceiver,code,ALL,None,IRReceiverRC5.ino,IMPLEMENTED,IR Receiver RC5
+A0367,IR Receiver RC6,DIGITAL,GPIO,irReceiver,code,ALL,None,IRReceiverRC6.ino,IMPLEMENTED,IR Receiver RC6
+A0368,IR Receiver Raw,DIGITAL,GPIO,irReceiver,code,ALL,None,IRReceiverRaw.ino,IMPLEMENTED,IR Receiver Raw
+A0369,IR Decode Universal,DIGITAL,GPIO,irReceiver,code,ALL,None,IRDecodeUniversal.ino,IMPLEMENTED,IR Decode Universal
+A0370,MPU6050,I2C,I2C,mpu6050,g/deg/s,ALL,None,MPU6050.ino,IMPLEMENTED,MPU6050 IMU
+A0371,MPU6050 6-axis,I2C,I2C,mpu6050,g/deg/s,ALL,None,MPU60506-axis.ino,IMPLEMENTED,MPU6050 6-axis IMU
+A0372,MPU9250,I2C,I2C,mpu6050,9-DOF,ALL,None,MPU9250.ino,IMPLEMENTED,MPU9250 IMU
+A0373,MPU9255,I2C,I2C,mpu6050,9-DOF,ALL,None,MPU9255.ino,IMPLEMENTED,MPU9255 IMU
+A0374,MPU9250 9-axis,I2C,I2C,mpu6050,9-DOF,ALL,None,MPU92509-axis.ino,IMPLEMENTED,MPU9250 9-axis IMU
+A0375,ICM20948,I2C,I2C,mpu6050,9-DOF,ALL,None,ICM20948.ino,IMPLEMENTED,ICM20948 IMU
+A0376,ICM20608,I2C,I2C,mpu6050,6-DOF,ALL,None,ICM20608.ino,IMPLEMENTED,ICM20608 IMU
+A0377,ICM20602,I2C,I2C,mpu6050,6-DOF,ALL,None,ICM20602.ino,IMPLEMENTED,ICM20602 IMU
+A0378,ICM20649,I2C,I2C,mpu6050,6-DOF,ALL,None,ICM20649.ino,IMPLEMENTED,ICM20649 IMU
+A0379,ICM20689,I2C,I2C,mpu6050,6-DOF,ALL,None,ICM20689.ino,IMPLEMENTED,ICM20689 IMU
+A0380,ICM42688,I2C,I2C,mpu6050,6-DOF,ALL,None,ICM42688.ino,IMPLEMENTED,ICM42688 IMU
+A0381,BNO055,I2C,I2C,mpu6050,9-DOF,ALL,None,BNO055.ino,IMPLEMENTED,BNO055 IMU
+A0382,BNO080,I2C,I2C,mpu6050,9-DOF,ALL,None,BNO080.ino,IMPLEMENTED,BNO080 IMU
+A0383,BNO085,I2C,I2C,mpu6050,9-DOF,ALL,None,BNO085.ino,IMPLEMENTED,BNO085 IMU
+A0384,LSM6DS3,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DS3.ino,IMPLEMENTED,LSM6DS3 IMU
+A0385,LSM6DSL,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DSL.ino,IMPLEMENTED,LSM6DSL IMU
+A0386,LSM6DSO,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DSO.ino,IMPLEMENTED,LSM6DSO IMU
+A0387,LSM6DSRX,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DSRX.ino,IMPLEMENTED,LSM6DSRX IMU
+A0388,LSM6DSM,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DSM.ino,IMPLEMENTED,LSM6DSM IMU
+A0389,LSM6DS3H,I2C,I2C,mpu6050,6-DOF,ALL,None,LSM6DS3H.ino,IMPLEMENTED,LSM6DS3H IMU
+A0390,BMI160,I2C,I2C,mpu6050,6-DOF,ALL,None,BMI160.ino,IMPLEMENTED,BMI160 IMU
+A0391,BMI160 6-axis,I2C,I2C,mpu6050,6-DOF,ALL,None,BMI1606-axis.ino,IMPLEMENTED,BMI160 6-axis IMU
+A0392,BMI270,I2C,I2C,mpu6050,6-DOF,ALL,None,BMI270.ino,IMPLEMENTED,BMI270 IMU
+A0393,BMI088,I2C,I2C,mpu6050,6-DOF,ALL,None,BMI088.ino,IMPLEMENTED,BMI088 IMU
+A0394,ADXL345,I2C,I2C,mpu6050,g,ALL,None,ADXL345.ino,IMPLEMENTED,ADXL345 IMU
+A0395,ADXL335,I2C,I2C,mpu6050,g,ALL,None,ADXL335.ino,IMPLEMENTED,ADXL335 IMU
+A0396,ADXL377,I2C,I2C,mpu6050,g,ALL,None,ADXL377.ino,IMPLEMENTED,ADXL377 IMU
+A0397,ADXL362,I2C,I2C,mpu6050,g,ALL,None,ADXL362.ino,IMPLEMENTED,ADXL362 IMU
+A0398,L3G4200D,I2C,I2C,mpu6050,deg/s,ALL,None,L3G4200D.ino,IMPLEMENTED,L3G4200D IMU
+A0399,L3GD20,I2C,I2C,mpu6050,deg/s,ALL,None,L3GD20.ino,IMPLEMENTED,L3GD20 IMU
+A0400,L3GD20H,I2C,I2C,mpu6050,deg/s,ALL,None,L3GD20H.ino,IMPLEMENTED,L3GD20H IMU
+A0401,HMC5883L,I2C,I2C,mpu6050,µT,ALL,None,HMC5883L.ino,IMPLEMENTED,HMC5883L IMU
+A0402,HMC5983,I2C,I2C,mpu6050,µT,ALL,None,HMC5983.ino,IMPLEMENTED,HMC5983 IMU
+A0403,QMC5883L,I2C,I2C,mpu6050,µT,ALL,None,QMC5883L.ino,IMPLEMENTED,QMC5883L IMU
+A0404,QMC6300,I2C,I2C,mpu6050,µT,ALL,None,QMC6300.ino,IMPLEMENTED,QMC6300 IMU
+A0405,MMC5883MA,I2C,I2C,mpu6050,µT,ALL,None,MMC5883MA.ino,IMPLEMENTED,MMC5883MA IMU
+A0406,MMC5983MA,I2C,I2C,mpu6050,µT,ALL,None,MMC5983MA.ino,IMPLEMENTED,MMC5983MA IMU
+A0407,SHT31,I2C,I2C,bme280,°C/%RH,ALL,None,SHT31.ino,IMPLEMENTED,SHT31 sensor
+A0408,SHT35,I2C,I2C,bme280,°C/%RH,ALL,None,SHT35.ino,IMPLEMENTED,SHT35 sensor
+A0409,SHT40,I2C,I2C,bme280,°C/%RH,ALL,None,SHT40.ino,IMPLEMENTED,SHT40 sensor
+A0410,SHT41,I2C,I2C,bme280,°C/%RH,ALL,None,SHT41.ino,IMPLEMENTED,SHT41 sensor
+A0411,SHT45,I2C,I2C,bme280,°C/%RH,ALL,None,SHT45.ino,IMPLEMENTED,SHT45 sensor
+A0412,AHT10,I2C,I2C,bme280,°C/%RH,ALL,None,AHT10.ino,IMPLEMENTED,AHT10 sensor
+A0413,AHT20,I2C,I2C,bme280,°C/%RH,ALL,None,AHT20.ino,IMPLEMENTED,AHT20 sensor
+A0414,AHT21,I2C,I2C,bme280,°C/%RH,ALL,None,AHT21.ino,IMPLEMENTED,AHT21 sensor
+A0415,AHT25,I2C,I2C,bme280,°C/%RH,ALL,None,AHT25.ino,IMPLEMENTED,AHT25 sensor
+A0416,MCP9808,I2C,I2C,bme280,°C,ALL,None,MCP9808.ino,IMPLEMENTED,MCP9808 sensor
+A0417,MCP9804,I2C,I2C,bme280,°C,ALL,None,MCP9804.ino,IMPLEMENTED,MCP9804 sensor
+A0418,TMP117,I2C,I2C,bme280,°C,ALL,None,TMP117.ino,IMPLEMENTED,TMP117 sensor
+A0419,TMP116,I2C,I2C,bme280,°C,ALL,None,TMP116.ino,IMPLEMENTED,TMP116 sensor
+A0420,TMP112,I2C,I2C,bme280,°C,ALL,None,TMP112.ino,IMPLEMENTED,TMP112 sensor
+A0421,LM75,I2C,I2C,bme280,°C,ALL,None,LM75.ino,IMPLEMENTED,LM75 sensor
+A0422,LM75A,I2C,I2C,bme280,°C,ALL,None,LM75A.ino,IMPLEMENTED,LM75A sensor
+A0423,TMP102,I2C,I2C,bme280,°C,ALL,None,TMP102.ino,IMPLEMENTED,TMP102 sensor
+A0424,TMP100,I2C,I2C,bme280,°C,ALL,None,TMP100.ino,IMPLEMENTED,TMP100 sensor
+A0425,TMP112A,I2C,I2C,bme280,°C,ALL,None,TMP112A.ino,IMPLEMENTED,TMP112A sensor
+A0426,BME280,I2C,I2C,bme280,°C/%/hPa,ALL,None,BME280.ino,IMPLEMENTED,BME280 sensor
+A0427,BME680,I2C,I2C,bme280,°C/%/hPa/IAQ,ALL,None,BME680.ino,IMPLEMENTED,BME680 sensor
+A0428,BME688,I2C,I2C,bme280,°C/%/hPa/IAQ,ALL,None,BME688.ino,IMPLEMENTED,BME688 sensor
+A0429,BMP280,I2C,I2C,bme280,°C/hPa,ALL,None,BMP280.ino,IMPLEMENTED,BMP280 sensor
+A0430,BMP388,I2C,I2C,bme280,°C/hPa,ALL,None,BMP388.ino,IMPLEMENTED,BMP388 sensor
+A0431,BMP390,I2C,I2C,bme280,°C/hPa,ALL,None,BMP390.ino,IMPLEMENTED,BMP390 sensor
+A0432,LPS22HB,I2C,I2C,bme280,hPa,ALL,None,LPS22HB.ino,IMPLEMENTED,LPS22HB sensor
+A0433,LPS25HB,I2C,I2C,bme280,hPa,ALL,None,LPS25HB.ino,IMPLEMENTED,LPS25HB sensor
+A0434,LPS33HW,I2C,I2C,bme280,hPa,ALL,None,LPS33HW.ino,IMPLEMENTED,LPS33HW sensor
+A0435,LPS35HW,I2C,I2C,bme280,hPa,ALL,None,LPS35HW.ino,IMPLEMENTED,LPS35HW sensor
+A0436,DPS310,I2C,I2C,bme280,hPa,ALL,None,DPS310.ino,IMPLEMENTED,DPS310 sensor
+A0437,DPS368,I2C,I2C,bme280,hPa,ALL,None,DPS368.ino,IMPLEMENTED,DPS368 sensor
+A0438,MPL3115A2,I2C,I2C,bme280,hPa,ALL,None,MPL3115A2.ino,IMPLEMENTED,MPL3115A2 sensor
+A0439,MPL115A2,I2C,I2C,bme280,hPa,ALL,None,MPL115A2.ino,IMPLEMENTED,MPL115A2 sensor
+A0440,MS5611,I2C,I2C,bme280,hPa,ALL,None,MS5611.ino,IMPLEMENTED,MS5611 sensor
+A0441,MS5607,I2C,I2C,bme280,hPa,ALL,None,MS5607.ino,IMPLEMENTED,MS5607 sensor
+A0442,MS5837,I2C,I2C,bme280,hPa,ALL,None,MS5837.ino,IMPLEMENTED,MS5837 sensor
+A0443,MS5803,I2C,I2C,bme280,hPa,ALL,None,MS5803.ino,IMPLEMENTED,MS5803 sensor
+A0444,MS5805,I2C,I2C,bme280,hPa,ALL,None,MS5805.ino,IMPLEMENTED,MS5805 sensor
+A0445,HDC1000,I2C,I2C,bme280,°C/%RH,ALL,None,HDC1000.ino,IMPLEMENTED,HDC1000 sensor
+A0446,HDC1010,I2C,I2C,bme280,°C/%RH,ALL,None,HDC1010.ino,IMPLEMENTED,HDC1010 sensor
+A0447,HDC1080,I2C,I2C,bme280,°C/%RH,ALL,None,HDC1080.ino,IMPLEMENTED,HDC1080 sensor
+A0448,HTU21D,I2C,I2C,bme280,°C/%RH,ALL,None,HTU21D.ino,IMPLEMENTED,HTU21D sensor
+A0449,HTU31D,I2C,I2C,bme280,°C/%RH,ALL,None,HTU31D.ino,IMPLEMENTED,HTU31D sensor
+A0450,SI7021,I2C,I2C,bme280,°C/%RH,ALL,None,SI7021.ino,IMPLEMENTED,SI7021 sensor
+A0451,SHT20,I2C,I2C,bme280,°C/%RH,ALL,None,SHT20.ino,IMPLEMENTED,SHT20 sensor
+A0452,SHT21,I2C,I2C,bme280,°C/%RH,ALL,None,SHT21.ino,IMPLEMENTED,SHT21 sensor
+A0453,SHT25,I2C,I2C,bme280,°C/%RH,ALL,None,SHT25.ino,IMPLEMENTED,SHT25 sensor
+A0454,DHT12,I2C,I2C,bme280,°C/%RH,ALL,None,DHT12.ino,IMPLEMENTED,DHT12 sensor
+A0455,AM2320,I2C,I2C,bme280,°C/%RH,ALL,None,AM2320.ino,IMPLEMENTED,AM2320 sensor
+A0456,AM2315,I2C,I2C,bme280,°C/%RH,ALL,None,AM2315.ino,IMPLEMENTED,AM2315 sensor
+A0457,AM2311C,I2C,I2C,bme280,°C/%RH,ALL,None,AM2311C.ino,IMPLEMENTED,AM2311C sensor
+A0458,RHT03,I2C,I2C,bme280,°C/%RH,ALL,None,RHT03.ino,IMPLEMENTED,RHT03 sensor
+A0459,BH1750,I2C,I2C,bh1750,lux,ALL,None,BH1750.ino,IMPLEMENTED,BH1750
+A0460,BH1750FVI,I2C,I2C,bh1750,lux,ALL,None,BH1750FVI.ino,IMPLEMENTED,BH1750FVI
+A0461,TSL2561,I2C,I2C,analogSensor,lux,ALL,None,TSL2561.ino,IMPLEMENTED,TSL2561
+A0462,TSL2572,I2C,I2C,analogSensor,lux,ALL,None,TSL2572.ino,IMPLEMENTED,TSL2572
+A0463,TSL2591,I2C,I2C,analogSensor,lux,ALL,None,TSL2591.ino,IMPLEMENTED,TSL2591
+A0464,VEML7700,I2C,I2C,analogSensor,lux,ALL,None,VEML7700.ino,IMPLEMENTED,VEML7700
+A0465,VEML6070,I2C,I2C,analogSensor,UV index,ALL,None,VEML6070.ino,IMPLEMENTED,VEML6070
+A0466,VEML6075,I2C,I2C,analogSensor,UV index,ALL,None,VEML6075.ino,IMPLEMENTED,VEML6075
+A0467,OPT3001,I2C,I2C,analogSensor,lux,ALL,None,OPT3001.ino,IMPLEMENTED,OPT3001
+A0468,OPT4001,I2C,I2C,analogSensor,lux,ALL,None,OPT4001.ino,IMPLEMENTED,OPT4001
+A0469,SI1145,I2C,I2C,analogSensor,UV/IR/vis,ALL,None,SI1145.ino,IMPLEMENTED,SI1145
+A0470,TCS34725,I2C,I2C,analogSensor,RGB/C,ALL,None,TCS34725.ino,IMPLEMENTED,TCS34725
+A0471,TCS3471,I2C,I2C,analogSensor,RGB/C,ALL,None,TCS3471.ino,IMPLEMENTED,TCS3471
+A0472,TCS3472,I2C,I2C,analogSensor,RGB/C,ALL,None,TCS3472.ino,IMPLEMENTED,TCS3472
+A0473,APDS9960,I2C,I2C,analogSensor,RGB/Gesture,ALL,None,APDS9960.ino,IMPLEMENTED,APDS9960
+A0474,APDS9930,I2C,I2C,analogSensor,Prox/Lux,ALL,None,APDS9930.ino,IMPLEMENTED,APDS9930
+A0475,APDS9960 Gesture,I2C,I2C,analogSensor,Gesture,ALL,None,APDS9960Gesture.ino,IMPLEMENTED,APDS9960 Gesture
+A0476,VCNL4010,I2C,I2C,analogSensor,Prox/Lux,ALL,None,VCNL4010.ino,IMPLEMENTED,VCNL4010
+A0477,VCNL4040,I2C,I2C,analogSensor,Prox/Lux,ALL,None,VCNL4040.ino,IMPLEMENTED,VCNL4040
+A0478,VCNL4020,I2C,I2C,analogSensor,Prox/Lux,ALL,None,VCNL4020.ino,IMPLEMENTED,VCNL4020
+A0479,LTR-303ALS,I2C,I2C,analogSensor,lux,ALL,None,LTR303ALS.ino,IMPLEMENTED,LTR-303ALS
+A0480,LTR-329ALS,I2C,I2C,analogSensor,lux,ALL,None,LTR329ALS.ino,IMPLEMENTED,LTR-329ALS
+A0481,LTR-501ALS,I2C,I2C,analogSensor,lux,ALL,None,LTR501ALS.ino,IMPLEMENTED,LTR-501ALS
+A0482,TMF8801,I2C,I2C,analogSensor,mm,ALL,None,TMF8801.ino,IMPLEMENTED,TMF8801
+A0483,VL53L0X,I2C,I2C,analogSensor,mm,ALL,None,VL53L0X.ino,IMPLEMENTED,VL53L0X
+A0484,VL53L1X,I2C,I2C,analogSensor,mm,ALL,None,VL53L1X.ino,IMPLEMENTED,VL53L1X
+A0485,VL53L3,I2C,I2C,analogSensor,mm,ALL,None,VL53L3.ino,IMPLEMENTED,VL53L3
+A0486,VL6180X,I2C,I2C,analogSensor,mm,ALL,None,VL6180X.ino,IMPLEMENTED,VL6180X
+A0487,VL6180,I2C,I2C,analogSensor,mm,ALL,None,VL6180.ino,IMPLEMENTED,VL6180
+A0488,VL53L5CX,I2C,I2C,analogSensor,mm,ALL,None,VL53L5CX.ino,IMPLEMENTED,VL53L5CX
+A0489,VL53L7CX,I2C,I2C,analogSensor,mm,ALL,None,VL53L7CX.ino,IMPLEMENTED,VL53L7CX
+A0490,TCA9548A Mux,I2C,I2C,analogSensor,8 ch,ALL,None,TCA9548AMux.ino,IMPLEMENTED,TCA9548A Mux
+A0491,PCA9548A Mux,I2C,I2C,analogSensor,8 ch,ALL,None,PCA9548AMux.ino,IMPLEMENTED,PCA9548A Mux
+A0492,DS3231,I2C,I2C,rtcDS3231,datetime,ALL,None,DS3231.ino,IMPLEMENTED,DS3231 RTC
+A0493,DS3232,I2C,I2C,rtcDS3231,datetime,ALL,None,DS3232.ino,IMPLEMENTED,DS3232 RTC
+A0494,DS1307,I2C,I2C,rtcDS3231,datetime,ALL,None,DS1307.ino,IMPLEMENTED,DS1307 RTC
+A0495,DS1302,I2C,I2C,rtcDS3231,datetime,ALL,None,DS1302.ino,IMPLEMENTED,DS1302 RTC
+A0496,DS1302 RTC,I2C,I2C,rtcDS3231,datetime,ALL,None,DS1302RTC.ino,IMPLEMENTED,DS1302 RTC RTC
+A0497,PCF8523,I2C,I2C,rtcDS3231,datetime,ALL,None,PCF8523.ino,IMPLEMENTED,PCF8523 RTC
+A0498,PCF8563,I2C,I2C,rtcDS3231,datetime,ALL,None,PCF8563.ino,IMPLEMENTED,PCF8563 RTC
+A0499,PCF85063,I2C,I2C,rtcDS3231,datetime,ALL,None,PCF85063.ino,IMPLEMENTED,PCF85063 RTC
+A0500,PCF2129,I2C,I2C,rtcDS3231,datetime,ALL,None,PCF2129.ino,IMPLEMENTED,PCF2129 RTC
+A0501,RV3028,I2C,I2C,rtcDS3231,datetime,ALL,None,RV3028.ino,IMPLEMENTED,RV3028 RTC
+A0502,RV3032,I2C,I2C,rtcDS3231,datetime,ALL,None,RV3032.ino,IMPLEMENTED,RV3032 RTC
+A0503,RV3129,I2C,I2C,rtcDS3231,datetime,ALL,None,RV3129.ino,IMPLEMENTED,RV3129 RTC
+A0504,RV8803,I2C,I2C,rtcDS3231,datetime,ALL,None,RV8803.ino,IMPLEMENTED,RV8803 RTC
+A0505,RV-3029,I2C,I2C,rtcDS3231,datetime,ALL,None,RV-3029.ino,IMPLEMENTED,RV-3029 RTC
+A0506,ISL12020,I2C,I2C,rtcDS3231,datetime,ALL,None,ISL12020.ino,IMPLEMENTED,ISL12020 RTC
+A0507,ISL12022,I2C,I2C,rtcDS3231,datetime,ALL,None,ISL12022.ino,IMPLEMENTED,ISL12022 RTC
+A0508,MCP79400,I2C,I2C,rtcDS3231,datetime,ALL,None,MCP79400.ino,IMPLEMENTED,MCP79400 RTC
+A0509,MCP79410,I2C,I2C,rtcDS3231,datetime,ALL,None,MCP79410.ino,IMPLEMENTED,MCP79410 RTC
+A0510,RX8010,I2C,I2C,rtcDS3231,datetime,ALL,None,RX8010.ino,IMPLEMENTED,RX8010 RTC
+A0511,RX8025,I2C,I2C,rtcDS3231,datetime,ALL,None,RX8025.ino,IMPLEMENTED,RX8025 RTC
+A0512,RX8900,I2C,I2C,rtcDS3231,datetime,ALL,None,RX8900.ino,IMPLEMENTED,RX8900 RTC
+A0513,RTC DS3231 Module,I2C,I2C,rtcDS3231,datetime,ALL,None,RTCDS3231Module.ino,IMPLEMENTED,RTC DS3231 Module RTC
+A0514,EEPROM 24LC256,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC256.ino,IMPLEMENTED,EEPROM 24LC256 memory
+A0515,EEPROM 24LC512,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC512.ino,IMPLEMENTED,EEPROM 24LC512 memory
+A0516,EEPROM 24LC1024,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC1024.ino,IMPLEMENTED,EEPROM 24LC1024 memory
+A0517,EEPROM 24LC32,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC32.ino,IMPLEMENTED,EEPROM 24LC32 memory
+A0518,EEPROM 24LC64,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC64.ino,IMPLEMENTED,EEPROM 24LC64 memory
+A0519,EEPROM 24LC128,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM24LC128.ino,IMPLEMENTED,EEPROM 24LC128 memory
+A0520,EEPROM AT24C256,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROMAT24C256.ino,IMPLEMENTED,EEPROM AT24C256 memory
+A0521,EEPROM AT24C512,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROMAT24C512.ino,IMPLEMENTED,EEPROM AT24C512 memory
+A0522,EEPROM AT24C1024,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROMAT24C1024.ino,IMPLEMENTED,EEPROM AT24C1024 memory
+A0523,FRAM MB85RC256V,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMMB85RC256V.ino,IMPLEMENTED,FRAM MB85RC256V memory
+A0524,FRAM MB85RC16,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMMB85RC16.ino,IMPLEMENTED,FRAM MB85RC16 memory
+A0525,FRAM MB85RC64,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMMB85RC64.ino,IMPLEMENTED,FRAM MB85RC64 memory
+A0526,FRAM MB85RC128,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMMB85RC128.ino,IMPLEMENTED,FRAM MB85RC128 memory
+A0527,FRAM FM24V10,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMFM24V10.ino,IMPLEMENTED,FRAM FM24V10 memory
+A0528,FRAM FM24V01,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMFM24V01.ino,IMPLEMENTED,FRAM FM24V01 memory
+A0529,FRAM FM24V02,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMFM24V02.ino,IMPLEMENTED,FRAM FM24V02 memory
+A0530,FRAM FM24V05,STORAGE,I2C,analogSensor,bytes,ALL,None,FRAMFM24V05.ino,IMPLEMENTED,FRAM FM24V05 memory
+A0531,EEPROM 93C46,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM93C46.ino,IMPLEMENTED,EEPROM 93C46 memory
+A0532,EEPROM 93C56,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM93C56.ino,IMPLEMENTED,EEPROM 93C56 memory
+A0533,EEPROM 93C66,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM93C66.ino,IMPLEMENTED,EEPROM 93C66 memory
+A0534,EEPROM 93C86,STORAGE,I2C,analogSensor,bytes,ALL,None,EEPROM93C86.ino,IMPLEMENTED,EEPROM 93C86 memory
+A0535,PCF8574,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,PCF8574.ino,IMPLEMENTED,PCF8574 expander
+A0536,PCF8574A,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,PCF8574A.ino,IMPLEMENTED,PCF8574A expander
+A0537,PCF8575,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,PCF8575.ino,IMPLEMENTED,PCF8575 expander
+A0538,PCF8575A,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,PCF8575A.ino,IMPLEMENTED,PCF8575A expander
+A0539,MCP23008,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,MCP23008.ino,IMPLEMENTED,MCP23008 expander
+A0540,MCP23017,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,MCP23017.ino,IMPLEMENTED,MCP23017 expander
+A0541,MCP23018,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,MCP23018.ino,IMPLEMENTED,MCP23018 expander
+A0542,MCP23S17,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,MCP23S17.ino,IMPLEMENTED,MCP23S17 expander
+A0543,TCA9548A,STORAGE,I2C,analogSensor,8 ch I2C Mux,ALL,None,TCA9548A.ino,IMPLEMENTED,TCA9548A expander
+A0544,TCA9548,STORAGE,I2C,analogSensor,8 ch I2C Mux,ALL,None,TCA9548.ino,IMPLEMENTED,TCA9548 expander
+A0545,PCA9548A,STORAGE,I2C,analogSensor,8 ch I2C Mux,ALL,None,PCA9548A.ino,IMPLEMENTED,PCA9548A expander
+A0546,PCA9547,STORAGE,I2C,analogSensor,2 ch I2C Mux,ALL,None,PCA9547.ino,IMPLEMENTED,PCA9547 expander
+A0547,PCA9546A,STORAGE,I2C,analogSensor,4 ch I2C Mux,ALL,None,PCA9546A.ino,IMPLEMENTED,PCA9546A expander
+A0548,PCA9545A,STORAGE,I2C,analogSensor,4 ch I2C Mux,ALL,None,PCA9545A.ino,IMPLEMENTED,PCA9545A expander
+A0549,PCA9685,STORAGE,I2C,analogSensor,16 PWM,ALL,None,PCA9685.ino,IMPLEMENTED,PCA9685 expander
+A0550,PCA9685 Servo,STORAGE,I2C,analogSensor,16 servo,ALL,None,PCA9685Servo.ino,IMPLEMENTED,PCA9685 Servo expander
+A0551,PCA9635,STORAGE,I2C,analogSensor,16 LED,ALL,None,PCA9635.ino,IMPLEMENTED,PCA9635 expander
+A0552,PCA9555,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,PCA9555.ino,IMPLEMENTED,PCA9555 expander
+A0553,PCA9554,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,PCA9554.ino,IMPLEMENTED,PCA9554 expander
+A0554,PCA9536,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,PCA9536.ino,IMPLEMENTED,PCA9536 expander
+A0555,PCA9538,STORAGE,I2C,analogSensor,8 GPIO,ALL,None,PCA9538.ino,IMPLEMENTED,PCA9538 expander
+A0556,PCA9539,STORAGE,I2C,analogSensor,16 GPIO,ALL,None,PCA9539.ino,IMPLEMENTED,PCA9539 expander
+A0557,MAX7300,STORAGE,I2C,analogSensor,10 GPIO,ALL,None,MAX7300.ino,IMPLEMENTED,MAX7300 expander
+A0558,MAX7310,STORAGE,I2C,analogSensor,18 GPIO,ALL,None,MAX7310.ino,IMPLEMENTED,MAX7310 expander
+A0559,ADS1115,I2C,I2C,analogSensor,0-32767,ALL,None,ADS1115.ino,IMPLEMENTED,ADS1115
+A0560,ADS1015,I2C,I2C,analogSensor,0-2047,ALL,None,ADS1015.ino,IMPLEMENTED,ADS1015
+A0561,ADS1114,I2C,I2C,analogSensor,0-32767,ALL,None,ADS1114.ino,IMPLEMENTED,ADS1114
+A0562,ADS1113,I2C,I2C,analogSensor,0-32767,ALL,None,ADS1113.ino,IMPLEMENTED,ADS1113
+A0563,ADS1118,I2C,I2C,analogSensor,0-32767,ALL,None,ADS1118.ino,IMPLEMENTED,ADS1118
+A0564,ADS1119,I2C,I2C,analogSensor,0-32767,ALL,None,ADS1119.ino,IMPLEMENTED,ADS1119
+A0565,MCP3421,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3421.ino,IMPLEMENTED,MCP3421
+A0566,MCP3422,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3422.ino,IMPLEMENTED,MCP3422
+A0567,MCP3423,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3423.ino,IMPLEMENTED,MCP3423
+A0568,MCP3424,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3424.ino,IMPLEMENTED,MCP3424
+A0569,MCP3425,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3425.ino,IMPLEMENTED,MCP3425
+A0570,MCP3426,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3426.ino,IMPLEMENTED,MCP3426
+A0571,MCP3427,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3427.ino,IMPLEMENTED,MCP3427
+A0572,MCP3428,I2C,I2C,analogSensor,18-bit,ALL,None,MCP3428.ino,IMPLEMENTED,MCP3428
+A0573,MCP3008 ADC,SPI,SPI,analogSensor,0-1023,ALL,None,MCP3008ADC.ino,IMPLEMENTED,MCP3008 ADC
+A0574,MCP3208 ADC,SPI,SPI,analogSensor,0-4095,ALL,None,MCP3208ADC.ino,IMPLEMENTED,MCP3208 ADC
+A0575,MCP3002,I2C,I2C,analogSensor,0-1023,ALL,None,MCP3002.ino,IMPLEMENTED,MCP3002
+A0576,MCP3004,I2C,I2C,analogSensor,0-1023,ALL,None,MCP3004.ino,IMPLEMENTED,MCP3004
+A0577,MCP3202,I2C,I2C,analogSensor,0-4095,ALL,None,MCP3202.ino,IMPLEMENTED,MCP3202
+A0578,MCP3204,I2C,I2C,analogSensor,0-4095,ALL,None,MCP3204.ino,IMPLEMENTED,MCP3204
+A0579,MCP4725,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4725.ino,IMPLEMENTED,MCP4725
+A0580,MCP4725A0,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4725A0.ino,IMPLEMENTED,MCP4725A0
+A0581,MCP4725A1,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4725A1.ino,IMPLEMENTED,MCP4725A1
+A0582,MCP4725A2,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4725A2.ino,IMPLEMENTED,MCP4725A2
+A0583,MCP4822,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4822.ino,IMPLEMENTED,MCP4822
+A0584,MCP4821,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4821.ino,IMPLEMENTED,MCP4821
+A0585,MCP4921,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4921.ino,IMPLEMENTED,MCP4921
+A0586,MCP4922,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4922.ino,IMPLEMENTED,MCP4922
+A0587,LTC2440,I2C,I2C,analogSensor,20-bit,ALL,None,LTC2440.ino,IMPLEMENTED,LTC2440
+A0588,LTC2442,I2C,I2C,analogSensor,20-bit,ALL,None,LTC2442.ino,IMPLEMENTED,LTC2442
+A0589,ADS7828,SPI,SPI,analogSensor,0-4095,ALL,None,ADS7828.ino,IMPLEMENTED,ADS7828
+A0590,ADS7829,SPI,SPI,analogSensor,0-4095,ALL,None,ADS7829.ino,IMPLEMENTED,ADS7829
+A0591,INA219,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA219.ino,IMPLEMENTED,INA219 power monitor
+A0592,INA220,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA220.ino,IMPLEMENTED,INA220 power monitor
+A0593,INA226,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA226.ino,IMPLEMENTED,INA226 power monitor
+A0594,INA230,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA230.ino,IMPLEMENTED,INA230 power monitor
+A0595,INA231,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA231.ino,IMPLEMENTED,INA231 power monitor
+A0596,INA233,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA233.ino,IMPLEMENTED,INA233 power monitor
+A0597,INA260,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA260.ino,IMPLEMENTED,INA260 power monitor
+A0598,INA3221,SPECIAL,I2C,analogSensor,3-ch A/V/W,ALL,None,INA3221.ino,IMPLEMENTED,INA3221 power monitor
+A0599,INA3221 3-channel,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,INA32213channel.ino,IMPLEMENTED,INA3221 3-channel power monitor
+A0600,LTC2944,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,LTC2944.ino,IMPLEMENTED,LTC2944 power monitor
+A0601,LTC2945,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,LTC2945.ino,IMPLEMENTED,LTC2945 power monitor
+A0602,LTC2946,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,LTC2946.ino,IMPLEMENTED,LTC2946 power monitor
+A0603,LTC4151,SPECIAL,I2C,analogSensor,A/V/W,ALL,None,LTC4151.ino,IMPLEMENTED,LTC4151 power monitor
+A0604,ZXCT1081,SPECIAL,I2C,analogSensor,A,ALL,None,ZXCT1081.ino,IMPLEMENTED,ZXCT1081 power monitor
+A0605,ZXCT1082,SPECIAL,I2C,analogSensor,A,ALL,None,ZXCT1082.ino,IMPLEMENTED,ZXCT1082 power monitor
+A0606,PZEM-004T (I2C),SPECIAL,I2C,analogSensor,W/V/A/Wh,ALL,None,PZEM004TI2C.ino,IMPLEMENTED,PZEM-004T (I2C) power monitor
+A0607,PZEM-017 (I2C),SPECIAL,I2C,analogSensor,W/V/A/Wh,ALL,None,PZEM017I2C.ino,IMPLEMENTED,PZEM-017 (I2C) power monitor
+A0608,SGP30,ANALOG,I2C,analogSensor,TVOC/eCO2,ALL,None,SGP30.ino,IMPLEMENTED,SGP30 gas sensor
+A0609,SGP40,ANALOG,I2C,analogSensor,VOC Index,ALL,None,SGP40.ino,IMPLEMENTED,SGP40 gas sensor
+A0610,SGP41,ANALOG,I2C,analogSensor,VOC/NOx,ALL,None,SGP41.ino,IMPLEMENTED,SGP41 gas sensor
+A0611,BME680,ANALOG,I2C,analogSensor,IAQ,ALL,None,BME680.ino,IMPLEMENTED,BME680 gas sensor
+A0612,BME688,ANALOG,I2C,analogSensor,IAQ,ALL,None,BME688.ino,IMPLEMENTED,BME688 gas sensor
+A0613,CCS811,ANALOG,I2C,analogSensor,TVOC/eCO2,ALL,None,CCS811.ino,IMPLEMENTED,CCS811 gas sensor
+A0614,CCS811B,ANALOG,I2C,analogSensor,TVOC/eCO2,ALL,None,CCS811B.ino,IMPLEMENTED,CCS811B gas sensor
+A0615,ZMOD4410,ANALOG,I2C,analogSensor,IAQ,ALL,None,ZMOD4410.ino,IMPLEMENTED,ZMOD4410 gas sensor
+A0616,ZMOD4450,ANALOG,I2C,analogSensor,IAQ,ALL,None,ZMOD4450.ino,IMPLEMENTED,ZMOD4450 gas sensor
+A0617,MICS-5524,ANALOG,I2C,analogSensor,ratio,ALL,None,MICS5524.ino,IMPLEMENTED,MICS-5524 gas sensor
+A0618,MICS-6814,ANALOG,I2C,analogSensor,ratio,ALL,None,MICS6814.ino,IMPLEMENTED,MICS-6814 gas sensor
+A0619,MiCS-4514,ANALOG,I2C,analogSensor,NO2/CO,ALL,None,MiCS4514.ino,IMPLEMENTED,MiCS-4514 gas sensor
+A0620,MiCS-4515,ANALOG,I2C,analogSensor,NO2,ALL,None,MiCS4515.ino,IMPLEMENTED,MiCS-4515 gas sensor
+A0621,MiCS-2610,ANALOG,I2C,analogSensor,CO,ALL,None,MiCS2610.ino,IMPLEMENTED,MiCS-2610 gas sensor
+A0622,MiCS-2710,ANALOG,I2C,analogSensor,VOC,ALL,None,MiCS2710.ino,IMPLEMENTED,MiCS-2710 gas sensor
+A0623,MiCS-2714,ANALOG,I2C,analogSensor,VOC,ALL,None,MiCS2714.ino,IMPLEMENTED,MiCS-2714 gas sensor
+A0624,MiCS-5525,ANALOG,I2C,analogSensor,CO/VOC,ALL,None,MiCS5525.ino,IMPLEMENTED,MiCS-5525 gas sensor
+A0625,SCD30,ANALOG,I2C,analogSensor,CO2,ALL,None,SCD30.ino,IMPLEMENTED,SCD30 gas sensor
+A0626,SCD40,ANALOG,I2C,analogSensor,CO2,ALL,None,SCD40.ino,IMPLEMENTED,SCD40 gas sensor
+A0627,SCD41,ANALOG,I2C,analogSensor,CO2,ALL,None,SCD41.ino,IMPLEMENTED,SCD41 gas sensor
+A0628,SEN54,ANALOG,I2C,analogSensor,PM/VOC/CO2,ALL,None,SEN54.ino,IMPLEMENTED,SEN54 gas sensor
+A0629,SEN55,ANALOG,I2C,analogSensor,PM/VOC/CO2,ALL,None,SEN55.ino,IMPLEMENTED,SEN55 gas sensor
+A0630,PMS5003T,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMS5003T.ino,IMPLEMENTED,PMS5003T PM sensor
+A0631,PMS7003T,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMS7003T.ino,IMPLEMENTED,PMS7003T PM sensor
+A0632,PMSA003I,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMSA003I.ino,IMPLEMENTED,PMSA003I PM sensor
+A0633,SPS30,SPECIAL,UART,analogSensor,µg/m³,ALL,None,SPS30.ino,IMPLEMENTED,SPS30 PM sensor
+A0634,SPS30 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,SPS30PM.ino,IMPLEMENTED,SPS30 PM PM sensor
+A0635,Plantower PMS5003,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PlantowerPMS5003.ino,IMPLEMENTED,Plantower PMS5003 PM sensor
+A0636,Plantower PMS7003,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PlantowerPMS7003.ino,IMPLEMENTED,Plantower PMS7003 PM sensor
+A0637,"SSD1306 0.96""",DISPLAY,I2C,oled,display,ALL,None,"SSD1306096"".ino",IMPLEMENTED,"SSD1306 0.96"" display"
+A0638,"SSD1306 1.3""",DISPLAY,I2C,oled,display,ALL,None,"SSD130613"".ino",IMPLEMENTED,"SSD1306 1.3"" display"
+A0639,"SSD1306 1.54""",DISPLAY,I2C,oled,display,ALL,None,"SSD1306154"".ino",IMPLEMENTED,"SSD1306 1.54"" display"
+A0640,"SSD1306 2.42""",DISPLAY,I2C,oled,display,ALL,None,"SSD1306242"".ino",IMPLEMENTED,"SSD1306 2.42"" display"
+A0641,"SH1106 1.3""",DISPLAY,I2C,oled,display,ALL,None,"SH110613"".ino",IMPLEMENTED,"SH1106 1.3"" display"
+A0642,"SH1106 0.96""",DISPLAY,I2C,oled,display,ALL,None,"SH1106096"".ino",IMPLEMENTED,"SH1106 0.96"" display"
+A0643,SH1107,DISPLAY,I2C,oled,display,ALL,None,SH1107.ino,IMPLEMENTED,SH1107 display
+A0644,SSD1322,DISPLAY,I2C,oled,display,ALL,None,SSD1322.ino,IMPLEMENTED,SSD1322 display
+A0645,SSD1325,DISPLAY,I2C,oled,display,ALL,None,SSD1325.ino,IMPLEMENTED,SSD1325 display
+A0646,SSD1327,DISPLAY,I2C,oled,display,ALL,None,SSD1327.ino,IMPLEMENTED,SSD1327 display
+A0647,LCD1602 I2C,DISPLAY,I2C,oled,display,ALL,None,LCD1602I2C.ino,IMPLEMENTED,LCD1602 I2C display
+A0648,LCD2004 I2C,DISPLAY,I2C,oled,display,ALL,None,LCD2004I2C.ino,IMPLEMENTED,LCD2004 I2C display
+A0649,LCD1602A I2C,DISPLAY,I2C,oled,display,ALL,None,LCD1602AI2C.ino,IMPLEMENTED,LCD1602A I2C display
+A0650,LCD2004A I2C,DISPLAY,I2C,oled,display,ALL,None,LCD2004AI2C.ino,IMPLEMENTED,LCD2004A I2C display
+A0651,HT16K33 8x8,DISPLAY,I2C,oled,display,ALL,None,HT16K338x8.ino,IMPLEMENTED,HT16K33 8x8 display
+A0652,HT16K33 8x16,DISPLAY,I2C,oled,display,ALL,None,HT16K338x16.ino,IMPLEMENTED,HT16K33 8x16 display
+A0653,IS31FL3731,DISPLAY,I2C,oled,display,ALL,None,IS31FL3731.ino,IMPLEMENTED,IS31FL3731 display
+A0654,IS31FL3731 Matrix,DISPLAY,I2C,oled,display,ALL,None,IS31FL3731Matrix.ino,IMPLEMENTED,IS31FL3731 Matrix display
+A0655,MAX7219 Matrix I2C,DISPLAY,I2C,oled,display,ALL,None,MAX7219MatrixI2C.ino,IMPLEMENTED,MAX7219 Matrix I2C display
+A0656,LM75A Display,DISPLAY,I2C,oled,display,ALL,None,LM75ADisplay.ino,IMPLEMENTED,LM75A Display display
+A0657,PCD8544 LCD,DISPLAY,I2C,oled,display,ALL,None,PCD8544LCD.ino,IMPLEMENTED,PCD8544 LCD display
+A0658,PCD8544 84x48,DISPLAY,I2C,oled,display,ALL,None,PCD854484x48.ino,IMPLEMENTED,PCD8544 84x48 display
+A0659,MAX98357 I2S Amp,RADIO,I2S,analogSensor,audio,ESP32,None,MAX98357I2SAmp.ino,IMPLEMENTED,MAX98357 I2S Amp audio
+A0660,MAX98357A,RADIO,I2S,analogSensor,audio,ESP32,None,MAX98357A.ino,IMPLEMENTED,MAX98357A audio
+A0661,TPA2012,RADIO,I2S,analogSensor,audio,ESP32,None,TPA2012.ino,IMPLEMENTED,TPA2012 audio
+A0662,TPA2016,RADIO,I2S,analogSensor,audio,ESP32,None,TPA2016.ino,IMPLEMENTED,TPA2016 audio
+A0663,PCA9635 Audio,RADIO,I2S,analogSensor,audio,ESP32,None,PCA9635Audio.ino,IMPLEMENTED,PCA9635 Audio audio
+A0664,WM8731,RADIO,I2S,analogSensor,audio,ESP32,None,WM8731.ino,IMPLEMENTED,WM8731 audio
+A0665,WM8960,RADIO,I2S,analogSensor,audio,ESP32,None,WM8960.ino,IMPLEMENTED,WM8960 audio
+A0666,PCM1808,RADIO,I2S,analogSensor,audio,ESP32,None,PCM1808.ino,IMPLEMENTED,PCM1808 audio
+A0667,PCM5102,RADIO,I2S,analogSensor,audio,ESP32,None,PCM5102.ino,IMPLEMENTED,PCM5102 audio
+A0668,PCM5122,RADIO,I2S,analogSensor,audio,ESP32,None,PCM5122.ino,IMPLEMENTED,PCM5122 audio
+A0669,"ILI9341 2.8""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ILI934128.ino,IMPLEMENTED,"ILI9341 2.8"" display"
+A0670,"ILI9341 3.5""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ILI934135.ino,IMPLEMENTED,"ILI9341 3.5"" display"
+A0671,"ILI9341 2.4""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ILI934124.ino,IMPLEMENTED,"ILI9341 2.4"" display"
+A0672,"ST7735 1.8""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ST7735,ST773518.ino,IMPLEMENTED,"ST7735 1.8"" display"
+A0673,"ST7735 1.44""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ST7735,ST7735144.ino,IMPLEMENTED,"ST7735 1.44"" display"
+A0674,"ST7789 1.3""",DISPLAY,SPI,analogSensor,display,ALL,None,ST778913.ino,IMPLEMENTED,"ST7789 1.3"" display"
+A0675,"ST7789 1.47""",DISPLAY,SPI,analogSensor,display,ALL,None,ST7789147.ino,IMPLEMENTED,"ST7789 1.47"" display"
+A0676,"ST7789 2.0""",DISPLAY,SPI,analogSensor,display,ALL,None,ST778920.ino,IMPLEMENTED,"ST7789 2.0"" display"
+A0677,"ST7789 2.4""",DISPLAY,SPI,analogSensor,display,ALL,None,ST778924.ino,IMPLEMENTED,"ST7789 2.4"" display"
+A0678,"HX8357 3.5""",DISPLAY,SPI,analogSensor,display,ALL,None,HX835735.ino,IMPLEMENTED,"HX8357 3.5"" display"
+A0679,HX8357D,DISPLAY,SPI,analogSensor,display,ALL,None,HX8357D.ino,IMPLEMENTED,HX8357D display
+A0680,"SSD1351 1.5""",DISPLAY,SPI,analogSensor,display,ALL,None,SSD135115.ino,IMPLEMENTED,"SSD1351 1.5"" display"
+A0681,"SSD1331 0.96""",DISPLAY,SPI,analogSensor,display,ALL,None,SSD1331096.ino,IMPLEMENTED,"SSD1331 0.96"" display"
+A0682,SSD1327 OLED,DISPLAY,SPI,analogSensor,display,ALL,None,SSD1327OLED.ino,IMPLEMENTED,SSD1327 OLED display
+A0683,SH1107 OLED,DISPLAY,SPI,analogSensor,display,ALL,None,SH1107OLED.ino,IMPLEMENTED,SH1107 OLED display
+A0684,"ePaper 1.54""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper154.ino,IMPLEMENTED,"ePaper 1.54"" display"
+A0685,"ePaper 2.13""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper213.ino,IMPLEMENTED,"ePaper 2.13"" display"
+A0686,"ePaper 2.9""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper29.ino,IMPLEMENTED,"ePaper 2.9"" display"
+A0687,"ePaper 4.2""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper42.ino,IMPLEMENTED,"ePaper 4.2"" display"
+A0688,"ePaper 7.5""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper75.ino,IMPLEMENTED,"ePaper 7.5"" display"
+A0689,"ePaper 10.3""",DISPLAY,SPI,analogSensor,display,ALL,None,ePaper103.ino,IMPLEMENTED,"ePaper 10.3"" display"
+A0690,"Waveshare 1.54""",DISPLAY,SPI,analogSensor,display,ALL,None,Waveshare154.ino,IMPLEMENTED,"Waveshare 1.54"" display"
+A0691,"Waveshare 2.13""",DISPLAY,SPI,analogSensor,display,ALL,None,Waveshare213.ino,IMPLEMENTED,"Waveshare 2.13"" display"
+A0692,"Waveshare 2.9""",DISPLAY,SPI,analogSensor,display,ALL,None,Waveshare29.ino,IMPLEMENTED,"Waveshare 2.9"" display"
+A0693,"Waveshare 4.2""",DISPLAY,SPI,analogSensor,display,ALL,None,Waveshare42.ino,IMPLEMENTED,"Waveshare 4.2"" display"
+A0694,"Waveshare 7.5""",DISPLAY,SPI,analogSensor,display,ALL,None,Waveshare75.ino,IMPLEMENTED,"Waveshare 7.5"" display"
+A0695,GD2301,DISPLAY,SPI,analogSensor,display,ALL,None,GD2301.ino,IMPLEMENTED,GD2301 display
+A0696,RA8875 TFT,DISPLAY,SPI,analogSensor,display,ALL,None,RA8875TFT.ino,IMPLEMENTED,RA8875 TFT display
+A0697,RA8876 TFT,DISPLAY,SPI,analogSensor,display,ALL,None,RA8876TFT.ino,IMPLEMENTED,RA8876 TFT display
+A0698,SD Card SPI,STORAGE,SPI,analogSensor,bytes,ALL,SD,SDCardSPI.ino,IMPLEMENTED,SD Card SPI memory
+A0699,MicroSD SPI,STORAGE,SPI,analogSensor,bytes,ALL,SD,MicroSDSPI.ino,IMPLEMENTED,MicroSD SPI memory
+A0700,SD Card SDIO,STORAGE,SDIO,analogSensor,bytes,ESP32/ESP8266,SD,SDCardSDIO.ino,IMPLEMENTED,SD Card SDIO memory
+A0701,W25Q128,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q128.ino,IMPLEMENTED,W25Q128 memory
+A0702,W25Q64,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q64.ino,IMPLEMENTED,W25Q64 memory
+A0703,W25Q32,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q32.ino,IMPLEMENTED,W25Q32 memory
+A0704,W25Q16,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q16.ino,IMPLEMENTED,W25Q16 memory
+A0705,W25Q80,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q80.ino,IMPLEMENTED,W25Q80 memory
+A0706,W25Q40,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q40.ino,IMPLEMENTED,W25Q40 memory
+A0707,GD25Q16,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q16.ino,IMPLEMENTED,GD25Q16 memory
+A0708,GD25Q32,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q32.ino,IMPLEMENTED,GD25Q32 memory
+A0709,GD25Q64,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q64.ino,IMPLEMENTED,GD25Q64 memory
+A0710,GD25Q128,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q128.ino,IMPLEMENTED,GD25Q128 memory
+A0711,EN25Q32,STORAGE,SPI,analogSensor,bytes,ALL,None,EN25Q32.ino,IMPLEMENTED,EN25Q32 memory
+A0712,EN25Q64,STORAGE,SPI,analogSensor,bytes,ALL,None,EN25Q64.ino,IMPLEMENTED,EN25Q64 memory
+A0713,AT25DF321,STORAGE,SPI,analogSensor,bytes,ALL,None,AT25DF321.ino,IMPLEMENTED,AT25DF321 memory
+A0714,AT25DF641,STORAGE,SPI,analogSensor,bytes,ALL,None,AT25DF641.ino,IMPLEMENTED,AT25DF641 memory
+A0715,S25FL128S,STORAGE,SPI,analogSensor,bytes,ALL,None,S25FL128S.ino,IMPLEMENTED,S25FL128S memory
+A0716,S25FL256S,STORAGE,SPI,analogSensor,bytes,ALL,None,S25FL256S.ino,IMPLEMENTED,S25FL256S memory
+A0717,MX25L3206,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L3206.ino,IMPLEMENTED,MX25L3206 memory
+A0718,MX25L6406,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L6406.ino,IMPLEMENTED,MX25L6406 memory
+A0719,MX25L12806,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L12806.ino,IMPLEMENTED,MX25L12806 memory
+A0720,EEPROM 25AA320,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA320.ino,IMPLEMENTED,EEPROM 25AA320 memory
+A0721,EEPROM 25AA640,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA640.ino,IMPLEMENTED,EEPROM 25AA640 memory
+A0722,EEPROM 25AA1280,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA1280.ino,IMPLEMENTED,EEPROM 25AA1280 memory
+A0723,EEPROM 25LC256,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC256.ino,IMPLEMENTED,EEPROM 25LC256 memory
+A0724,EEPROM 25LC512,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC512.ino,IMPLEMENTED,EEPROM 25LC512 memory
+A0725,EEPROM 25LC1024,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC1024.ino,IMPLEMENTED,EEPROM 25LC1024 memory
+A0726,FRAM FM25V02,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V02.ino,IMPLEMENTED,FRAM FM25V02 memory
+A0727,FRAM FM25V10,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V10.ino,IMPLEMENTED,FRAM FM25V10 memory
+A0728,FRAM FM25V20,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V20.ino,IMPLEMENTED,FRAM FM25V20 memory
+A0729,MCP3008 SPI,SPI,SPI,analogSensor,0-1023,ALL,None,MCP3008SPI.ino,IMPLEMENTED,MCP3008 SPI ADC/DAC
+A0730,MCP3208 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP3208SPI.ino,IMPLEMENTED,MCP3208 SPI ADC/DAC
+A0731,MCP3002 SPI,SPI,SPI,analogSensor,0-1023,ALL,None,MCP3002SPI.ino,IMPLEMENTED,MCP3002 SPI ADC/DAC
+A0732,MCP3004 SPI,SPI,SPI,analogSensor,0-1023,ALL,None,MCP3004SPI.ino,IMPLEMENTED,MCP3004 SPI ADC/DAC
+A0733,MCP3202 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP3202SPI.ino,IMPLEMENTED,MCP3202 SPI ADC/DAC
+A0734,MCP3204 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP3204SPI.ino,IMPLEMENTED,MCP3204 SPI ADC/DAC
+A0735,MCP3301,SPI,SPI,analogSensor,0-65535,ALL,None,MCP3301.ino,IMPLEMENTED,MCP3301 ADC/DAC
+A0736,MCP3302,SPI,SPI,analogSensor,0-65535,ALL,None,MCP3302.ino,IMPLEMENTED,MCP3302 ADC/DAC
+A0737,MCP3304,SPI,SPI,analogSensor,0-65535,ALL,None,MCP3304.ino,IMPLEMENTED,MCP3304 ADC/DAC
+A0738,MCP4822 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4822SPI.ino,IMPLEMENTED,MCP4822 SPI ADC/DAC
+A0739,MCP4821 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4821SPI.ino,IMPLEMENTED,MCP4821 SPI ADC/DAC
+A0740,MCP4921 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4921SPI.ino,IMPLEMENTED,MCP4921 SPI ADC/DAC
+A0741,MCP4922 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,MCP4922SPI.ino,IMPLEMENTED,MCP4922 SPI ADC/DAC
+A0742,LTC1257,SPI,SPI,analogSensor,0-4095,ALL,None,LTC1257.ino,IMPLEMENTED,LTC1257 ADC/DAC
+A0743,LTC1258,SPI,SPI,analogSensor,0-4095,ALL,None,LTC1258.ino,IMPLEMENTED,LTC1258 ADC/DAC
+A0744,ADS7828 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,ADS7828SPI.ino,IMPLEMENTED,ADS7828 SPI ADC/DAC
+A0745,ADS7829 SPI,SPI,SPI,analogSensor,0-4095,ALL,None,ADS7829SPI.ino,IMPLEMENTED,ADS7829 SPI ADC/DAC
+A0746,MAX1161,SPI,SPI,analogSensor,0-1023,ALL,None,MAX1161.ino,IMPLEMENTED,MAX1161 ADC/DAC
+A0747,MAX1162,SPI,SPI,analogSensor,0-1023,ALL,None,MAX1162.ino,IMPLEMENTED,MAX1162 ADC/DAC
+A0748,MAX1164,SPI,SPI,analogSensor,0-1023,ALL,None,MAX1164.ino,IMPLEMENTED,MAX1164 ADC/DAC
+A0749,MFRC522 RFID,RADIO,SPI,analogSensor,UID,ALL,None,MFRC522RFID.ino,IMPLEMENTED,MFRC522 RFID reader
+A0750,MFRC522 NFC,RADIO,SPI,analogSensor,UID,ALL,None,MFRC522NFC.ino,IMPLEMENTED,MFRC522 NFC reader
+A0751,PN532 SPI,RADIO,SPI,analogSensor,UID,ALL,None,PN532SPI.ino,IMPLEMENTED,PN532 SPI reader
+A0752,PN532 NFC SPI,RADIO,SPI,analogSensor,UID,ALL,None,PN532NFCSPI.ino,IMPLEMENTED,PN532 NFC SPI reader
+A0753,RC522 RFID,RADIO,SPI,analogSensor,UID,ALL,None,RC522RFID.ino,IMPLEMENTED,RC522 RFID reader
+A0754,ISO14443A NFC,RADIO,SPI,analogSensor,UID,ALL,None,ISO14443ANFC.ino,IMPLEMENTED,ISO14443A NFC reader
+A0755,MIFARE Classic 1K,RADIO,SPI,analogSensor,UID,ALL,None,MIFAREClassic1K.ino,IMPLEMENTED,MIFARE Classic 1K reader
+A0756,MIFARE Classic 4K,RADIO,SPI,analogSensor,UID,ALL,None,MIFAREClassic4K.ino,IMPLEMENTED,MIFARE Classic 4K reader
+A0757,NTAG213,RADIO,SPI,analogSensor,UID,ALL,None,NTAG213.ino,IMPLEMENTED,NTAG213 reader
+A0758,NTAG215,RADIO,SPI,analogSensor,UID,ALL,None,NTAG215.ino,IMPLEMENTED,NTAG215 reader
+A0759,NTAG216,RADIO,SPI,analogSensor,UID,ALL,None,NTAG216.ino,IMPLEMENTED,NTAG216 reader
+A0760,EM4100 RFID,RADIO,SPI,analogSensor,UID,ALL,None,EM4100RFID.ino,IMPLEMENTED,EM4100 RFID reader
+A0761,TMC5160,ACTUATOR,SPI,stepper,steps,ALL,TMCStepper,TMC5160.ino,IMPLEMENTED,TMC5160 driver
+A0762,TMC2130,ACTUATOR,SPI,stepper,steps,ALL,TMCStepper,TMC2130.ino,IMPLEMENTED,TMC2130 driver
+A0763,TMC2224,ACTUATOR,UART,stepper,steps,ALL,TMCStepper,TMC2224.ino,IMPLEMENTED,TMC2224 driver
+A0764,TMC2225,ACTUATOR,UART,stepper,steps,ALL,TMCStepper,TMC2225.ino,IMPLEMENTED,TMC2225 driver
+A0765,TMC2226,ACTUATOR,UART,stepper,steps,ALL,TMCStepper,TMC2226.ino,IMPLEMENTED,TMC2226 driver
+A0766,TMC2660,ACTUATOR,SPI,stepper,steps,ALL,TMCStepper,TMC2660.ino,IMPLEMENTED,TMC2660 driver
+A0767,TMC5130,ACTUATOR,SPI,stepper,steps,ALL,TMCStepper,TMC5130.ino,IMPLEMENTED,TMC5130 driver
+A0768,TMC5160-A,ACTUATOR,SPI,stepper,steps,ALL,TMCStepper,TMC5160A.ino,IMPLEMENTED,TMC5160-A driver
+A0769,A4988 SPI,ACTUATOR,SPI,stepper,steps,ALL,None,A4988SPI.ino,IMPLEMENTED,A4988 SPI driver
+A0770,DRV8825 SPI,ACTUATOR,SPI,stepper,steps,ALL,None,DRV8825SPI.ino,IMPLEMENTED,DRV8825 SPI driver
+A0771,TB6600 SPI,ACTUATOR,SPI,stepper,steps,ALL,None,TB6600SPI.ino,IMPLEMENTED,TB6600 SPI driver
+A0772,DM542 SPI,ACTUATOR,SPI,stepper,steps,ALL,None,DM542SPI.ino,IMPLEMENTED,DM542 SPI driver
+A0773,Leadshine SPI,ACTUATOR,SPI,stepper,steps,ALL,None,LeadshineSPI.ino,IMPLEMENTED,Leadshine SPI driver
+A0774,iHSV Stepper,ACTUATOR,SPI,stepper,steps,ALL,None,iHSVStepper.ino,IMPLEMENTED,iHSV Stepper driver
+A0775,ATM90E32,SPECIAL,SPI,analogSensor,Wh,ALL,None,ATM90E32.ino,IMPLEMENTED,ATM90E32 energy IC
+A0776,ATM90E32A,SPECIAL,SPI,analogSensor,Wh,ALL,None,ATM90E32A.ino,IMPLEMENTED,ATM90E32A energy IC
+A0777,ADE7753,SPECIAL,SPI,analogSensor,Wh,ALL,None,ADE7753.ino,IMPLEMENTED,ADE7753 energy IC
+A0778,ADE7758,SPECIAL,SPI,analogSensor,Wh,ALL,None,ADE7758.ino,IMPLEMENTED,ADE7758 energy IC
+A0779,ADE7763,SPECIAL,SPI,analogSensor,Wh,ALL,None,ADE7763.ino,IMPLEMENTED,ADE7763 energy IC
+A0780,ADE7858,SPECIAL,SPI,analogSensor,Wh,ALL,None,ADE7858.ino,IMPLEMENTED,ADE7858 energy IC
+A0781,ADE7878,SPECIAL,SPI,analogSensor,Wh,ALL,None,ADE7878.ino,IMPLEMENTED,ADE7878 energy IC
+A0782,CS5463,SPECIAL,SPI,analogSensor,Wh,ALL,None,CS5463.ino,IMPLEMENTED,CS5463 energy IC
+A0783,CS5464,SPECIAL,SPI,analogSensor,Wh,ALL,None,CS5464.ino,IMPLEMENTED,CS5464 energy IC
+A0784,CS5467,SPECIAL,SPI,analogSensor,Wh,ALL,None,CS5467.ino,IMPLEMENTED,CS5467 energy IC
+A0785,CS5480,SPECIAL,SPI,analogSensor,Wh,ALL,None,CS5480.ino,IMPLEMENTED,CS5480 energy IC
+A0786,CS5484,SPECIAL,SPI,analogSensor,Wh,ALL,None,CS5484.ino,IMPLEMENTED,CS5484 energy IC
+A0787,GPS NEO-6M,UART,UART,gps,lat/lon,ALL,None,GPSNEO-6M.ino,IMPLEMENTED,GPS NEO-6M module
+A0788,GPS NEO-7M,UART,UART,gps,lat/lon,ALL,None,GPSNEO-7M.ino,IMPLEMENTED,GPS NEO-7M module
+A0789,GPS NEO-8M,UART,UART,gps,lat/lon,ALL,None,GPSNEO-8M.ino,IMPLEMENTED,GPS NEO-8M module
+A0790,GPS NEO-M8N,UART,UART,gps,lat/lon,ALL,None,GPSNEO-M8N.ino,IMPLEMENTED,GPS NEO-M8N module
+A0791,GPS NEO-M9N,UART,UART,gps,lat/lon,ALL,None,GPSNEO-M9N.ino,IMPLEMENTED,GPS NEO-M9N module
+A0792,GPS ATGM336H,UART,UART,gps,lat/lon,ALL,None,GPSATGM336H.ino,IMPLEMENTED,GPS ATGM336H module
+A0793,GPS L76K,UART,UART,gps,lat/lon,ALL,None,GPSL76K.ino,IMPLEMENTED,GPS L76K module
+A0794,GPS L76B,UART,UART,gps,lat/lon,ALL,None,GPSL76B.ino,IMPLEMENTED,GPS L76B module
+A0795,GPS PA6H,UART,UART,gps,lat/lon,ALL,None,GPSPA6H.ino,IMPLEMENTED,GPS PA6H module
+A0796,GPS PA6C,UART,UART,gps,lat/lon,ALL,None,GPSPA6C.ino,IMPLEMENTED,GPS PA6C module
+A0797,GPS GT-U7,UART,UART,gps,lat/lon,ALL,None,GPSGT-U7.ino,IMPLEMENTED,GPS GT-U7 module
+A0798,GPS GY-NEO6MV2,UART,UART,gps,lat/lon,ALL,None,GPSGY-NEO6MV2.ino,IMPLEMENTED,GPS GY-NEO6MV2 module
+A0799,GPS GY-GPS6MV2,UART,UART,gps,lat/lon,ALL,None,GPSGY-GPS6MV2.ino,IMPLEMENTED,GPS GY-GPS6MV2 module
+A0800,GPS Quectel L80,UART,UART,gps,lat/lon,ALL,None,GPSQuectelL80.ino,IMPLEMENTED,GPS Quectel L80 module
+A0801,GPS Quectel L86,UART,UART,gps,lat/lon,ALL,None,GPSQuectelL86.ino,IMPLEMENTED,GPS Quectel L86 module
+A0802,GPS Ublox C099,UART,UART,gps,lat/lon,ALL,None,GPSUbloxC099.ino,IMPLEMENTED,GPS Ublox C099 module
+A0803,GPS Ublox ZED-F9P,UART,UART,gps,lat/lon,ALL,None,GPSUbloxZED-F9P.ino,IMPLEMENTED,GPS Ublox ZED-F9P module
+A0804,GNSS RTK,UART,UART,gps,lat/lon,ALL,None,GNSSRTK.ino,IMPLEMENTED,GNSS RTK module
+A0805,MH-Z19 CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ19CO2.ino,IMPLEMENTED,MH-Z19 CO2 sensor
+A0806,MH-Z19B CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ19BCO2.ino,IMPLEMENTED,MH-Z19B CO2 sensor
+A0807,MH-Z19C CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ19CCO2.ino,IMPLEMENTED,MH-Z19C CO2 sensor
+A0808,MH-Z16 CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ16CO2.ino,IMPLEMENTED,MH-Z16 CO2 sensor
+A0809,MH-Z14 CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ14CO2.ino,IMPLEMENTED,MH-Z14 CO2 sensor
+A0810,MH-Z14A CO2,ANALOG,UART,analogSensor,ppm,ALL,None,MHZ14ACO2.ino,IMPLEMENTED,MH-Z14A CO2 sensor
+A0811,SenseAir S8 CO2,ANALOG,UART,analogSensor,ppm,ALL,None,SenseAirS8CO2.ino,IMPLEMENTED,SenseAir S8 CO2 sensor
+A0812,SenseAir Sunrise CO2,ANALOG,UART,analogSensor,ppm,ALL,None,SenseAirSunriseCO2.ino,IMPLEMENTED,SenseAir Sunrise CO2 sensor
+A0813,PMS5003 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMS5003PM.ino,IMPLEMENTED,PMS5003 PM sensor
+A0814,PMS7003 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMS7003PM.ino,IMPLEMENTED,PMS7003 PM sensor
+A0815,PMS1003 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMS1003PM.ino,IMPLEMENTED,PMS1003 PM sensor
+A0816,PMSA003 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,PMSA003PM.ino,IMPLEMENTED,PMSA003 PM sensor
+A0817,SDS011 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,SDS011PM.ino,IMPLEMENTED,SDS011 PM sensor
+A0818,HPMA115S0 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,HPMA115S0PM.ino,IMPLEMENTED,HPMA115S0 PM sensor
+A0819,SPS30 PM,SPECIAL,UART,analogSensor,µg/m³,ALL,None,SPS30PM.ino,IMPLEMENTED,SPS30 PM sensor
+A0820,SPS30 PM2.5,SPECIAL,UART,analogSensor,µg/m³,ALL,None,SPS30PM25.ino,IMPLEMENTED,SPS30 PM2.5 sensor
+A0821,HLK-LD2410 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,HLKLD2410Radar.ino,IMPLEMENTED,HLK-LD2410 Radar sensor
+A0822,HLK-LD2450 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,HLKLD2450Radar.ino,IMPLEMENTED,HLK-LD2450 Radar sensor
+A0823,MR60BHA1 Radar,DIGITAL,UART,analogSensor,mm,ALL,None,MR60BHA1Radar.ino,IMPLEMENTED,MR60BHA1 Radar sensor
+A0824,LD2410B Radar,DIGITAL,UART,analogSensor,mm,ALL,None,LD2410BRadar.ino,IMPLEMENTED,LD2410B Radar sensor
+A0825,LD2410C Radar,DIGITAL,UART,analogSensor,mm,ALL,None,LD2410CRadar.ino,IMPLEMENTED,LD2410C Radar sensor
+A0826,LD2450B Radar,DIGITAL,UART,analogSensor,mm,ALL,None,LD2450BRadar.ino,IMPLEMENTED,LD2450B Radar sensor
+A0827,ZE08 CH2O,ANALOG,UART,analogSensor,ppm,ALL,None,ZE08CH2O.ino,IMPLEMENTED,ZE08 CH2O sensor
+A0828,ZE25 O3,ANALOG,UART,analogSensor,ppm,ALL,None,ZE25O3.ino,IMPLEMENTED,ZE25 O3 sensor
+A0829,ZE27 NO2,ANALOG,UART,analogSensor,ppm,ALL,None,ZE27NO2.ino,IMPLEMENTED,ZE27 NO2 sensor
+A0830,ZE03 Multi,ANALOG,UART,analogSensor,ppm,ALL,None,ZE03Multi.ino,IMPLEMENTED,ZE03 Multi sensor
+A0831,ZE15 CO,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15CO.ino,IMPLEMENTED,ZE15 CO sensor
+A0832,ZE15 SO2,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15SO2.ino,IMPLEMENTED,ZE15 SO2 sensor
+A0833,ZE15 H2S,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15H2S.ino,IMPLEMENTED,ZE15 H2S sensor
+A0834,ZE15 O3,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15O3.ino,IMPLEMENTED,ZE15 O3 sensor
+A0835,ZE15 NO2,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15NO2.ino,IMPLEMENTED,ZE15 NO2 sensor
+A0836,ZE15 NH3,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15NH3.ino,IMPLEMENTED,ZE15 NH3 sensor
+A0837,ZE15 CL2,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15CL2.ino,IMPLEMENTED,ZE15 CL2 sensor
+A0838,ZE15 HF,ANALOG,UART,analogSensor,ppm,ALL,None,ZE15HF.ino,IMPLEMENTED,ZE15 HF sensor
+A0839,PZEM-004T V3,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM004TV3.ino,IMPLEMENTED,PZEM-004T V3 power monitor
+A0840,PZEM-004T V4,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM004TV4.ino,IMPLEMENTED,PZEM-004T V4 power monitor
+A0841,PZEM-017,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM017.ino,IMPLEMENTED,PZEM-017 power monitor
+A0842,PZEM-016,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM016.ino,IMPLEMENTED,PZEM-016 power monitor
+A0843,PZEM-003,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM003.ino,IMPLEMENTED,PZEM-003 power monitor
+A0844,PZEM-004T DC,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM004TDC.ino,IMPLEMENTED,PZEM-004T DC power monitor
+A0845,PZEM-017 DC,SPECIAL,UART,analogSensor,W/V/A/Wh,ALL,None,PZEM017DC.ino,IMPLEMENTED,PZEM-017 DC power monitor
+A0846,DFPlayer Mini,RADIO,UART,analogSensor,track,ALL,None,DFPlayerMini.ino,IMPLEMENTED,DFPlayer Mini audio
+A0847,DFPlayer DFRobot,RADIO,UART,analogSensor,track,ALL,None,DFPlayerDFRobot.ino,IMPLEMENTED,DFPlayer DFRobot audio
+A0848,YX5200,RADIO,UART,analogSensor,track,ALL,None,YX5200.ino,IMPLEMENTED,YX5200 audio
+A0849,JQ6500,RADIO,UART,analogSensor,track,ALL,None,JQ6500.ino,IMPLEMENTED,JQ6500 audio
+A0850,JQ6500-16P,RADIO,UART,analogSensor,track,ALL,None,JQ650016P.ino,IMPLEMENTED,JQ6500-16P audio
+A0851,WT588D,RADIO,UART,analogSensor,track,ALL,None,WT588D.ino,IMPLEMENTED,WT588D audio
+A0852,WT588D-U,RADIO,UART,analogSensor,track,ALL,None,WT588DU.ino,IMPLEMENTED,WT588D-U audio
+A0853,WT2003H,RADIO,UART,analogSensor,track,ALL,None,WT2003H.ino,IMPLEMENTED,WT2003H audio
+A0854,WT2003S,RADIO,UART,analogSensor,track,ALL,None,WT2003S.ino,IMPLEMENTED,WT2003S audio
+A0855,ISD1820,RADIO,UART,analogSensor,record,ALL,None,ISD1820.ino,IMPLEMENTED,ISD1820 audio
+A0856,ISD1820P,RADIO,UART,analogSensor,record,ALL,None,ISD1820P.ino,IMPLEMENTED,ISD1820P audio
+A0857,APR33A3,RADIO,UART,analogSensor,record,ALL,None,APR33A3.ino,IMPLEMENTED,APR33A3 audio
+A0858,APR33A3-TC,RADIO,UART,analogSensor,record,ALL,None,APR33A3TC.ino,IMPLEMENTED,APR33A3-TC audio
+A0859,Voice Recorder,RADIO,UART,analogSensor,record,ALL,None,VoiceRecorder.ino,IMPLEMENTED,Voice Recorder audio
+A0860,PN532 UART,RADIO,UART,analogSensor,UID,ALL,None,PN532UART.ino,IMPLEMENTED,PN532 UART reader
+A0861,PN532 NFC UART,RADIO,UART,analogSensor,UID,ALL,None,PN532NFCUART.ino,IMPLEMENTED,PN532 NFC UART reader
+A0862,RDM6300 RFID,RADIO,UART,analogSensor,UID,ALL,None,RDM6300RFID.ino,IMPLEMENTED,RDM6300 RFID reader
+A0863,RDM6300 125kHz,RADIO,UART,analogSensor,UID,ALL,None,RDM6300125kHz.ino,IMPLEMENTED,RDM6300 125kHz reader
+A0864,EM4100 UART,RADIO,UART,analogSensor,UID,ALL,None,EM4100UART.ino,IMPLEMENTED,EM4100 UART reader
+A0865,GY-RDM6300,RADIO,UART,analogSensor,UID,ALL,None,GY-RDM6300.ino,IMPLEMENTED,GY-RDM6300 reader
+A0866,DS18B20,ONEWIRE,1-WIRE,ds18b20,°C,ALL,None,DS18B20.ino,IMPLEMENTED,DS18B20
+A0867,DS18S20,ONEWIRE,1-WIRE,ds18b20,°C,ALL,None,DS18S20.ino,IMPLEMENTED,DS18S20
+A0868,DS1822,ONEWIRE,1-WIRE,ds18b20,°C,ALL,None,DS1822.ino,IMPLEMENTED,DS1822
+A0869,DS1825,ONEWIRE,1-WIRE,ds18b20,°C,ALL,None,DS1825.ino,IMPLEMENTED,DS1825
+A0870,DS2438,ONEWIRE,1-WIRE,analogSensor,V/A/°C,ALL,None,DS2438.ino,IMPLEMENTED,DS2438
+A0871,DS2413,ONEWIRE,1-WIRE,analogSensor,2 GPIO,ALL,None,DS2413.ino,IMPLEMENTED,DS2413
+A0872,DS2406,ONEWIRE,1-WIRE,analogSensor,2 GPIO,ALL,None,DS2406.ino,IMPLEMENTED,DS2406
+A0873,DS2408,ONEWIRE,1-WIRE,analogSensor,8 GPIO,ALL,None,DS2408.ino,IMPLEMENTED,DS2408
+A0874,DS2450,ONEWIRE,1-WIRE,analogSensor,4-ch ADC,ALL,None,DS2450.ino,IMPLEMENTED,DS2450
+A0875,DS2417,ONEWIRE,1-WIRE,analogSensor,time,ALL,None,DS2417.ino,IMPLEMENTED,DS2417
+A0876,DS2423,ONEWIRE,1-WIRE,analogSensor,counter,ALL,None,DS2423.ino,IMPLEMENTED,DS2423
+A0877,iButton DS1990A,ONEWIRE,1-WIRE,analogSensor,UID,ALL,None,iButtonDS1990A.ino,IMPLEMENTED,iButton DS1990A
+A0878,iButton DS1921,ONEWIRE,1-WIRE,analogSensor,temp log,ALL,None,iButtonDS1921.ino,IMPLEMENTED,iButton DS1921
+A0879,iButton DS1922,ONEWIRE,1-WIRE,analogSensor,temp log,ALL,None,iButtonDS1922.ino,IMPLEMENTED,iButton DS1922
+A0880,iButton DS1963,ONEWIRE,1-WIRE,analogSensor,SHA,ALL,None,iButtonDS1963.ino,IMPLEMENTED,iButton DS1963
+A0881,LED PWM,ACTUATOR,PWM,led,0-255,ALL,None,LEDPWM.ino,IMPLEMENTED,LED PWM module
+A0882,LED High Power,ACTUATOR,PWM,led,0-255,ALL,None,LEDHighPower.ino,IMPLEMENTED,LED High Power module
+A0883,LED COB,ACTUATOR,PWM,led,0-255,ALL,None,LEDCOB.ino,IMPLEMENTED,LED COB module
+A0884,LED Strip,ACTUATOR,PWM,led,0-255,ALL,None,LEDStrip.ino,IMPLEMENTED,LED Strip module
+A0885,LED RGB Strip,ACTUATOR,PWM,led,0-255,ALL,None,LEDRGBStrip.ino,IMPLEMENTED,LED RGB Strip module
+A0886,LED Matrix,ACTUATOR,PWM,led,display,ALL,None,LEDMatrix.ino,IMPLEMENTED,LED Matrix module
+A0887,Buzzer Active,ACTUATOR,PWM,buzzer,on/off,ALL,None,BuzzerActive.ino,IMPLEMENTED,Buzzer Active module
+A0888,Buzzer Passive,ACTUATOR,PWM,buzzer,Hz/ms,ALL,None,BuzzerPassive.ino,IMPLEMENTED,Buzzer Passive module
+A0889,Buzzer 5V,ACTUATOR,PWM,buzzer,on/off,ALL,None,Buzzer5V.ino,IMPLEMENTED,Buzzer 5V module
+A0890,Buzzer 12V,ACTUATOR,PWM,buzzer,on/off,ALL,None,Buzzer12V.ino,IMPLEMENTED,Buzzer 12V module
+A0891,Piezo Buzzer,ACTUATOR,GPIO,buzzer,on/off,ALL,None,PiezoBuzzer.ino,IMPLEMENTED,Piezo Buzzer module
+A0892,Magnetic Buzzer,ACTUATOR,GPIO,buzzer,on/off,ALL,None,MagneticBuzzer.ino,IMPLEMENTED,Magnetic Buzzer module
+A0893,Relay 1CH,ACTUATOR,GPIO,relay,on/off,ALL,None,Relay1CH.ino,IMPLEMENTED,Relay 1CH module
+A0894,Relay 2CH,ACTUATOR,GPIO,relay,on/off,ALL,None,Relay2CH.ino,IMPLEMENTED,Relay 2CH module
+A0895,Relay 4CH,ACTUATOR,GPIO,relay,on/off,ALL,None,Relay4CH.ino,IMPLEMENTED,Relay 4CH module
+A0896,Relay 8CH,ACTUATOR,GPIO,relay,on/off,ALL,None,Relay8CH.ino,IMPLEMENTED,Relay 8CH module
+A0897,Relay 16CH,ACTUATOR,GPIO,relay,on/off,ALL,MCP23017,Relay16CH.ino,IMPLEMENTED,Relay 16CH module
+A0898,Relay 32CH,ACTUATOR,GPIO,relay,on/off,ALL,MCP23017,Relay32CH.ino,IMPLEMENTED,Relay 32CH module
+A0899,SSR Relay,ACTUATOR,GPIO,relay,on/off,ALL,None,SSRRelay.ino,IMPLEMENTED,SSR Relay module
+A0900,SSR 25A,ACTUATOR,GPIO,relay,on/off,ALL,None,SSR25A.ino,IMPLEMENTED,SSR 25A module
+A0901,SSR 40A,ACTUATOR,GPIO,relay,on/off,ALL,None,SSR40A.ino,IMPLEMENTED,SSR 40A module
+A0902,Reed Relay,ACTUATOR,GPIO,relay,on/off,ALL,None,ReedRelay.ino,IMPLEMENTED,Reed Relay module
+A0903,Latching Relay,ACTUATOR,GPIO,relay,on/off,ALL,None,LatchingRelay.ino,IMPLEMENTED,Latching Relay module
+A0904,Power Relay,ACTUATOR,GPIO,relay,on/off,ALL,None,PowerRelay.ino,IMPLEMENTED,Power Relay module
+A0905,Solenoid 12V,ACTUATOR,GPIO,solenoid,on/off,ALL,None,Solenoid12V.ino,IMPLEMENTED,Solenoid 12V module
+A0906,Solenoid 24V,ACTUATOR,GPIO,solenoid,on/off,ALL,None,Solenoid24V.ino,IMPLEMENTED,Solenoid 24V module
+A0907,Solenoid 48V,ACTUATOR,GPIO,solenoid,on/off,ALL,None,Solenoid48V.ino,IMPLEMENTED,Solenoid 48V module
+A0908,Water Valve,ACTUATOR,GPIO,solenoid,on/off,ALL,None,WaterValve.ino,IMPLEMENTED,Water Valve module
+A0909,Gas Valve,ACTUATOR,GPIO,solenoid,on/off,ALL,None,GasValve.ino,IMPLEMENTED,Gas Valve module
+A0910,Air Valve,ACTUATOR,GPIO,solenoid,on/off,ALL,None,AirValve.ino,IMPLEMENTED,Air Valve module
+A0911,Laser KY-008,ACTUATOR,GPIO,laser,on/off,ALL,None,LaserKY008.ino,IMPLEMENTED,Laser KY-008 module
+A0912,Laser Module,ACTUATOR,GPIO,laser,on/off,ALL,None,LaserModule.ino,IMPLEMENTED,Laser Module module
+A0913,Laser Diode,ACTUATOR,GPIO,laser,on/off,ALL,None,LaserDiode.ino,IMPLEMENTED,Laser Diode module
+A0914,RGB LED,ACTUATOR,GPIO,rgb,0-255×3,ALL,None,RGBLED.ino,IMPLEMENTED,RGB LED module
+A0915,RGBW LED,ACTUATOR,GPIO,rgb,0-255×4,ALL,None,RGBWLED.ino,IMPLEMENTED,RGBW LED module
+A0916,RGB LED Strip,ACTUATOR,GPIO,rgb,0-255×3,ALL,None,RGBLEDStrip.ino,IMPLEMENTED,RGB LED Strip module
+A0917,PWM Output,ACTUATOR,PWM,pwmOut,0-255,ALL,None,PWMOutput.ino,IMPLEMENTED,PWM Output module
+A0918,PWM Fan,ACTUATOR,PWM,pwmOut,0-255,ALL,None,PWMFan.ino,IMPLEMENTED,PWM Fan module
+A0919,PWM Pump,ACTUATOR,PWM,pwmOut,0-255,ALL,None,PWMPump.ino,IMPLEMENTED,PWM Pump module
+A0920,DC Motor,ACTUATOR,GPIO,motor,-255..255,ALL,None,DCMotor.ino,IMPLEMENTED,DC Motor module
+A0921,DC Motor 12V,ACTUATOR,GPIO,motor,-255..255,ALL,None,DCMotor12V.ino,IMPLEMENTED,DC Motor 12V module
+A0922,DC Motor 24V,ACTUATOR,GPIO,motor,-255..255,ALL,None,DCMotor24V.ino,IMPLEMENTED,DC Motor 24V module
+A0923,Servo SG90,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoSG90.ino,IMPLEMENTED,Servo SG90 module
+A0924,Servo MG90S,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoMG90S.ino,IMPLEMENTED,Servo MG90S module
+A0925,Servo MG996R,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoMG996R.ino,IMPLEMENTED,Servo MG996R module
+A0926,Servo DS3218,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoDS3218.ino,IMPLEMENTED,Servo DS3218 module
+A0927,Servo DS3225,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoDS3225.ino,IMPLEMENTED,Servo DS3225 module
+A0928,Servo MG995,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoMG995.ino,IMPLEMENTED,Servo MG995 module
+A0929,Servo MG946,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoMG946.ino,IMPLEMENTED,Servo MG946 module
+A0930,Servo Continuous,ACTUATOR,GPIO,servo,speed,ALL,None,ServoContinuous.ino,IMPLEMENTED,Servo Continuous module
+A0931,Servo High Torque,ACTUATOR,GPIO,servo,0-180°,ALL,None,ServoHighTorque.ino,IMPLEMENTED,Servo High Torque module
+A0932,Stepper A4988,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperA4988.ino,IMPLEMENTED,Stepper A4988 module
+A0933,Stepper DRV8825,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperDRV8825.ino,IMPLEMENTED,Stepper DRV8825 module
+A0934,Stepper TB6600,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperTB6600.ino,IMPLEMENTED,Stepper TB6600 module
+A0935,Stepper DM542,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperDM542.ino,IMPLEMENTED,Stepper DM542 module
+A0936,Stepper TMC2208,ACTUATOR,GPIO,stepper,steps,ALL,TMCStepper,StepperTMC2208.ino,IMPLEMENTED,Stepper TMC2208 module
+A0937,Stepper TMC2209,ACTUATOR,GPIO,stepper,steps,ALL,TMCStepper,StepperTMC2209.ino,IMPLEMENTED,Stepper TMC2209 module
+A0938,Stepper 28BYJ-48,ACTUATOR,GPIO,stepper,steps,ALL,None,Stepper28BYJ48.ino,IMPLEMENTED,Stepper 28BYJ-48 module
+A0939,Stepper NEMA17,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperNEMA17.ino,IMPLEMENTED,Stepper NEMA17 module
+A0940,Stepper NEMA23,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperNEMA23.ino,IMPLEMENTED,Stepper NEMA23 module
+A0941,Stepper NEMA34,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperNEMA34.ino,IMPLEMENTED,Stepper NEMA34 module
+A0942,Stepper Leadshine,ACTUATOR,GPIO,stepper,steps,ALL,None,StepperLeadshine.ino,IMPLEMENTED,Stepper Leadshine module
+A0943,Fan PWM,ACTUATOR,PWM,pwmOut,0-255,ALL,None,FanPWM.ino,IMPLEMENTED,Fan PWM module
+A0944,Fan DC,ACTUATOR,PWM,pwmOut,speed,ALL,None,FanDC.ino,IMPLEMENTED,Fan DC module
+A0945,Fan 12V,ACTUATOR,PWM,pwmOut,speed,ALL,None,Fan12V.ino,IMPLEMENTED,Fan 12V module
+A0946,Fan 24V,ACTUATOR,PWM,pwmOut,speed,ALL,None,Fan24V.ino,IMPLEMENTED,Fan 24V module
+A0947,Pump Peristaltic,ACTUATOR,PWM,pwmOut,speed,ALL,None,PumpPeristaltic.ino,IMPLEMENTED,Pump Peristaltic module
+A0948,Pump Diaphragm,ACTUATOR,PWM,pwmOut,speed,ALL,None,PumpDiaphragm.ino,IMPLEMENTED,Pump Diaphragm module
+A0949,Pump Centrifugal,ACTUATOR,PWM,pwmOut,speed,ALL,None,PumpCentrifugal.ino,IMPLEMENTED,Pump Centrifugal module
+A0950,Pump Water 12V,ACTUATOR,PWM,pwmOut,speed,ALL,None,PumpWater12V.ino,IMPLEMENTED,Pump Water 12V module
+A0951,Pump Water 24V,ACTUATOR,PWM,pwmOut,speed,ALL,None,PumpWater24V.ino,IMPLEMENTED,Pump Water 24V module
+A0952,Air Pump,ACTUATOR,GPIO,stepper,speed,ALL,None,AirPump.ino,IMPLEMENTED,Air Pump module
+A0953,Heater MOSFET,ACTUATOR,PWM,pwmOut,power,ALL,None,HeaterMOSFET.ino,IMPLEMENTED,Heater MOSFET module
+A0954,Heater SSR,ACTUATOR,PWM,relay,on/off,ALL,None,HeaterSSR.ino,IMPLEMENTED,Heater SSR module
+A0955,Heater 25A,ACTUATOR,PWM,pwmOut,on/off,ALL,None,Heater25A.ino,IMPLEMENTED,Heater 25A module
+A0956,Heater 40A,ACTUATOR,PWM,pwmOut,on/off,ALL,None,Heater40A.ino,IMPLEMENTED,Heater 40A module
+A0957,Peltier Cooler,ACTUATOR,PWM,pwmOut,power,ALL,None,PeltierCooler.ino,IMPLEMENTED,Peltier Cooler module
+A0958,Peltier TEC1-12706,ACTUATOR,PWM,pwmOut,power,ALL,None,PeltierTEC112706.ino,IMPLEMENTED,Peltier TEC1-12706 module
+A0959,Valve Water,ACTUATOR,GPIO,solenoid,on/off,ALL,None,ValveWater.ino,IMPLEMENTED,Valve Water module
+A0960,Valve Gas,ACTUATOR,GPIO,solenoid,on/off,ALL,None,ValveGas.ino,IMPLEMENTED,Valve Gas module
+A0961,Valve Air,ACTUATOR,GPIO,solenoid,on/off,ALL,None,ValveAir.ino,IMPLEMENTED,Valve Air module
+A0962,Valve Solenoid 12V,ACTUATOR,GPIO,solenoid,on/off,ALL,None,ValveSolenoid12V.ino,IMPLEMENTED,Valve Solenoid 12V module
+A0963,Valve Solenoid 24V,ACTUATOR,GPIO,solenoid,on/off,ALL,None,ValveSolenoid24V.ino,IMPLEMENTED,Valve Solenoid 24V module
+A0964,TM1637 4-digit,DISPLAY,2-WIRE,tm1637,display,ALL,None,TM16374digit.ino,IMPLEMENTED,TM1637 4-digit display
+A0965,TM1637 6-digit,DISPLAY,2-WIRE,tm1637,display,ALL,None,TM16376digit.ino,IMPLEMENTED,TM1637 6-digit display
+A0966,TM1637 8-digit,DISPLAY,2-WIRE,tm1637,display,ALL,None,TM16378digit.ino,IMPLEMENTED,TM1637 8-digit display
+A0967,MAX7219 8-digit,DISPLAY,SPI,max7219,display,ALL,None,MAX72198digit.ino,IMPLEMENTED,MAX7219 8-digit display
+A0968,MAX7219 Matrix,DISPLAY,SPI,max7219,display,ALL,None,MAX7219Matrix.ino,IMPLEMENTED,MAX7219 Matrix display
+A0969,MAX7219 4-digit,DISPLAY,SPI,max7219,display,ALL,None,MAX72194digit.ino,IMPLEMENTED,MAX7219 4-digit display
+A0970,WS2812 Strip,DISPLAY,1-WIRE,ws2812,display,ALL,None,WS2812Strip.ino,IMPLEMENTED,WS2812 Strip display
+A0971,WS2812B Strip,DISPLAY,1-WIRE,ws2812,display,ALL,None,WS2812BStrip.ino,IMPLEMENTED,WS2812B Strip display
+A0972,SK6812 RGBW,DISPLAY,1-WIRE,ws2812,display,ALL,None,SK6812RGBW.ino,IMPLEMENTED,SK6812 RGBW display
+A0973,SK6812 RGBW Strip,DISPLAY,1-WIRE,ws2812,display,ALL,None,SK6812RGBWStrip.ino,IMPLEMENTED,SK6812 RGBW Strip display
+A0974,APA102 Strip,DISPLAY,SPI,analogSensor,display,ALL,None,APA102Strip.ino,IMPLEMENTED,APA102 Strip display
+A0975,SK9822 Strip,DISPLAY,SPI,analogSensor,display,ALL,None,SK9822Strip.ino,IMPLEMENTED,SK9822 Strip display
+A0976,WS2801 Strip,DISPLAY,SPI,ws2812,display,ALL,None,WS2801Strip.ino,IMPLEMENTED,WS2801 Strip display
+A0977,TM1814 Strip,DISPLAY,SPI,ws2812,display,ALL,None,TM1814Strip.ino,IMPLEMENTED,TM1814 Strip display
+A0978,GS8208 Strip,DISPLAY,SPI,ws2812,display,ALL,None,GS8208Strip.ino,IMPLEMENTED,GS8208 Strip display
+A0979,"ePaper 1.54"" B/W",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper154B/W.ino,IMPLEMENTED,"ePaper 1.54"" B/W display"
+A0980,"ePaper 2.13"" B/W",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper213B/W.ino,IMPLEMENTED,"ePaper 2.13"" B/W display"
+A0981,"ePaper 2.9"" B/W",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper29B/W.ino,IMPLEMENTED,"ePaper 2.9"" B/W display"
+A0982,"ePaper 4.2"" B/W",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper42B/W.ino,IMPLEMENTED,"ePaper 4.2"" B/W display"
+A0983,"ePaper 7.5"" B/W",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper75B/W.ino,IMPLEMENTED,"ePaper 7.5"" B/W display"
+A0984,"ePaper 7.5"" Color",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper75Color.ino,IMPLEMENTED,"ePaper 7.5"" Color display"
+A0985,"ePaper 10.3""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper103.ino,IMPLEMENTED,"ePaper 10.3"" display"
+A0986,"ePaper 13.3""",DISPLAY,SPI,analogSensor,display,ALL,TFT_ILI9341,ePaper133.ino,IMPLEMENTED,"ePaper 13.3"" display"
+A0987,IR Remote NEC,RADIO,GPIO,analogSensor,code,ALL,None,IRRemoteNEC.ino,IMPLEMENTED,IR Remote NEC module
+A0988,IR Remote Sony,RADIO,GPIO,analogSensor,code,ALL,None,IRRemoteSony.ino,IMPLEMENTED,IR Remote Sony module
+A0989,IR Remote RC5,RADIO,GPIO,analogSensor,code,ALL,None,IRRemoteRC5.ino,IMPLEMENTED,IR Remote RC5 module
+A0990,IR Remote RC6,RADIO,GPIO,analogSensor,code,ALL,None,IRRemoteRC6.ino,IMPLEMENTED,IR Remote RC6 module
+A0991,IR Transmitter,RADIO,GPIO,analogSensor,code,ALL,None,IRTransmitter.ino,IMPLEMENTED,IR Transmitter module
+A0992,IR Blaster,RADIO,GPIO,analogSensor,code,ALL,None,IRBlaster.ino,IMPLEMENTED,IR Blaster module
+A0993,IR Receiver Module,RADIO,GPIO,analogSensor,code,ALL,None,IRReceiverModule.ino,IMPLEMENTED,IR Receiver Module module
+A0994,IR LED,RADIO,GPIO,analogSensor,code,ALL,None,IRLED.ino,IMPLEMENTED,IR LED module
+A0995,IR Flood,RADIO,GPIO,analogSensor,code,ALL,None,IRFlood.ino,IMPLEMENTED,IR Flood module
+A0996,ESP32 WiFi,RADIO,UART,analogSensor,connected,ESP32,None,ESP32WiFi.ino,IMPLEMENTED,ESP32 WiFi module
+A0997,ESP8266 WiFi,RADIO,UART,analogSensor,connected,ESP8266,None,ESP8266WiFi.ino,IMPLEMENTED,ESP8266 WiFi module
+A0998,ESP32-C3 WiFi,RADIO,UART,analogSensor,connected,ESP32,None,ESP32C3WiFi.ino,IMPLEMENTED,ESP32-C3 WiFi module
+A0999,ESP32-S2 WiFi,RADIO,UART,analogSensor,connected,ESP32,None,ESP32S2WiFi.ino,IMPLEMENTED,ESP32-S2 WiFi module
+A1000,ESP32-S3 WiFi,RADIO,UART,analogSensor,connected,ESP32,None,ESP32S3WiFi.ino,IMPLEMENTED,ESP32-S3 WiFi module
+A1001,ESP32-C6 WiFi,RADIO,UART,analogSensor,connected,ESP32,None,ESP32C6WiFi.ino,IMPLEMENTED,ESP32-C6 WiFi module
+A1002,BLE Module,RADIO,UART,analogSensor,connected,ALL,None,BLEModule.ino,IMPLEMENTED,BLE Module module
+A1003,BLE HM-10,RADIO,UART,analogSensor,connected,ALL,None,BLEHM10.ino,IMPLEMENTED,BLE HM-10 module
+A1004,BLE HC-05,RADIO,UART,analogSensor,connected,ALL,None,BLEHC05.ino,IMPLEMENTED,BLE HC-05 module
+A1005,BLE HC-06,RADIO,UART,analogSensor,connected,ALL,None,BLEHC06.ino,IMPLEMENTED,BLE HC-06 module
+A1006,BLE nRF52832,RADIO,UART,analogSensor,connected,ALL,None,BLEnRF52832.ino,IMPLEMENTED,BLE nRF52832 module
+A1007,BLE nRF52840,RADIO,UART,analogSensor,connected,ALL,None,BLEnRF52840.ino,IMPLEMENTED,BLE nRF52840 module
+A1008,BLE ESP32,RADIO,UART,analogSensor,connected,ESP32,None,BLEESP32.ino,IMPLEMENTED,BLE ESP32 module
+A1009,BLE AT-09,RADIO,UART,analogSensor,connected,ALL,None,BLEAT09.ino,IMPLEMENTED,BLE AT-09 module
+A1010,LoRa Ra-02,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaRa02.ino,IMPLEMENTED,LoRa Ra-02 module
+A1011,LoRa Ra-01S,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaRa01S.ino,IMPLEMENTED,LoRa Ra-01S module
+A1012,LoRa E22,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaE22.ino,IMPLEMENTED,LoRa E22 module
+A1013,LoRa E220,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaE220.ino,IMPLEMENTED,LoRa E220 module
+A1014,LoRa RFM95,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaRFM95.ino,IMPLEMENTED,LoRa RFM95 module
+A1015,LoRa RFM96,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaRFM96.ino,IMPLEMENTED,LoRa RFM96 module
+A1016,LoRa RFM98,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaRFM98.ino,IMPLEMENTED,LoRa RFM98 module
+A1017,LoRa SX1262,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaSX1262.ino,IMPLEMENTED,LoRa SX1262 module
+A1018,LoRa SX1268,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaSX1268.ino,IMPLEMENTED,LoRa SX1268 module
+A1019,LoRa SX1276,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaSX1276.ino,IMPLEMENTED,LoRa SX1276 module
+A1020,LoRa SX1278,RADIO,SPI,analogSensor,packet,ALL,LoRa,LoRaSX1278.ino,IMPLEMENTED,LoRa SX1278 module
+A1021,RF433 Receiver,RADIO,GPIO,analogSensor,code,ALL,None,RF433Receiver.ino,IMPLEMENTED,RF433 Receiver module
+A1022,RF433 Transmitter,RADIO,GPIO,analogSensor,code,ALL,None,RF433Transmitter.ino,IMPLEMENTED,RF433 Transmitter module
+A1023,RF315 Receiver,RADIO,GPIO,analogSensor,code,ALL,None,RF315Receiver.ino,IMPLEMENTED,RF315 Receiver module
+A1024,RF315 Transmitter,RADIO,GPIO,analogSensor,code,ALL,None,RF315Transmitter.ino,IMPLEMENTED,RF315 Transmitter module
+A1025,NRF24L01,RADIO,SPI,analogSensor,packet,ALL,RF24,NRF24L01.ino,IMPLEMENTED,NRF24L01 module
+A1026,NRF24L01+,RADIO,SPI,analogSensor,packet,ALL,RF24,NRF24L01.ino,IMPLEMENTED,NRF24L01+ module
+A1027,RFM69,RADIO,SPI,analogSensor,packet,ALL,None,RFM69.ino,IMPLEMENTED,RFM69 module
+A1028,RFM69HCW,RADIO,SPI,analogSensor,packet,ALL,None,RFM69HCW.ino,IMPLEMENTED,RFM69HCW module
+A1029,WiFi ESP-01,RADIO,UART,analogSensor,connected,ALL,None,WiFiESP01.ino,IMPLEMENTED,WiFi ESP-01 module
+A1030,WiFi ESP-12F,RADIO,UART,analogSensor,connected,ESP8266,None,WiFiESP12F.ino,IMPLEMENTED,WiFi ESP-12F module
+A1031,WiFi NodeMCU,RADIO,UART,analogSensor,connected,ESP8266,None,WiFiNodeMCU.ino,IMPLEMENTED,WiFi NodeMCU module
+A1032,WiFi Wemos D1,RADIO,UART,analogSensor,connected,ESP8266,None,WiFiWemosD1.ino,IMPLEMENTED,WiFi Wemos D1 module
+A1033,WiFi ESP32 DevKit,RADIO,UART,analogSensor,connected,ESP32,None,WiFiESP32DevKit.ino,IMPLEMENTED,WiFi ESP32 DevKit module
+A1034,SD Card Module,STORAGE,SPI,analogSensor,bytes,ALL,SD,SDCardModule.ino,IMPLEMENTED,SD Card Module
+A1035,MicroSD Module,STORAGE,SPI,analogSensor,bytes,ALL,SD,MicroSDModule.ino,IMPLEMENTED,MicroSD Module
+A1036,SD Card Adapter,STORAGE,SPI,analogSensor,bytes,ALL,SD,SDCardAdapter.ino,IMPLEMENTED,SD Card Adapter
+A1037,SD Card Breakout,STORAGE,SPI,analogSensor,bytes,ALL,SD,SDCardBreakout.ino,IMPLEMENTED,SD Card Breakout
+A1038,MicroSD Breakout,STORAGE,SPI,analogSensor,bytes,ALL,SD,MicroSDBreakout.ino,IMPLEMENTED,MicroSD Breakout
+A1039,SDIO SD Card,STORAGE,SDIO,analogSensor,bytes,ESP32/ESP8266,SD,SDIOSDCard.ino,IMPLEMENTED,SDIO SD Card
+A1040,W25Q128 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q128SPIFlash.ino,IMPLEMENTED,W25Q128 SPI Flash
+A1041,W25Q64 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q64SPIFlash.ino,IMPLEMENTED,W25Q64 SPI Flash
+A1042,W25Q32 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q32SPIFlash.ino,IMPLEMENTED,W25Q32 SPI Flash
+A1043,W25Q16 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,W25Q16SPIFlash.ino,IMPLEMENTED,W25Q16 SPI Flash
+A1044,GD25Q16 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q16SPIFlash.ino,IMPLEMENTED,GD25Q16 SPI Flash
+A1045,GD25Q32 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,GD25Q32SPIFlash.ino,IMPLEMENTED,GD25Q32 SPI Flash
+A1046,EN25Q32 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,EN25Q32SPIFlash.ino,IMPLEMENTED,EN25Q32 SPI Flash
+A1047,EN25Q64 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,EN25Q64SPIFlash.ino,IMPLEMENTED,EN25Q64 SPI Flash
+A1048,AT25DF321 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,AT25DF321SPIFlash.ino,IMPLEMENTED,AT25DF321 SPI Flash
+A1049,AT25DF641 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,AT25DF641SPIFlash.ino,IMPLEMENTED,AT25DF641 SPI Flash
+A1050,S25FL128S SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,S25FL128SSPIFlash.ino,IMPLEMENTED,S25FL128S SPI Flash
+A1051,MX25L3206 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L3206SPIFlash.ino,IMPLEMENTED,MX25L3206 SPI Flash
+A1052,MX25L6406 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L6406SPIFlash.ino,IMPLEMENTED,MX25L6406 SPI Flash
+A1053,MX25L12806 SPI Flash,STORAGE,SPI,analogSensor,bytes,ALL,None,MX25L12806SPIFlash.ino,IMPLEMENTED,MX25L12806 SPI Flash
+A1054,EEPROM 25AA320,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA320.ino,IMPLEMENTED,EEPROM 25AA320
+A1055,EEPROM 25AA640,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA640.ino,IMPLEMENTED,EEPROM 25AA640
+A1056,EEPROM 25AA1280,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25AA1280.ino,IMPLEMENTED,EEPROM 25AA1280
+A1057,EEPROM 25LC256,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC256.ino,IMPLEMENTED,EEPROM 25LC256
+A1058,EEPROM 25LC512,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC512.ino,IMPLEMENTED,EEPROM 25LC512
+A1059,EEPROM 25LC1024,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROM25LC1024.ino,IMPLEMENTED,EEPROM 25LC1024
+A1060,EEPROM AT25320A,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROMAT25320A.ino,IMPLEMENTED,EEPROM AT25320A
+A1061,EEPROM AT25640B,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROMAT25640B.ino,IMPLEMENTED,EEPROM AT25640B
+A1062,EEPROM AT251280A,STORAGE,SPI,analogSensor,bytes,ALL,None,EEPROMAT251280A.ino,IMPLEMENTED,EEPROM AT251280A
+A1063,FRAM FM25V02A,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V02A.ino,IMPLEMENTED,FRAM FM25V02A
+A1064,FRAM FM25V10A,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V10A.ino,IMPLEMENTED,FRAM FM25V10A
+A1065,FRAM FM25V20A,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V20A.ino,IMPLEMENTED,FRAM FM25V20A
+A1066,FRAM FM25V50A,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V50A.ino,IMPLEMENTED,FRAM FM25V50A
+A1067,FRAM FM25V01A,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMFM25V01A.ino,IMPLEMENTED,FRAM FM25V01A
+A1068,FRAM MB85RC256V,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMMB85RC256V.ino,IMPLEMENTED,FRAM MB85RC256V
+A1069,FRAM MB85RC16V,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMMB85RC16V.ino,IMPLEMENTED,FRAM MB85RC16V
+A1070,FRAM MB85RC64V,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMMB85RC64V.ino,IMPLEMENTED,FRAM MB85RC64V
+A1071,FRAM MB85RC128V,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMMB85RC128V.ino,IMPLEMENTED,FRAM MB85RC128V
+A1072,FRAM MB85RC256V,STORAGE,SPI,analogSensor,bytes,ALL,None,FRAMMB85RC256V.ino,IMPLEMENTED,FRAM MB85RC256V
+A1073,Joystick Module,SPECIAL,ANALOG,joystick,raw/°,ALL,None,JoystickModule.ino,IMPLEMENTED,Joystick Module module
+A1074,Joystick 2-axis,SPECIAL,ANALOG,joystick,raw/°,ALL,None,Joystick2axis.ino,IMPLEMENTED,Joystick 2-axis module
+A1075,Joystick PS2,SPECIAL,ANALOG,joystick,raw/°,ALL,None,JoystickPS2.ino,IMPLEMENTED,Joystick PS2 module
+A1076,Joystick Arduino,SPECIAL,ANALOG,joystick,raw/°,ALL,None,JoystickArduino.ino,IMPLEMENTED,Joystick Arduino module
+A1077,Rotary Encoder KY-040,SPECIAL,QUAD,rotaryEncoder,count,ALL,None,RotaryEncoderKY040.ino,IMPLEMENTED,Rotary Encoder KY-040 module
+A1078,Rotary Encoder EC11,SPECIAL,QUAD,rotaryEncoder,count,ALL,None,RotaryEncoderEC11.ino,IMPLEMENTED,Rotary Encoder EC11 module
+A1079,Rotary Encoder IL251,SPECIAL,QUAD,rotaryEncoder,count,ALL,None,RotaryEncoderIL251.ino,IMPLEMENTED,Rotary Encoder IL251 module
+A1080,Rotary Encoder 360,SPECIAL,QUAD,rotaryEncoder,count,ALL,None,RotaryEncoder360.ino,IMPLEMENTED,Rotary Encoder 360 module
+A1081,Rotary Potentiometer,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,RotaryPotentiometer.ino,IMPLEMENTED,Rotary Potentiometer module
+A1082,Slide Potentiometer,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,SlidePotentiometer.ino,IMPLEMENTED,Slide Potentiometer module
+A1083,Angle Sensor,SPECIAL,ANALOG,analogSensor,degrees,ALL,None,AngleSensor.ino,IMPLEMENTED,Angle Sensor module
+A1084,Potentiometer 10K,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,Potentiometer10K.ino,IMPLEMENTED,Potentiometer 10K module
+A1085,Potentiometer 100K,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,Potentiometer100K.ino,IMPLEMENTED,Potentiometer 100K module
+A1086,Potentiometer 1M,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,Potentiometer1M.ino,IMPLEMENTED,Potentiometer 1M module
+A1087,Trimmer Potentiometer,SPECIAL,ANALOG,analogSensor,raw/%,ALL,None,TrimmerPotentiometer.ino,IMPLEMENTED,Trimmer Potentiometer module
+A1088,Joystick Shield,SPECIAL,ANALOG,joystick,raw/°,ALL,None,JoystickShield.ino,IMPLEMENTED,Joystick Shield module
+A1089,Gamepad Shield,SPECIAL,SPECIAL,analogSensor,raw/°,ALL,None,GamepadShield.ino,IMPLEMENTED,Gamepad Shield module
+A1090,Arduino Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,ArduinoShield.ino,IMPLEMENTED,Arduino Shield module
+A1091,Proto Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,ProtoShield.ino,IMPLEMENTED,Proto Shield module
+A1092,Sensor Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,SensorShield.ino,IMPLEMENTED,Sensor Shield module
+A1093,Motor Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,MotorShield.ino,IMPLEMENTED,Motor Shield module
+A1094,LCD Keypad Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LCDKeypadShield.ino,IMPLEMENTED,LCD Keypad Shield module
+A1095,Ethernet Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,EthernetShield.ino,IMPLEMENTED,Ethernet Shield module
+A1096,WiFi Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,WiFiShield.ino,IMPLEMENTED,WiFi Shield module
+A1097,GPS Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GPSShield.ino,IMPLEMENTED,GPS Shield module
+A1098,GSM Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GSMShield.ino,IMPLEMENTED,GSM Shield module
+A1099,Bluetooth Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,BluetoothShield.ino,IMPLEMENTED,Bluetooth Shield module
+A1100,NFC Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,NFCShield.ino,IMPLEMENTED,NFC Shield module
+A1101,RFID Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,RFIDShield.ino,IMPLEMENTED,RFID Shield module
+A1102,LoRa Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LoRaShield.ino,IMPLEMENTED,LoRa Shield module
+A1103,OLED Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,OLEDShield.ino,IMPLEMENTED,OLED Shield module
+A1104,TFT Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,TFTShield.ino,IMPLEMENTED,TFT Shield module
+A1105,Relay Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,RelayShield.ino,IMPLEMENTED,Relay Shield module
+A1106,Stepper Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,StepperShield.ino,IMPLEMENTED,Stepper Shield module
+A1107,Servo Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,ServoShield.ino,IMPLEMENTED,Servo Shield module
+A1108,DMX Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,DMXShield.ino,IMPLEMENTED,DMX Shield module
+A1109,MIDI Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,MIDIShield.ino,IMPLEMENTED,MIDI Shield module
+A1110,Audio Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,AudioShield.ino,IMPLEMENTED,Audio Shield module
+A1111,MP3 Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,MP3Shield.ino,IMPLEMENTED,MP3 Shield module
+A1112,CAN Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,CANShield.ino,IMPLEMENTED,CAN Shield module
+A1113,RS485 Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,RS485Shield.ino,IMPLEMENTED,RS485 Shield module
+A1114,RS232 Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,RS232Shield.ino,IMPLEMENTED,RS232 Shield module
+A1115,LoRa Shield RFM95,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LoRaShieldRFM95.ino,IMPLEMENTED,LoRa Shield RFM95 module
+A1116,NB-IoT Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,NBIoTShield.ino,IMPLEMENTED,NB-IoT Shield module
+A1117,LTE Shield,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LTEShield.ino,IMPLEMENTED,LTE Shield module
+A1118,GSM SIM800L,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GSMSIM800L.ino,IMPLEMENTED,GSM SIM800L module
+A1119,GSM SIM900,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GSMSIM900.ino,IMPLEMENTED,GSM SIM900 module
+A1120,GSM A6,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GSMA6.ino,IMPLEMENTED,GSM A6 module
+A1121,GSM A7,SPECIAL,SPECIAL,analogSensor,special,ALL,None,GSMA7.ino,IMPLEMENTED,GSM A7 module
+A1122,NB-IoT BC95,SPECIAL,SPECIAL,analogSensor,special,ALL,None,NBIoTBC95.ino,IMPLEMENTED,NB-IoT BC95 module
+A1123,LTE SIM7600,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LTESIM7600.ino,IMPLEMENTED,LTE SIM7600 module
+A1124,LTE SIM7000,SPECIAL,SPECIAL,analogSensor,special,ALL,None,LTESIM7000.ino,IMPLEMENTED,LTE SIM7000 module
+A1125,GPS Module NEO-6M,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleNEO6M.ino,IMPLEMENTED,GPS Module NEO-6M module
+A1126,GPS Module NEO-7M,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleNEO7M.ino,IMPLEMENTED,GPS Module NEO-7M module
+A1127,GPS Module NEO-8M,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleNEO8M.ino,IMPLEMENTED,GPS Module NEO-8M module
+A1128,GPS Module NEO-M8N,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleNEOM8N.ino,IMPLEMENTED,GPS Module NEO-M8N module
+A1129,GPS Module L80,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleL80.ino,IMPLEMENTED,GPS Module L80 module
+A1130,GPS Module L86,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleL86.ino,IMPLEMENTED,GPS Module L86 module
+A1131,GPS Module ATGM336H,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModuleATGM336H.ino,IMPLEMENTED,GPS Module ATGM336H module
+A1132,GPS Module PA6H,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModulePA6H.ino,IMPLEMENTED,GPS Module PA6H module
+A1133,GPS Module PA6C,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GPSModulePA6C.ino,IMPLEMENTED,GPS Module PA6C module
+A1134,GNSS Module ZED-F9P,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GNSSModuleZEDF9P.ino,IMPLEMENTED,GNSS Module ZED-F9P module
+A1135,GNSS Module C099,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GNSSModuleC099.ino,IMPLEMENTED,GNSS Module C099 module
+A1136,GNSS RTK Module,SPECIAL,SPECIAL,analogSensor,lat/lon,ALL,None,GNSSRTKModule.ino,IMPLEMENTED,GNSS RTK Module module
