@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARUARDUINO - Universal Arduino Library</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a1628; color: #e0e0e0; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #0a1628 100%); padding: 80px 20px; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .logo { width: 120px; height: 120px; margin-bottom: 20px; }
+        .hero h1 { font-size: 3em; color: #00bcd4; margin-bottom: 10px; }
+        .hero .tagline { font-size: 1.2em; color: #80b0c0; margin-bottom: 30px; }
+        .stats { display: flex; gap: 30px; justify-content: center; margin-bottom: 30px; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2.5em; font-weight: 700; color: #00bcd4; }
+        .stat-label { font-size: 0.85em; color: #80b0c0; }
+        .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
+        .badge { background: rgba(0,188,212,0.15); border: 1px solid rgba(0,188,212,0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; color: #00bcd4; }
+        .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 5px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: linear-gradient(135deg, #00838f, #00bcd4); color: white; }
+        .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        .section { margin-bottom: 60px; }
+        .section h2 { font-size: 2em; margin-bottom: 20px; color: #00bcd4; }
+        .section p { color: #b0c0d0; margin-bottom: 15px; }
+        .boards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+        .board-card { background: rgba(0,188,212,0.08); border: 1px solid rgba(0,188,212,0.2); border-radius: 8px; padding: 16px; text-align: center; }
+        .board-card h4 { color: #00bcd4; margin-bottom: 4px; }
+        .board-card span { font-size: 0.85em; color: #80b0c0; }
+        .modules-table { width: 100%; border-collapse: collapse; }
+        .modules-table th, .modules-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .modules-table th { background: rgba(0,188,212,0.1); color: #00bcd4; }
+        .modules-table tr:hover { background: rgba(0,188,212,0.05); }
+        .code-block { background: rgba(0,0,0,0.4); border: 1px solid rgba(0,188,212,0.2); border-radius: 8px; padding: 20px; overflow-x: auto; font-family: 'Fira Code', monospace; font-size: 0.9em; margin: 15px 0; color: #e0e0e0; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; }
+        .feature-card h3 { color: #00bcd4; margin-bottom: 10px; }
+        .warning { background: rgba(255,152,0,0.1); border: 1px solid rgba(255,152,0,0.3); border-radius: 8px; padding: 16px; margin: 15px 0; }
+        .warning strong { color: #ff9800; }
+        footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #808090; }
+        footer a { color: #00bcd4; text-decoration: none; }
+        @media (max-width: 600px) { .hero h1 { font-size: 2em; } .stats { gap: 15px; } }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="AARUARDUINO" class="logo">
+            <h1>AARUARDUINO</h1>
+            <p class="tagline">Universal Arduino Library — 1000+ Modules, One Consistent API</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-num">1136</div><div class="stat-label">Modules</div></div>
+                <div class="stat"><div class="stat-num">11</div><div class="stat-label">Categories</div></div>
+                <div class="stat"><div class="stat-num">11+</div><div class="stat-label">Boards</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-label">Required Deps</div></div>
+            </div>
+            <div class="badges">
+                <span class="badge">v1.0.0</span>
+                <span class="badge">MIT License</span>
+                <span class="badge">Arduino IDE</span>
+                <span class="badge">ESP32 / ESP8266</span>
+            </div>
+            <a href="https://github.com/AARUTO347/AARUARDUINO/releases" class="btn btn-primary">Download Library</a>
+            <a href="https://github.com/AARUTO347/AARUARDUINO" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About</h2>
+            <p>AARUARDUINO provides <strong>one consistent API</strong> for 1000+ sensors, actuators, displays, and communication modules across all Arduino IDE-compatible boards. No more juggling different libraries — just <code>#include &lt;AARUARDUINO.h&gt;</code> and go.</p>
+            <p><strong>Made by <a href="https://github.com/AARUTO347" style="color:#00bcd4">AARUTO</a></strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Supported Boards</h2>
+            <div class="boards-grid">
+                <div class="board-card"><h4>Arduino Uno R3</h4><span>ATmega328P · 5V</span></div>
+                <div class="board-card"><h4>Uno R4 Minima</h4><span>RA4M1 · 5V</span></div>
+                <div class="board-card"><h4>Uno R4 WiFi</h4><span>RA4M1 + ESP32-S3</span></div>
+                <div class="board-card"><h4>Arduino Nano</h4><span>ATmega328P · 5V</span></div>
+                <div class="board-card"><h4>Mega 2560</h4><span>ATmega2560 · 5V</span></div>
+                <div class="board-card"><h4>Leonardo</h4><span>ATmega32U4 · 5V</span></div>
+                <div class="board-card"><h4>Arduino Due</h4><span>SAM3X8E · 3.3V</span></div>
+                <div class="board-card"><h4>Arduino Zero</h4><span>SAMD21 · 3.3V</span></div>
+                <div class="board-card"><h4>Nano 33 IoT</h4><span>SAMD21 + NINA · 3.3V</span></div>
+                <div class="board-card"><h4>ESP32 Family</h4><span>Xtensa/RISC-V · 3.3V</span></div>
+                <div class="board-card"><h4>ESP8266</h4><span>NodeMCU / D1 mini · 3.3V</span></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Module Reference</h2>
+            <table class="modules-table">
+                <tr><th>Category</th><th>Count</th><th>Examples</th></tr>
+                <tr><td>Analog Sensors</td><td>324</td><td>LDR, MQ-x, LM35, soil, rain, sound, FSR, pH/EC/TDS</td></tr>
+                <tr><td>Digital Sensors</td><td>93</td><td>PIR, radar, IR, flame, smoke, touch, reed, hall, button</td></tr>
+                <tr><td>I2C Devices</td><td>164</td><td>MPU6050, BME280, SHT3x, VL53L0X, SSD1306, LCD1602</td></tr>
+                <tr><td>SPI Devices</td><td>32</td><td>MAX7219, ILI9341, MFRC522, W25Q flash, SD card</td></tr>
+                <tr><td>UART Devices</td><td>18</td><td>GPS NEO-6M, MH-Z19, PZEM-004T, DFPlayer, PMS5003</td></tr>
+                <tr><td>1-Wire Devices</td><td>15</td><td>DS18B20, DS2438, iButton</td></tr>
+                <tr><td>Actuators</td><td>97</td><td>LED, buzzer, relay, servo, stepper, motor, pump</td></tr>
+                <tr><td>Displays</td><td>74</td><td>TM1637, WS2812, ePaper, OLED</td></tr>
+                <tr><td>Radio</td><td>89</td><td>IR, WiFi, BLE, LoRa, RF433, NRF24L01</td></tr>
+                <tr><td>Storage</td><td>115</td><td>SD, flash, EEPROM, FRAM</td></tr>
+                <tr><td>Special/Composite</td><td>115</td><td>Joystick, encoder, shields, GPS, GSM</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Quick Start</h2>
+            <div class="code-block">#include &lt;AARUARDUINO.h&gt;
+
+void setup() {
+  Serial.begin(115200);
+  AARUARDUINO.begin();
+  AARUARDUINO.ultrasonic(7, 8);
+  AARUARDUINO.led(13);
+  AARUARDUINO.buzzer(9);
+  AARUARDUINO.lcdI2C(0x27, 16, 2);
+}
+
+void loop() {
+  AARUARDUINO.update();
+  float cm = AARUARDUINO.readUltrasonic();
+  if (AARUARDUINO.lastError() != AARUARDUINO_OK) return;
+  if (cm > 0 && cm < 20) {
+    AARUARDUINO.setLED(true);
+    AARUARDUINO.beep(2000, 100);
+    AARUARDUINO.displayText("Close!");
+  } else {
+    AARUARDUINO.setLED(false);
+  }
+  delay(100);
+}</div>
+        </div>
+
+        <div class="section">
+            <h2>Installation</h2>
+            <div class="feature-card">
+                <h3>Arduino IDE (.zip)</h3>
+                <p>1. Download repo as <code>.zip</code> or grab the release<br>2. Sketch → Include Library → Add .ZIP Library<br>3. Verify: File → Examples → AARUARDUINO → Basic</p>
+            </div>
+            <div class="feature-card" style="margin-top:15px">
+                <h3>Arduino CLI</h3>
+                <div class="code-block" style="margin:10px 0">arduino-cli lib install --zip-path AARUARDUINO-1.0.0.zip</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Safety</h2>
+            <div class="warning"><strong>Voltage:</strong> ESP32/ESP8266 GPIO is <strong>3.3V, not 5V tolerant</strong>. HC-SR04 echo is 5V — use a voltage divider (1k/2k) or level shifter.</div>
+            <div class="warning"><strong>Current:</strong> Never drive motors, relays, servos, or high-current loads directly from GPIO. Use driver modules + external power.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>AARUARDUINO v1.0.0</strong> — Made by <a href="https://github.com/AARUTO347">AARUTO</a></p>
+        <p style="margin-top:10px"><a href="https://github.com/AARUTO347/AARUARDUINO">GitHub</a> | <a href="https://github.com/AARUTO347/AARUARDUINO/releases">Releases</a> | <a href="https://github.com/AARUTO347/AARUARDUINO/issues">Issues</a></p>
+        <p style="margin-top:10px">MIT License</p>
+    </footer>
+</body>
+</html>
