@@ -1,1 +1,0 @@
-Fix display routing, GPS accessors and default args; bump to v1.0.2
