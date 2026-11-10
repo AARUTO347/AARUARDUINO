@@ -54,7 +54,7 @@ public:
 
     int discover(AaruOneWireROM* roms, int max_devices);
 
-    AaruarduinoError ds18b20Convert(const AaruOneWireROM* rom);
+    AaruarduinoError ds18b20Convert(const AaruOneWireROM* rom = nullptr);
     AaruarduinoError ds18b20ReadScratchpad(const AaruOneWireROM* rom, uint8_t* scratchpad);
     float ds18b20ReadTempC(const AaruOneWireROM* rom);
     AaruarduinoError ds18b20SetResolution(const AaruOneWireROM* rom, uint8_t resolution);

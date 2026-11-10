@@ -26,7 +26,7 @@ class AaruSPIEngine {
 public:
     AaruSPIEngine() = default;
 
-    AaruarduinoError begin(int sck, int miso, int mosi);
+    AaruarduinoError begin(int sck = -1, int miso = -1, int mosi = -1);
     void setDefaultSpeed(uint32_t hz);
     void setDefaultMode(uint8_t mode);
 
@@ -36,12 +36,12 @@ public:
     uint8_t transfer(uint8_t data);
     void transfer(uint8_t* buf, uint16_t len);
 
-    AaruarduinoError writeReg(uint8_t cs, uint8_t reg, uint8_t val, uint32_t speed);
-    AaruarduinoError readReg(uint8_t cs, uint8_t reg, uint8_t* val, uint32_t speed);
-    AaruarduinoError writeReg16(uint8_t cs, uint8_t reg, uint16_t val, uint32_t speed);
-    AaruarduinoError readReg16(uint8_t cs, uint8_t reg, uint16_t* val, uint32_t speed);
-    AaruarduinoError readBytes(uint8_t cs, uint8_t reg, uint8_t* buf, uint8_t len, uint32_t speed);
-    AaruarduinoError writeBytes(uint8_t cs, const uint8_t* buf, uint8_t len, uint32_t speed);
+    AaruarduinoError writeReg(uint8_t cs, uint8_t reg, uint8_t val, uint32_t speed = 0);
+    AaruarduinoError readReg(uint8_t cs, uint8_t reg, uint8_t* val, uint32_t speed = 0);
+    AaruarduinoError writeReg16(uint8_t cs, uint8_t reg, uint16_t val, uint32_t speed = 0);
+    AaruarduinoError readReg16(uint8_t cs, uint8_t reg, uint16_t* val, uint32_t speed = 0);
+    AaruarduinoError readBytes(uint8_t cs, uint8_t reg, uint8_t* buf, uint8_t len, uint32_t speed = 0);
+    AaruarduinoError writeBytes(uint8_t cs, const uint8_t* buf, uint8_t len, uint32_t speed = 0);
 
     AaruarduinoError csPin(uint8_t pin);
     void csSelect(uint8_t pin);

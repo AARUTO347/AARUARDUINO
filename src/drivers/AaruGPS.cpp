@@ -15,7 +15,20 @@ AaruarduinoError AaruGPS::begin(int rx, int tx, uint32_t baud) {
 
 void AaruGPS::update() {}
 
-const AaruGPSSatellite* AaruGPS::sat(int idx) const {
+const struct AaruGPSFix& AaruGPS::fix() const { return _fix; }
+bool AaruGPS::hasFix() const { return _fix.valid; }
+float AaruGPS::lat() const { return _fix.latitude; }
+float AaruGPS::lon() const { return _fix.longitude; }
+float AaruGPS::alt() const { return _fix.altitude; }
+float AaruGPS::speedKnots() const { return _fix.speed; }
+float AaruGPS::speedKmph() const { return _fix.speed * 1.852f; }
+float AaruGPS::course() const { return _fix.course; }
+uint8_t AaruGPS::sats() const { return _fix.satellites; }
+uint32_t AaruGPS::date() const { return _fix.date; }
+uint32_t AaruGPS::time() const { return _fix.time; }
+int AaruGPS::satCount() const { return _sat_count; }
+
+const struct AaruGPSSatellite* AaruGPS::sat(int idx) const {
     if (idx < _sat_count) return &_sats[idx];
     return nullptr;
 }

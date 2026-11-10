@@ -25,7 +25,7 @@ class AaruStepper {
 public:
     AaruStepper() = default;
 
-    AaruarduinoError begin(uint8_t step_pin, uint8_t dir_pin, int en_pin);
+    AaruarduinoError begin(uint8_t step_pin, uint8_t dir_pin, int en_pin = -1);
     AaruarduinoError begin(uint8_t step_pin, uint8_t dir_pin, uint8_t en_pin, StepperType type);
     AaruarduinoError begin4Wire(uint8_t in1, uint8_t in2, uint8_t in3, uint8_t in4);
 

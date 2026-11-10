@@ -390,60 +390,160 @@ float AaruarduinoClass::readLux() {
 
 // ---- Displays ----
 AaruarduinoError AaruarduinoClass::oled(uint8_t addr, uint8_t w, uint8_t h) {
-    return _oled.beginI2C(&_i2c, addr, w, h);
+    AaruarduinoError e = _oled.beginI2C(&_i2c, addr, w, h);
+    if (e == AARUARDUINO_OK) _display_kind = 1;
+    return e;
 }
 AaruarduinoError AaruarduinoClass::lcdI2C(uint8_t addr, uint8_t cols, uint8_t rows) {
-    return _lcd.begin(&_i2c, addr, cols, rows);
+    AaruarduinoError e = _lcd.begin(&_i2c, addr, cols, rows);
+    if (e == AARUARDUINO_OK) _display_kind = 2;
+    return e;
 }
 AaruarduinoError AaruarduinoClass::lcd(uint8_t addr, uint8_t cols, uint8_t rows) {
     return lcdI2C(addr, cols, rows);
 }
 AaruarduinoError AaruarduinoClass::max7219(uint8_t cs, uint8_t devices) {
-    return _max7219.begin(&_spi, cs, devices);
+    AaruarduinoError e = _max7219.begin(&_spi, cs, devices);
+    if (e == AARUARDUINO_OK) _display_kind = 3;
+    return e;
 }
 AaruarduinoError AaruarduinoClass::tm1637(uint8_t clk, uint8_t dio) {
-    return _tm1637.begin(clk, dio);
+    AaruarduinoError e = _tm1637.begin(clk, dio);
+    if (e == AARUARDUINO_OK) _display_kind = 4;
+    return e;
 }
 AaruarduinoError AaruarduinoClass::ws2812(uint8_t pin, uint16_t num_leds) {
     return _ws2812.begin(pin, num_leds);
 }
 
 AaruarduinoError AaruarduinoClass::displayClear() {
-    _err = _oled.lastError();
-    _oled.clear(); _oled.display();
-    return _err;
+    switch (_display_kind) {
+        case 1: _oled.clear(); _oled.display(); break;
+        case 2: _lcd.clear(); break;
+        case 3: _max7219.clear(255); break;
+        case 4: _tm1637.clear(); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
 AaruarduinoError AaruarduinoClass::displayText(const char* line) {
-    _err = _oled.lastError();
-    _oled.clear(); _oled.setCursor(0, 0); _oled.print(line); _oled.display();
-    return _err;
+    switch (_display_kind) {
+        case 1: _oled.clear(); _oled.setCursor(0, 0); _oled.print(line); _oled.display(); break;
+        case 2: _lcd.clear(); _lcd.print(line); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
 AaruarduinoError AaruarduinoClass::displayText(int row, const char* line) {
-    _err = _oled.lastError();
-    _oled.setCursor(0, row * 8); _oled.print(line); _oled.display();
-    return _err;
+    switch (_display_kind) {
+        case 1: _oled.setCursor(0, row * 8); _oled.print(line); _oled.display(); break;
+        case 2: _lcd.setCursor(0, row); _lcd.print(line); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
 AaruarduinoError AaruarduinoClass::displayTextAt(int row, int col, const char* line) {
-    _err = _oled.lastError();
-    _oled.setCursor(col * 6, row * 8); _oled.print(line); _oled.display();
-    return _err;
+    switch (_display_kind) {
+        case 1: _oled.setCursor(col * 6, row * 8); _oled.print(line); _oled.display(); break;
+        case 2: _lcd.setCursor(col, row); _lcd.print(line); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
 AaruarduinoError AaruarduinoClass::displayBacklight(bool on) {
-    _err = _lcd.lastError();
-    if (on) _lcd.backlightOn(); else _lcd.backlightOff();
-    return _err;
+    if (_display_kind != 2) return setErr(AARUARDUINO_UNSUPPORTED);
+    return on ? _lcd.backlightOn() : _lcd.backlightOff();
 }
+
+// ---- displayPrint overloads (explicit integral types avoid ambiguity) ----
 AaruarduinoError AaruarduinoClass::displayPrint(int n, int base) {
-    _oled.print(n, base); _oled.display(); return AARUARDUINO_OK;
+    switch (_display_kind) {
+        case 1: _oled.print(n, base); _oled.display(); break;
+        case 2: _lcd.print(n, base); break;
+        case 3: _max7219.printNumber(0, n); break;
+        case 4: _tm1637.printNumber(n); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
+AaruarduinoError AaruarduinoClass::displayPrint(unsigned int n, int base) {
+    return displayPrint((int)n, base);
+}
+
+AaruarduinoError AaruarduinoClass::displayPrint(long n, int base) {
+    return displayPrint((int)n, base);
+}
+
+AaruarduinoError AaruarduinoClass::displayPrint(unsigned long n, int base) {
+    return displayPrint((long)n, base);
+}
+
 AaruarduinoError AaruarduinoClass::displayPrint(float f, int digits) {
-    _oled.print(f, digits); _oled.display(); return AARUARDUINO_OK;
+    switch (_display_kind) {
+        case 1: _oled.print(f, digits); _oled.display(); break;
+        case 2: _lcd.print(f, digits); break;
+        case 3: _max7219.printFloat(0, f, (uint8_t)digits); break;
+        case 4: _tm1637.printFloat(f, (uint8_t)digits); break;
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
+    return AARUARDUINO_OK;
 }
+
 AaruarduinoError AaruarduinoClass::displaySetCursor(int col, int row) {
-    _oled.setCursor(col * 6, row * 8); return AARUARDUINO_OK;
+    switch (_display_kind) {
+        case 1: _oled.setCursor(col * 6, row * 8); return AARUARDUINO_OK;
+        case 2: return _lcd.setCursor((uint8_t)col, (uint8_t)row);
+        default: return setErr(AARUARDUINO_NOT_INITIALIZED);
+    }
 }
-AaruarduinoError AaruarduinoClass::displayContrast(uint8_t val) { return _oled.setContrast(val); }
-AaruarduinoError AaruarduinoClass::displayInvert(bool inv) { return _oled.invert(inv); }
+
+AaruarduinoError AaruarduinoClass::displayContrast(uint8_t val) {
+    if (_display_kind != 1) return setErr(AARUARDUINO_UNSUPPORTED);
+    return _oled.setContrast(val);
+}
+
+AaruarduinoError AaruarduinoClass::displayInvert(bool inv) {
+    if (_display_kind != 1) return setErr(AARUARDUINO_UNSUPPORTED);
+    return _oled.invert(inv);
+}
+
+AaruarduinoError AaruarduinoClass::displayNumber(int num, bool leading_zeros) {
+    if (_display_kind == 4) return _tm1637.printNumber(num, leading_zeros);
+    if (_display_kind == 3) return _max7219.printNumber(0, num, leading_zeros);
+    return setErr(AARUARDUINO_UNSUPPORTED);
+}
+
+AaruarduinoError AaruarduinoClass::displayFloat(float num, uint8_t decimals) {
+    if (_display_kind == 4) return _tm1637.printFloat(num, decimals);
+    if (_display_kind == 3) return _max7219.printFloat(0, num, decimals);
+    return displayPrint(num, (int)decimals);
+}
+
+// ---- WS2812 / NeoPixel ----
+AaruarduinoError AaruarduinoClass::ws2812Set(uint16_t index, uint8_t r, uint8_t g, uint8_t b) {
+    return _ws2812.setPixel(index, r, g, b);
+}
+AaruarduinoError AaruarduinoClass::ws2812Fill(uint8_t r, uint8_t g, uint8_t b) {
+    return _ws2812.fill(r, g, b);
+}
+AaruarduinoError AaruarduinoClass::ws2812Clear() {
+    return _ws2812.clear();
+}
+AaruarduinoError AaruarduinoClass::ws2812Rainbow(uint16_t first_hue, uint16_t hue_step) {
+    return _ws2812.rainbow(first_hue, hue_step);
+}
+AaruarduinoError AaruarduinoClass::ws2812Show() {
+    return _ws2812.show();
+}
+AaruarduinoError AaruarduinoClass::ws2812Brightness(uint8_t b) {
+    _ws2812.setBrightness(b);
+    return AARUARDUINO_OK;
+}
 
 // ---- Actuators ----
 AaruarduinoError AaruarduinoClass::led(uint8_t pin) {

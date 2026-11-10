@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-  AARUARDUINO.rainbow();
-  AARUARDUINO.show();
+  AARUARDUINO.ws2812Rainbow();
+  AARUARDUINO.ws2812Show();
   delay(50);
 }

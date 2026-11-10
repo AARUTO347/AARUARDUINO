@@ -41,8 +41,8 @@ class AaruMPU6050 {
 public:
     AaruMPU6050() = default;
 
-    AaruarduinoError begin(uint8_t addr);
-    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr);
+    AaruarduinoError begin(uint8_t addr = 0x68);
+    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr = 0x68);
 
     AaruarduinoError setAccelRange(MPU6050AccelRange range);
     AaruarduinoError setGyroRange(MPU6050GyroRange range);
@@ -60,8 +60,8 @@ public:
     float readGyroY();
     float readGyroZ();
 
-    void calibrateAccel(int samples);
-    void calibrateGyro(int samples);
+    void calibrateAccel(int samples = 200);
+    void calibrateGyro(int samples = 200);
     void setAccelOffset(float x, float y, float z);
     void setGyroOffset(float x, float y, float z);
 

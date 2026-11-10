@@ -18,14 +18,14 @@ class AaruPulseEngine {
 public:
     AaruPulseEngine() = default;
 
-    unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout_us);
-    unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout_us);
+    unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout_us = 1000000UL);
+    unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout_us = 1000000UL);
 
     AaruarduinoError beginFreqCount(uint8_t pin, unsigned long sample_ms = 1000);
     float readFrequencyHz();
     void endFreqCount();
 
-    AaruarduinoError beginPulseCount(uint8_t pin, bool active_high, uint16_t debounce_us);
+    AaruarduinoError beginPulseCount(uint8_t pin, bool active_high = true, uint16_t debounce_us = 0);
     unsigned long pulseCount();
     void resetPulseCount();
     float readRateHz();

@@ -40,10 +40,10 @@ public:
     AaruarduinoError rgbOff();
 
     AaruarduinoError beginBuzzer(uint8_t pin);
-    AaruarduinoError tone(uint16_t freq_hz, unsigned long duration_ms);
+    AaruarduinoError tone(uint16_t freq_hz, unsigned long duration_ms = 0);
     AaruarduinoError noTone();
 
-    AaruarduinoError beginServo(uint8_t pin, int min_us, int max_us);
+    AaruarduinoError beginServo(uint8_t pin, int min_us = 544, int max_us = 2400);
     AaruarduinoError servoWrite(int angle);
     AaruarduinoError servoWriteUs(uint16_t us);
     AaruarduinoError servoDetach();

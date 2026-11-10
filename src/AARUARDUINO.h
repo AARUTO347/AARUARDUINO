@@ -257,10 +257,24 @@ public:
     AaruarduinoError displayTextAt(int row, int col, const char* line);
     AaruarduinoError displayBacklight(bool on);
     AaruarduinoError displayPrint(int n, int base = 10);
-    AaruarduinoError displayPrint(float f, int digits = 2);
+    AaruarduinoError displayPrint(unsigned int n, int base = 10);
+    AaruarduinoError displayPrint(long n, int base = 10);
+    AaruarduinoError displayPrint(unsigned long n, int base = 10);
+    AaruarduinoError displayPrint(float f, int digits);
     AaruarduinoError displaySetCursor(int col, int row);
     AaruarduinoError displayContrast(uint8_t val);
     AaruarduinoError displayInvert(bool inv);
+    // TM1637 / MAX7219 numeric helpers
+    AaruarduinoError displayNumber(int num, bool leading_zeros = false);
+    AaruarduinoError displayFloat(float num, uint8_t decimals);
+
+    // ---- WS2812 / NeoPixel ----
+    AaruarduinoError ws2812Set(uint16_t index, uint8_t r, uint8_t g, uint8_t b);
+    AaruarduinoError ws2812Fill(uint8_t r, uint8_t g, uint8_t b);
+    AaruarduinoError ws2812Clear();
+    AaruarduinoError ws2812Rainbow(uint16_t first_hue = 0, uint16_t hue_step = 256);
+    AaruarduinoError ws2812Show();
+    AaruarduinoError ws2812Brightness(uint8_t b);
 
     // ---- Actuators ----
     AaruarduinoError led(uint8_t pin);
@@ -395,6 +409,9 @@ private:
 
     bool _gps_setup = false;
     bool _ir_send_setup = false;
+
+    // Active display routing (0=none 1=oled 2=lcd 3=max7219 4=tm1637)
+    uint8_t _display_kind = 0;
 };
 
 extern AaruarduinoClass AARUARDUINO;

@@ -53,7 +53,7 @@ class AaruDigitalEngine {
 public:
     AaruDigitalEngine() = default;
 
-    AaruarduinoError begin(uint8_t pin, AaruDigitalKind kind, bool active_low, bool pullup);
+    AaruarduinoError begin(uint8_t pin, AaruDigitalKind kind, bool active_low = false, bool pullup = false);
     AaruarduinoError beginDebounced(uint8_t pin, AaruDigitalKind kind,
                                     bool active_low, bool pullup,
                                     uint16_t debounce_ms);

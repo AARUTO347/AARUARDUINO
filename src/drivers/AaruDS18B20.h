@@ -19,12 +19,12 @@ public:
     AaruDS18B20() = default;
 
     AaruarduinoError begin(uint8_t pin);
-    AaruarduinoError begin(AaruOneWireEngine* ow, uint8_t pin);
+    AaruarduinoError begin(AaruOneWireEngine* ow, uint8_t pin = 255);
 
     int discover();
-    float readTempC(int index);
+    float readTempC(int index = 0);
     float readTempC(const AaruOneWireROM* rom);
-    float readTempF(int index);
+    float readTempF(int index = 0);
 
     AaruarduinoError requestTemperatures();
     bool conversionReady();

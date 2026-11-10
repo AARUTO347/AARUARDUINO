@@ -30,8 +30,8 @@ class AaruBH1750 {
 public:
     AaruBH1750() = default;
 
-    AaruarduinoError begin(uint8_t addr);
-    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr);
+    AaruarduinoError begin(uint8_t addr = 0x23);
+    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr = 0x23);
 
     bool read(float& lux);
     float readLux();

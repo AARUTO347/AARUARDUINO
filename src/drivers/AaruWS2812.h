@@ -29,16 +29,16 @@ public:
     AaruarduinoError setPixel(uint16_t index, uint8_t r, uint8_t g, uint8_t b);
     AaruarduinoError setPixel(uint16_t index, struct AaruRGB color);
     AaruarduinoError setPixelHSV(uint16_t index, uint16_t h, uint8_t s, uint8_t v);
-    AaruarduinoError fill(uint8_t r, uint8_t g, uint8_t b, uint16_t start, uint16_t len);
-    AaruarduinoError fill(struct AaruRGB color, uint16_t start, uint16_t len);
+    AaruarduinoError fill(uint8_t r, uint8_t g, uint8_t b, uint16_t start = 0, uint16_t len = 0xFFFF);
+    AaruarduinoError fill(struct AaruRGB color, uint16_t start = 0, uint16_t len = 0xFFFF);
     AaruarduinoError clear();
     AaruarduinoError show();
 
     void setBrightness(uint8_t b);
 
-    AaruarduinoError rainbow(uint16_t first_hue, uint16_t hue_step);
-    AaruarduinoError theaterChase(uint8_t r, uint8_t g, uint8_t b, uint8_t wait_ms);
-    AaruarduinoError colorWipe(uint8_t r, uint8_t g, uint8_t b, uint8_t wait_ms);
+    AaruarduinoError rainbow(uint16_t first_hue = 0, uint16_t hue_step = 256);
+    AaruarduinoError theaterChase(uint8_t r, uint8_t g, uint8_t b, uint8_t wait_ms = 50);
+    AaruarduinoError colorWipe(uint8_t r, uint8_t g, uint8_t b, uint8_t wait_ms = 50);
 
     uint16_t numLeds() const;
     struct AaruRGB getPixel(uint16_t index) const;

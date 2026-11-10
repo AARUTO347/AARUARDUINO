@@ -40,14 +40,14 @@ public:
 
     bool decode(struct AaruIRResult* result);
     void resume();
-    bool waitDecode(struct AaruIRResult* result, unsigned long timeout_ms);
+    bool waitDecode(struct AaruIRResult* result, unsigned long timeout_ms = 5000);
 
     AaruarduinoError beginSend(uint8_t send_pin);
-    AaruarduinoError sendNEC(uint32_t data, uint8_t nbits);
-    AaruarduinoError sendSony(uint32_t data, uint8_t nbits);
-    AaruarduinoError sendRC5(uint16_t data, uint8_t nbits);
-    AaruarduinoError sendRC6(uint32_t data, uint8_t nbits);
-    AaruarduinoError sendRaw(const uint16_t* buf, uint16_t len, uint16_t freq_khz);
+    AaruarduinoError sendNEC(uint32_t data, uint8_t nbits = 32);
+    AaruarduinoError sendSony(uint32_t data, uint8_t nbits = 12);
+    AaruarduinoError sendRC5(uint16_t data, uint8_t nbits = 14);
+    AaruarduinoError sendRC6(uint32_t data, uint8_t nbits = 20);
+    AaruarduinoError sendRaw(const uint16_t* buf, uint16_t len, uint16_t freq_khz = 38);
 
     bool isConfigured() const;
     AaruarduinoError lastError() const;

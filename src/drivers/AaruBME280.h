@@ -57,8 +57,8 @@ class AaruBME280 {
 public:
     AaruBME280() = default;
 
-    AaruarduinoError beginI2C(uint8_t addr);
-    AaruarduinoError beginI2C(class AaruI2CEngine* i2c, uint8_t addr);
+    AaruarduinoError beginI2C(uint8_t addr = 0x76);
+    AaruarduinoError beginI2C(class AaruI2CEngine* i2c, uint8_t addr = 0x76);
     AaruarduinoError beginSPI(uint8_t cs_pin);
     AaruarduinoError beginSPI(class AaruSPIEngine* spi, uint8_t cs_pin);
 

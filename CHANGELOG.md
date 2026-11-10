@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.2
+- Fixed AaruGPS accessors (hasFix/lat/lon/alt/speed/course/sats/date/time) missing from build
+- Fixed displayPrint() overload ambiguity for long / unsigned long arguments
+- Added display routing so display* helpers work with OLED, LCD1602, MAX7219 and TM1637
+- Added WS2812 convenience API (ws2812Set/Show/Fill/Clear/Rainbow/Brightness)
+- Restored default arguments across all driver headers
+- Fixed AaruStepper duplicate moveTo() overload
+- Fixed library.properties url field (Arduino Library Manager lint LP042)
+
+
 ## v1.0.0 — 2026-11-05
 - Initial release of AARUARDUINO by AARUTO
 - 1136 modules across analog, digital, I²C, SPI, UART, 1-Wire, PWM, display, actuator, radio, storage, special

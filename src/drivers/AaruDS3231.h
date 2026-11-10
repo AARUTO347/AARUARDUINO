@@ -30,8 +30,8 @@ class AaruDS3231 {
 public:
     AaruDS3231() = default;
 
-    AaruarduinoError begin(uint8_t addr);
-    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr);
+    AaruarduinoError begin(uint8_t addr = 0x68);
+    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr = 0x68);
 
     AaruarduinoError setDateTime(const AaruDateTime& dt);
     AaruarduinoError getDateTime(AaruDateTime& dt);

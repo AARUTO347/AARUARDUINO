@@ -29,9 +29,9 @@ public:
     AaruarduinoError display(uint8_t pos, uint8_t digit);
     AaruarduinoError displayRaw(uint8_t pos, uint8_t segments);
     AaruarduinoError clear();
-    AaruarduinoError printNumber(int num, bool leading_zeros);
+    AaruarduinoError printNumber(int num, bool leading_zeros = false);
     AaruarduinoError printFloat(float num, uint8_t decimals);
-    AaruarduinoError printTime(uint8_t hour, uint8_t min, bool colon);
+    AaruarduinoError printTime(uint8_t hour, uint8_t min, bool colon = true);
 
     bool isConfigured() const;
     AaruarduinoError lastError() const;

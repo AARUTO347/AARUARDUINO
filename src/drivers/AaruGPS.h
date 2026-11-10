@@ -42,7 +42,7 @@ public:
     AaruGPS() = default;
 
     AaruarduinoError begin(class AaruUARTEngine* uart);
-    AaruarduinoError begin(int rx, int tx, uint32_t baud);
+    AaruarduinoError begin(int rx, int tx, uint32_t baud = 9600);
 
     void update();
 

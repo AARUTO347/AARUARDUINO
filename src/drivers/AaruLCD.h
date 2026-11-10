@@ -21,8 +21,8 @@ class AaruLCD {
 public:
     AaruLCD() = default;
 
-    AaruarduinoError begin(uint8_t addr, uint8_t cols, uint8_t rows);
-    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr, uint8_t cols, uint8_t rows);
+    AaruarduinoError begin(uint8_t addr = 0x27, uint8_t cols = 16, uint8_t rows = 2);
+    AaruarduinoError begin(class AaruI2CEngine* i2c, uint8_t addr = 0x27, uint8_t cols = 16, uint8_t rows = 2);
 
     AaruarduinoError clear();
     AaruarduinoError home();
@@ -39,8 +39,8 @@ public:
 
     AaruarduinoError print(const char* str);
     AaruarduinoError println(const char* str);
-    AaruarduinoError print(int n, int base);
-    AaruarduinoError print(float f, int digits);
+    AaruarduinoError print(int n, int base = 10);
+    AaruarduinoError print(float f, int digits = 2);
     AaruarduinoError write(uint8_t c);
 
     AaruarduinoError createChar(uint8_t slot, const uint8_t pattern[8]);

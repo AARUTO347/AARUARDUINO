@@ -33,9 +33,9 @@ public:
     AaruUARTEngine() = default;
 
     AaruarduinoError beginHardware(int uart_num, uint32_t baud,
-                                   int rx, int tx, uint8_t config);
+                                   int rx = -1, int tx = -1, uint8_t config = 0x06);
     AaruarduinoError beginSoftware(int rx, int tx, uint32_t baud,
-                                   bool invert, int buffer_size);
+                                   bool invert = false, int buffer_size = 64);
 
     void setTimeout(uint16_t ms);
     void setBufferSize(int sz);

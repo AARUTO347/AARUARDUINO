@@ -13,6 +13,6 @@ void setup() {
 
 void loop() {
   static int count = 0;
-  AARUARDUINO.printNumber(count++);
+  AARUARDUINO.displayNumber(count++);
   delay(100);
 }

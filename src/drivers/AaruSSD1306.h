@@ -25,10 +25,10 @@ class AaruSSD1306 {
 public:
     AaruSSD1306() = default;
 
-    AaruarduinoError beginI2C(uint8_t addr, uint8_t w, uint8_t h);
-    AaruarduinoError beginI2C(class AaruI2CEngine* i2c, uint8_t addr, uint8_t w, uint8_t h);
-    AaruarduinoError beginSPI(uint8_t cs, uint8_t dc, uint8_t rst, uint8_t w, uint8_t h);
-    AaruarduinoError beginSPI(class AaruSPIEngine* spi, uint8_t cs, uint8_t dc, uint8_t rst, uint8_t w, uint8_t h);
+    AaruarduinoError beginI2C(uint8_t addr = 0x3C, uint8_t w = 128, uint8_t h = 64);
+    AaruarduinoError beginI2C(class AaruI2CEngine* i2c, uint8_t addr = 0x3C, uint8_t w = 128, uint8_t h = 64);
+    AaruarduinoError beginSPI(uint8_t cs, uint8_t dc, uint8_t rst = 255, uint8_t w = 128, uint8_t h = 64);
+    AaruarduinoError beginSPI(class AaruSPIEngine* spi, uint8_t cs, uint8_t dc, uint8_t rst = 255, uint8_t w = 128, uint8_t h = 64);
 
     AaruarduinoError displayOn();
     AaruarduinoError displayOff();
@@ -43,13 +43,13 @@ public:
 
     void setCursor(int16_t x, int16_t y);
     void setTextSize(uint8_t s);
-    void setTextColor(bool fg, bool bg);
+    void setTextColor(bool fg, bool bg = false);
     void setTextWrap(bool w);
     size_t write(uint8_t c);
     size_t print(const char* str);
     size_t println(const char* str);
-    size_t print(int n, int base);
-    size_t print(float f, int digits);
+    size_t print(int n, int base = 10);
+    size_t print(float f, int digits = 2);
 
     void drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, bool color);
     void drawRect(int16_t x, int16_t y, int16_t w, int16_t h, bool color);

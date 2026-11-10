@@ -33,19 +33,19 @@ class AaruMAX7219 {
 public:
     AaruMAX7219() = default;
 
-    AaruarduinoError begin(uint8_t cs_pin, uint8_t num_devices);
-    AaruarduinoError begin(class AaruSPIEngine* spi, uint8_t cs_pin, uint8_t num_devices);
+    AaruarduinoError begin(uint8_t cs_pin, uint8_t num_devices = 1);
+    AaruarduinoError begin(class AaruSPIEngine* spi, uint8_t cs_pin, uint8_t num_devices = 1);
 
     AaruarduinoError shutdown(bool off);
     AaruarduinoError setIntensity(uint8_t intensity);
     AaruarduinoError setScanLimit(uint8_t limit);
     AaruarduinoError setDecodeMode(uint8_t mode);
 
-    AaruarduinoError setDigit(uint8_t device, uint8_t digit, uint8_t value, bool dp);
-    AaruarduinoError setDigits(uint8_t device, const uint8_t* values, uint8_t count, bool dp);
-    AaruarduinoError printNumber(uint8_t device, long num, bool leading_zeros);
+    AaruarduinoError setDigit(uint8_t device, uint8_t digit, uint8_t value, bool dp = false);
+    AaruarduinoError setDigits(uint8_t device, const uint8_t* values, uint8_t count, bool dp = false);
+    AaruarduinoError printNumber(uint8_t device, long num, bool leading_zeros = false);
     AaruarduinoError printFloat(uint8_t device, float num, uint8_t decimals);
-    AaruarduinoError clear(uint8_t device);
+    AaruarduinoError clear(uint8_t device = 255);
 
     AaruarduinoError setLed(uint8_t device, uint8_t row, uint8_t col, bool on);
     AaruarduinoError setRow(uint8_t device, uint8_t row, uint8_t val);
