@@ -6,7 +6,7 @@
 
 ### Universal Arduino Library — 1000+ Modules, One Consistent API
 
-[![Version](https://img.shields.io/badge/version-1.0.2-00979D?style=for-the-badge&logo=arduino)]()
+[![Version](https://img.shields.io/badge/version-1.0.3-00979D?style=for-the-badge&logo=arduino)]()
 [![Modules](https://img.shields.io/badge/modules-1136-green?style=for-the-badge)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-Uno%20%7C%20Mega%20%7C%20ESP32%20%7C%20ESP8266-00979D?style=for-the-badge&logo=arduino)]()

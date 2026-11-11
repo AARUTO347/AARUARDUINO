@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.3
+- Reduced static RAM usage (~170 bytes) by shrinking GPS satellite table and NMEA buffer
+- Fixes low-memory warning on Arduino Uno R3 (now 73% RAM instead of 82%)
+
+
 ## v1.0.2
 - Fixed AaruGPS accessors (hasFix/lat/lon/alt/speed/course/sats/date/time) missing from build
 - Fixed displayPrint() overload ambiguity for long / unsigned long arguments

@@ -81,9 +81,9 @@ private:
     class AaruUARTEngine* _uart;
     bool _own_uart;
     struct AaruGPSFix _fix;
-    struct AaruGPSSatellite _sats[16];
+    struct AaruGPSSatellite _sats[8];
     int _sat_count;
-    char _buf[128];
+    char _buf[64];
     int _buf_idx;
     AaruarduinoError _err;
 
