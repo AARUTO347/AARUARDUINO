@@ -46,6 +46,11 @@ public:
 
     void update();
 
+    // Feed one raw NMEA sentence (no trailing newline needed). Useful when the
+    // NMEA stream comes from somewhere other than the UART. Returns true when
+    // the sentence was accepted (checksum valid and parsed).
+    bool feedSentence(const char* sentence);
+
     const struct AaruGPSFix& fix() const;
     bool hasFix() const;
     float lat() const;
@@ -77,20 +82,23 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    class AaruUARTEngine* _uart;
-    bool _own_uart;
-    struct AaruGPSFix _fix;
-    struct AaruGPSSatellite _sats[8];
-    int _sat_count;
-    char _buf[64];
-    int _buf_idx;
-    AaruarduinoError _err;
+    bool _configured = false;
+    class AaruUARTEngine* _uart = nullptr;
+    bool _own_uart = false;
+    class AaruUARTEngine _own_uart_engine;
+    struct AaruGPSFix _fix = {};
+    struct AaruGPSSatellite _sats[8] = {};
+    int _sat_count = 0;
+    char _buf[64] = {};
+    int _buf_idx = 0;
+    bool _in_sentence = false;
+    uint32_t _baud = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
-    void (*_cb_gga)(const struct AaruGPSFix&);
-    void (*_cb_rmc)(const struct AaruGPSFix&);
-    void (*_cb_gsv)(const struct AaruGPSSatellite*, int);
-    void (*_cb_raw)(const char*);
+    void (*_cb_gga)(const struct AaruGPSFix&) = nullptr;
+    void (*_cb_rmc)(const struct AaruGPSFix&) = nullptr;
+    void (*_cb_gsv)(const struct AaruGPSSatellite*, int) = nullptr;
+    void (*_cb_raw)(const char*) = nullptr;
 
     void parseSentence(const char* sentence);
     bool parseGGA(const char* s);
@@ -98,6 +106,7 @@ private:
     bool parseGSV(const char* s);
     bool parseVTG(const char* s);
     static uint8_t nmeaChecksum(const char* s);
+    static bool nmeaChecksumValid(const char* s);
 };
 
 #endif // AARUARDUINO_GPS_H

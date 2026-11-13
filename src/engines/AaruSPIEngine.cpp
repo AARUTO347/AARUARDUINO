@@ -6,9 +6,15 @@
 
 AaruarduinoError AaruSPIEngine::begin(int sck, int miso, int mosi) {
     _begun = true; _err = AARUARDUINO_OK;
+    _sck = sck; _miso = miso; _mosi = mosi;
 #if defined(ARDUINO)
 #if defined(ARDUINO_ARCH_ESP32)
-    SPI.begin(sck, miso, mosi);
+    // The 3-argument form requires real pins; -1 means "use the board defaults".
+    if (sck >= 0 && miso >= 0 && mosi >= 0) {
+        SPI.begin(sck, miso, mosi);
+    } else {
+        SPI.begin();
+    }
 #else
     SPI.begin();
 #endif

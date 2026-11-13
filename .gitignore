@@ -1,0 +1,20 @@
+# Build artefacts
+build/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/

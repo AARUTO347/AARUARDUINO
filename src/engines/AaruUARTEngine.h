@@ -10,10 +10,18 @@
 
 #if defined(ARDUINO)
 #include <Arduino.h>
-#if defined(ESP32) || defined(ESP8266)
+#if defined(ESP32)
+// ESP32 has a real hardware serial that accepts arbitrary pins.
 #include <HardwareSerial.h>
+#define AARUARDUINO_HAS_HARDWARE_SERIAL 1
+#elif defined(__has_include)
+#if __has_include(<SoftwareSerial.h>)
+#include <SoftwareSerial.h>
+#define AARUARDUINO_HAS_SOFTWARE_SERIAL 1
+#endif
 #else
 #include <SoftwareSerial.h>
+#define AARUARDUINO_HAS_SOFTWARE_SERIAL 1
 #endif
 #else
 #include <stdint.h>
@@ -59,18 +67,18 @@ public:
     const char* errorString() const;
 
 private:
-    bool _begun;
-    bool _hw;
-    int _uart_num;
-    int _rx, _tx;
-    uint32_t _baud;
-    uint16_t _timeout_ms;
-    AaruarduinoError _err;
+    bool _begun = false;
+    bool _hw = false;
+    int _uart_num = 0;
+    int _rx = 0, _tx = 0;
+    uint32_t _baud = 0;
+    uint16_t _timeout_ms = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
-#if defined(ARDUINO) && !defined(ESP32) && !defined(ESP8266)
-    class SoftwareSerial* _soft;
-#elif defined(ARDUINO) && (defined(ESP32) || defined(ESP8266))
-    class HardwareSerial* _hw_serial;
+#if defined(AARUARDUINO_HAS_SOFTWARE_SERIAL)
+    class SoftwareSerial* _soft = nullptr;
+#elif defined(AARUARDUINO_HAS_HARDWARE_SERIAL)
+    class HardwareSerial* _hw_serial = nullptr;
 #endif
 
     class Stream* getStream();

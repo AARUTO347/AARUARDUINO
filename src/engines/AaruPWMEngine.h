@@ -59,26 +59,26 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _pin;
-    uint8_t _mode;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _pin = 0;
+    uint8_t _mode = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
-    uint8_t _rgb_pins[3];
-    uint8_t _buzzer_pin;
+    uint8_t _rgb_pins[3] = {};
+    uint8_t _buzzer_pin = 0;
 
-    uint8_t _motor_in1, _motor_in2, _motor_en;
-    bool _motor_en_pwm;
-    int _motor_speed;
+    uint8_t _motor_in1 = 0, _motor_in2 = 0, _motor_en = 0;
+    bool _motor_en_pwm = false;
+    int _motor_speed = 0;
 
 #if defined(ARDUINO) && AARUARDUINO_HAS_SERVO
     class Servo _servo;
 #endif
-    uint8_t _servo_pin;
-    int _servo_min_us;
-    int _servo_max_us;
-    int _servo_angle;
-    bool _servo_attached;
+    uint8_t _servo_pin = 0;
+    int _servo_min_us = 0;
+    int _servo_max_us = 0;
+    int _servo_angle = 0;
+    bool _servo_attached = false;
 };
 
 #endif // AARUARDUINO_PWM_ENGINE_H

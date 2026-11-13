@@ -48,12 +48,13 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _addr;
-    class AaruI2CEngine* _i2c;
-    bool _own_i2c;
-    int _mode;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _addr = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    bool _own_i2c = false;
+    int _mode = 0;
+    uint8_t _mtreg = 69;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     AaruarduinoError writeCmd(uint8_t cmd);
 };

@@ -66,10 +66,10 @@ public:
     const char* errorString() const;
 
 private:
-    bool _begun;
-    uint8_t _pin;
-    uint32_t _timeout_us;
-    AaruarduinoError _err;
+    bool _begun = false;
+    uint8_t _pin = 0;
+    uint32_t _timeout_us = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     void write1();
     void write0();

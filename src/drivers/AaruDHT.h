@@ -43,15 +43,15 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _pin;
-    AaruDHTType _type;
-    unsigned long _min_interval;
-    unsigned long _last_read;
-    float _temp_c;
-    float _hum_pct;
-    bool _fresh;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _pin = 0;
+    AaruDHTType _type = {};
+    unsigned long _min_interval = 0;
+    unsigned long _last_read = 0;
+    float _temp_c = 0.0f;
+    float _hum_pct = 0.0f;
+    bool _fresh = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     bool readRaw(uint8_t* data);
     float parseTemp(const uint8_t* data);

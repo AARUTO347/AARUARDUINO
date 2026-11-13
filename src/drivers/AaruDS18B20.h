@@ -42,13 +42,13 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    AaruOneWireEngine* _ow;
-    bool _own_ow;
-    AaruOneWireROM _roms[16];
-    int _count;
-    unsigned long _last_convert;
-    AaruarduinoError _err;
+    bool _configured = false;
+    AaruOneWireEngine* _ow = nullptr;
+    bool _own_ow = false;
+    AaruOneWireROM _roms[16] = {};
+    int _count = 0;
+    unsigned long _last_convert = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 };
 
 #endif // AARUARDUINO_DS18B20_H

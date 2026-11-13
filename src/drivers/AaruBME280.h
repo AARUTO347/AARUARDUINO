@@ -83,23 +83,23 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    bool _is_bme280;
-    bool _use_i2c;
-    uint8_t _addr;
-    uint8_t _cs;
-    class AaruI2CEngine* _i2c;
-    class AaruSPIEngine* _spi;
-    bool _own_i2c, _own_spi;
+    bool _configured = false;
+    bool _is_bme280 = false;
+    bool _use_i2c = false;
+    uint8_t _addr = 0;
+    uint8_t _cs = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    class AaruSPIEngine* _spi = nullptr;
+    bool _own_i2c = false, _own_spi = false;
 
     struct {
         uint16_t dig_T1; int16_t dig_T2, dig_T3;
         uint16_t dig_P1; int16_t dig_P2, dig_P3, dig_P4, dig_P5, dig_P6, dig_P7, dig_P8, dig_P9;
         uint8_t dig_H1; int16_t dig_H2; uint8_t dig_H3; int16_t dig_H4, dig_H5; int8_t dig_H6;
-    } _cal;
+    } _cal = {};
 
-    int32_t _t_fine;
-    AaruarduinoError _err;
+    int32_t _t_fine = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     AaruarduinoError readCalibration();
     int32_t compensateTemp(int32_t adc_T);

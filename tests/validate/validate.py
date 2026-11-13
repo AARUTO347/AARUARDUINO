@@ -226,6 +226,7 @@ def main():
     all_errors += check_examples()
     all_errors += check_library_properties()
     all_errors += check_readme()
+    all_errors += check_static_analysis()
     print("\n" + "=" * 50)
     if all_errors:
         print(f"FAILED: {len(all_errors)} error(s)")
@@ -234,6 +235,26 @@ def main():
         return 1
     print("PASSED: All structure checks OK")
     return 0
+
+
+def check_static_analysis():
+    """Every declared method must have a definition, and every member an
+    initializer. Both checks are implemented as standalone tools so they can
+    also be run on their own."""
+    import subprocess
+    errors = []
+    root = os.path.join(os.path.dirname(__file__), '..', '..')
+    for tool, label in (('tools/check_definitions.py', 'missing method definitions'),
+                        ('tools/check_init.py', 'members without default initializers')):
+        script = os.path.join(root, tool)
+        if not os.path.exists(script):
+            errors.append(f"Static analysis tool missing: {tool}")
+            continue
+        r = subprocess.run([sys.executable, script], capture_output=True, text=True)
+        if r.returncode != 0:
+            out = (r.stdout or '') + (r.stderr or '')
+            errors.append(f"{label}: see output of {tool}\n{out.strip()}")
+    return errors
 
 
 if __name__ == '__main__':

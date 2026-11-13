@@ -91,34 +91,34 @@ public:
     void isrIREdge();
 
 private:
-    uint8_t _pin;
-    int _kind;
-    AaruarduinoError _err;
-    bool _active_low;
-    bool _pullup;
-    uint16_t _debounce_ms;
-    bool _last_raw;
-    bool _stable_state;
-    bool _prev_stable;
-    bool _rose_pending;
-    bool _fell_pending;
-    unsigned long _last_change_ms;
+    uint8_t _pin = 0;
+    int _kind = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
+    bool _active_low = false;
+    bool _pullup = false;
+    uint16_t _debounce_ms = 0;
+    bool _last_raw = false;
+    bool _stable_state = false;
+    bool _prev_stable = false;
+    bool _rose_pending = false;
+    bool _fell_pending = false;
+    unsigned long _last_change_ms = 0;
 
-    float _flow_ppl;
-    float _tach_ppr;
+    float _flow_ppl = 0.0f;
+    float _tach_ppr = 0.0f;
 
-    volatile unsigned long _pulse_count;
-    volatile unsigned long _last_pulse_us;
-    volatile unsigned long _freq_count_window_start_us;
-    volatile unsigned long _freq_count_window;
-    float _freq_hz_cached;
-    unsigned long _freq_last_calc_us;
+    volatile unsigned long _pulse_count = {};
+    volatile unsigned long _last_pulse_us = {};
+    volatile unsigned long _freq_count_window_start_us = {};
+    volatile unsigned long _freq_count_window = {};
+    float _freq_hz_cached = 0.0f;
+    unsigned long _freq_last_calc_us = 0;
 
-    volatile uint16_t _ir_pulses[68];
-    volatile int _ir_pulse_idx;
-    volatile unsigned long _ir_last_us;
-    volatile bool _ir_ready;
-    uint32_t _ir_value;
+    volatile uint16_t _ir_pulses[68] = {};
+    volatile int _ir_pulse_idx = {};
+    volatile unsigned long _ir_last_us = {};
+    volatile bool _ir_ready = {};
+    uint32_t _ir_value = 0;
 
     void updateDebounce();
     void handlePulseRead();

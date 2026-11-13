@@ -46,23 +46,23 @@ public:
     const char* errorString() const;
 
 private:
-    AaruarduinoError _err;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
-    uint8_t _enc_clk, _enc_dt, _enc_sw;
-    long _enc_count;
-    int8_t _enc_last;
-    int8_t _enc_dir;
+    uint8_t _enc_clk = 0, _enc_dt = 0, _enc_sw = 0;
+    long _enc_count = 0;
+    int8_t _enc_last = 0;
+    int8_t _enc_dir = 0;
 
-    uint8_t _pulse_pin;
-    volatile unsigned long _pulse_count;
-    unsigned long _pulse_last_time;
-    uint16_t _pulse_debounce_us;
+    uint8_t _pulse_pin = 0;
+    volatile unsigned long _pulse_count = {};
+    unsigned long _pulse_last_time = 0;
+    uint16_t _pulse_debounce_us = 0;
 
-    uint8_t _pwm_pin;
-    volatile unsigned long _pwm_high_us;
-    volatile unsigned long _pwm_period_us;
-    volatile unsigned long _pwm_last_rise;
-    volatile bool _pwm_measuring;
+    uint8_t _pwm_pin = 0;
+    volatile unsigned long _pwm_high_us = {};
+    volatile unsigned long _pwm_period_us = {};
+    volatile unsigned long _pwm_last_rise = {};
+    volatile bool _pwm_measuring = {};
 };
 
 #endif // AARUARDUINO_PULSE_ENGINE_H

@@ -55,11 +55,11 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _addr;
-    class AaruI2CEngine* _i2c;
-    bool _own_i2c;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _addr = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    bool _own_i2c = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     static uint8_t decToBcd(uint8_t v);
     static uint8_t bcdToDec(uint8_t v);

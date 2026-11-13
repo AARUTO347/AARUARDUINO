@@ -7,6 +7,7 @@ Run: python tools/gen_keywords.py
 """
 import csv
 import os
+import re
 
 REGISTRY_PATH = os.path.join(os.path.dirname(__file__), '..', 'registry', 'modules.csv')
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'keywords.txt')
@@ -118,6 +119,42 @@ def load_registry():
         return list(csv.DictReader(f))
 
 
+def load_public_api():
+    """Read the public methods straight out of the main header so the keyword
+    list can never drift away from the real API."""
+    path = os.path.join(os.path.dirname(__file__), '..', 'src', 'AARUARDUINO.h')
+    with open(path, 'r', encoding='utf-8') as f:
+        text = f.read()
+
+    # Only the public part of AaruarduinoClass.
+    m = re.search(r'class\s+AaruarduinoClass\s*\{', text)
+    if not m:
+        return []
+    body = text[m.end():]
+    body = body.split('\nprivate:', 1)[0]
+
+    names = []
+    for line in body.split('\n'):
+        line = line.strip()
+        if not line.endswith(';'):
+            continue
+        decl = line[:-1].strip()
+        if '(' not in decl:
+            continue
+        head, _, args = decl.partition('(')
+        # Default arguments may contain '=' - only look before the parameter list.
+        if '=' in head:
+            continue
+        head = head.strip()
+        if not head:
+            continue
+        name = head.split()[-1].lstrip('*&')
+        if not name or not name[0].isalpha() or not name[0].islower():
+            continue
+        names.append(name)
+    return names
+
+
 def main():
     rows = load_registry()
     keywords = set()
@@ -128,9 +165,12 @@ def main():
             api = row['api_function'].strip()
             if api:
                 keywords.add((api, 'KEYWORD2'))
+    # Every public method of the singleton, straight from the header.
+    for name in load_public_api():
+        keywords.add((name, 'KEYWORD2'))
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         f.write("# AARUARDUINO keywords.txt - MADE BY AARUTO\n")
-        f.write("# Auto-generated from registry/modules.csv\n\n")
+        f.write("# Auto-generated from registry/modules.csv and src/AARUARDUINO.h\n\n")
         for kw, ktype in sorted(keywords):
             f.write(f"{kw}\t{ktype}\n")
     print(f"Generated {OUTPUT_PATH} with {len(keywords)} keywords")

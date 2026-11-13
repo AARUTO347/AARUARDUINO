@@ -68,20 +68,20 @@ public:
     size_t bufferSize() const;
 
 private:
-    bool _configured;
-    bool _use_i2c;
-    uint8_t _addr;
-    uint8_t _cs, _dc, _rst;
-    int16_t _w, _h;
-    class AaruI2CEngine* _i2c;
-    class AaruSPIEngine* _spi;
-    bool _own_i2c, _own_spi;
-    uint8_t* _buffer;
-    int16_t _cursor_x, _cursor_y;
-    uint8_t _text_size;
-    bool _text_color_fg, _text_color_bg;
-    bool _text_wrap;
-    AaruarduinoError _err;
+    bool _configured = false;
+    bool _use_i2c = false;
+    uint8_t _addr = 0;
+    uint8_t _cs = 0, _dc = 0, _rst = 0;
+    int16_t _w = 0, _h = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    class AaruSPIEngine* _spi = nullptr;
+    bool _own_i2c = false, _own_spi = false;
+    uint8_t* _buffer = 0;
+    int16_t _cursor_x = 0, _cursor_y = 0;
+    uint8_t _text_size = 0;
+    bool _text_color_fg = false, _text_color_bg = false;
+    bool _text_wrap = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     AaruarduinoError init();
     AaruarduinoError sendCommand(uint8_t cmd);

@@ -18,6 +18,9 @@
 #define TM1637_CMD_ADDR     0xC0
 #define TM1637_CMD_DISP     0x80
 
+// Number of digits on the module (4 is the most common TM1637 board).
+#define TM1637_DIGITS       4
+
 class AaruTM1637 {
 public:
     AaruTM1637() = default;
@@ -38,11 +41,12 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _clk, _dio;
-    uint8_t _brightness;
-    bool _colon;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _clk = 0, _dio = 0;
+    uint8_t _brightness = 0;
+    bool _colon = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
+    uint8_t _buffer[TM1637_DIGITS] = {};
 
     void start();
     void stop();

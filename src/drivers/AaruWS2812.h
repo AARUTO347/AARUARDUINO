@@ -47,13 +47,14 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _pin;
-    uint16_t _num_leds;
-    uint8_t _type;
-    uint8_t _brightness;
-    struct AaruRGB* _pixels;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _pin = 0;
+    uint16_t _num_leds = 0;
+    uint8_t _type = 0;
+    uint8_t _brightness = 0;
+    struct AaruRGB* _pixels = nullptr;
+    uint8_t* _raw = nullptr;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     void sendBytes(const uint8_t* data, uint32_t len);
     static uint32_t rgbToRaw(uint8_t r, uint8_t g, uint8_t b, uint8_t brightness);

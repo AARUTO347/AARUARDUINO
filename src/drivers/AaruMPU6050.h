@@ -74,15 +74,15 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _addr;
-    class AaruI2CEngine* _i2c;
-    bool _own_i2c;
-    float _accel_scale;
-    float _gyro_scale;
-    float _accel_off[3];
-    float _gyro_off[3];
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _addr = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    bool _own_i2c = false;
+    float _accel_scale = 0.0f;
+    float _gyro_scale = 0.0f;
+    float _accel_off[3] = {};
+    float _gyro_off[3] = {};
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     AaruarduinoError writeReg(uint8_t reg, uint8_t val);
     AaruarduinoError readRegs(uint8_t reg, uint8_t* buf, uint8_t len);

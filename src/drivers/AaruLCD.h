@@ -59,13 +59,13 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _addr;
-    uint8_t _cols, _rows;
-    uint8_t _backlight_val;
-    class AaruI2CEngine* _i2c;
-    bool _own_i2c;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _addr = 0;
+    uint8_t _cols = 0, _rows = 0;
+    uint8_t _backlight_val = 0;
+    class AaruI2CEngine* _i2c = nullptr;
+    bool _own_i2c = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     enum {
         LCD_CLEAR = 0x01,

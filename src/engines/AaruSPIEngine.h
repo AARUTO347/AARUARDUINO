@@ -52,11 +52,11 @@ public:
     const char* errorString() const;
 
 private:
-    bool _begun;
-    AaruarduinoError _err;
-    uint32_t _default_speed;
-    uint8_t _default_mode;
-    int _sck, _miso, _mosi;
+    bool _begun = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
+    uint32_t _default_speed = 0;
+    uint8_t _default_mode = 0;
+    int _sck = 0, _miso = 0, _mosi = 0;
 };
 
 #endif // AARUARDUINO_SPI_ENGINE_H

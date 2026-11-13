@@ -35,8 +35,8 @@ struct AaruI2CDeviceDesc {
     uint8_t who_am_i_reg;
     uint8_t who_am_i_val;
     int category;
-    bool (*init_fn)(uint8_t addr);
-    bool (*read_fn)(uint8_t addr, float* values, int max_vals);
+    bool (*init_fn)(uint8_t addr) = nullptr;
+    bool (*read_fn)(uint8_t addr, float* values, int max_vals) = nullptr;
 };
 
 class AaruI2CEngine {
@@ -76,10 +76,10 @@ public:
     const char* errorString() const;
 
 private:
-    bool _begun;
-    AaruarduinoError _err;
-    uint32_t _timeout_ms;
-    uint32_t _speed_hz;
+    bool _begun = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
+    uint32_t _timeout_ms = 0;
+    uint32_t _speed_hz = 0;
 
     AaruarduinoError doRead(uint8_t addr, uint8_t reg, uint8_t* buf, uint8_t len);
     AaruarduinoError doWrite(uint8_t addr, uint8_t reg, const uint8_t* buf, uint8_t len);

@@ -131,15 +131,15 @@ public:
     float readVoltagePin(uint8_t pin, float divider_ratio = 1.0f);
 
 private:
-    uint8_t _pin;
-    AaruAnalogKind _kind;
-    AaruarduinoError _err;
-    float _p1, _p2, _p3, _p4;
-    float _divider;
-    uint8_t _samples;
-    uint16_t _settle_us;
-    int _adc_max;
-    float _vref;
+    uint8_t _pin = 0;
+    AaruAnalogKind _kind = AARU_AN_KIND_NONE;
+    AaruarduinoError _err = AARUARDUINO_OK;
+    float _p1 = 0.0f, _p2 = 0.0f, _p3 = 0.0f, _p4 = 0.0f;
+    float _divider = 0.0f;
+    uint8_t _samples = 0;
+    uint16_t _settle_us = 0;
+    int _adc_max = 0;
+    float _vref = 0.0f;
 
     float convertRawToValue(int raw);
     const struct AaruAnalogPreset* findPreset(AaruAnalogKind kind) const;

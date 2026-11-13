@@ -54,16 +54,18 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _recv_pin;
-    uint8_t _send_pin;
-    int _proto;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _recv_pin = 0;
+    uint8_t _send_pin = 0;
+    int _proto = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     bool decodeNEC(struct AaruIRResult* r);
     bool decodeSony(struct AaruIRResult* r);
     bool decodeRC5(struct AaruIRResult* r);
     bool decodeRC6(struct AaruIRResult* r);
+    bool decodeNECFromPulses(const uint16_t* pulses, uint8_t count, struct AaruIRResult* r);
+    bool decodeSonyFromPulses(const uint16_t* pulses, uint8_t count, struct AaruIRResult* r);
     void sendMark(uint16_t us);
     void sendSpace(uint16_t us);
     void sendPulse(uint16_t mark, uint16_t space);

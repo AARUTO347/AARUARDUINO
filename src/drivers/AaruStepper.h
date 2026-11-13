@@ -58,26 +58,26 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    int _type;
-    uint8_t _step_pin, _dir_pin, _en_pin;
-    uint8_t _in1, _in2, _in3, _in4;
-    int _steps_per_rev;
-    uint8_t _microsteps;
-    double _rpm;
-    double _max_speed;
-    double _accel;
-    bool _enabled;
-    bool _dir_high;
+    bool _configured = false;
+    int _type = 0;
+    uint8_t _step_pin = 0, _dir_pin = 0, _en_pin = 0;
+    uint8_t _in1 = 0, _in2 = 0, _in3 = 0, _in4 = 0;
+    int _steps_per_rev = 0;
+    uint8_t _microsteps = 0;
+    double _rpm = 0.0;
+    double _max_speed = 0.0;
+    double _accel = 0.0;
+    bool _enabled = false;
+    bool _dir_high = false;
 
-    long _pos;
-    long _target;
-    double _speed;
-    bool _running;
-    unsigned long _last_step;
-    unsigned long _step_interval;
-    int8_t _dir;
-    AaruarduinoError _err;
+    long _pos = 0;
+    long _target = 0;
+    double _speed = 0.0;
+    bool _running = false;
+    unsigned long _last_step = 0;
+    unsigned long _step_interval = 0;
+    int8_t _dir = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     void stepPin(bool level);
     void dirPin(bool level);

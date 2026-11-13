@@ -58,12 +58,12 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _cs;
-    uint8_t _num_devices;
-    class AaruSPIEngine* _spi;
-    bool _own_spi;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _cs = 0;
+    uint8_t _num_devices = 0;
+    class AaruSPIEngine* _spi = nullptr;
+    bool _own_spi = false;
+    AaruarduinoError _err = AARUARDUINO_OK;
 
     AaruarduinoError write(uint8_t device, uint8_t reg, uint8_t data);
 };

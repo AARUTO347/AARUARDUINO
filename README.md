@@ -6,7 +6,7 @@
 
 ### Universal Arduino Library — 1000+ Modules, One Consistent API
 
-[![Version](https://img.shields.io/badge/version-1.0.3-00979D?style=for-the-badge&logo=arduino)]()
+[![Version](https://img.shields.io/badge/version-1.0.4-00979D?style=for-the-badge&logo=arduino)]()
 [![Modules](https://img.shields.io/badge/modules-1136-green?style=for-the-badge)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-Uno%20%7C%20Mega%20%7C%20ESP32%20%7C%20ESP8266-00979D?style=for-the-badge&logo=arduino)]()
@@ -45,14 +45,14 @@ AARUARDUINO provides **one consistent API** for 1000+ sensors, actuators, displa
 
 ### Arduino IDE (.zip)
 
-1. Download this repo as `.zip` or grab the release `AARUARDUINO-1.0.0.zip`
+1. Download this repo as `.zip` or grab the release `AARUARDUINO-1.0.4.zip`
 2. Arduino IDE → **Sketch** → **Include Library** → **Add .ZIP Library** → select the file
 3. Verify: **File** → **Examples** → **AARUARDUINO** → **Basic**
 
 ### Arduino CLI
 
 ```bash
-arduino-cli lib install --zip-path AARUARDUINO-1.0.0.zip
+arduino-cli lib install AARUARDUINO
 ```
 
 ## Quick Start
@@ -93,6 +93,40 @@ ultrasonic_uno(7, 8);
 float cm = ultrasonic_uno();
 ```
 
+### Shared Bus Setup
+
+The I2C, SPI and UART engines are configured automatically when you call the
+matching device setup, but you can also drive the buses directly:
+
+```cpp
+AARUARDUINO.i2cBegin(21, 22, 400000);  // ESP32 SDA/SCL @ 400 kHz
+AARUARDUINO.spiBegin(18, 19, 23);      // ESP32 SCK/MISO/MOSI
+AARUARDUINO.uartBegin(2, 9600, 16, 17); // ESP32 UART2, RX/TX
+
+bool present = AARUARDUINO.i2cDevicePresent(0x3C);
+int first    = AARUARDUINO.i2cScanFirst();
+```
+
+> On AVR and SAMD cores the library uses the bundled `SoftwareSerial` for the
+> GPS. Cores that do not ship it (detected automatically with `__has_include`)
+> fall back to a hardware UART.
+
+### GPS / NMEA
+
+```cpp
+AARUARDUINO.gps(2, 3, 9600);   // RX/TX on AVR, UART2 on ESP32
+AARUARDUINO.gpsUpdate();       // or just call AARUARDUINO.update()
+
+if (AARUARDUINO.gpsFix()) {
+  Serial.println(AARUARDUINO.gpsLat(), 6);
+  Serial.println(AARUARDUINO.gpsLon(), 6);
+}
+```
+
+The parser implements NMEA 0183 GGA, RMC, GSV and VTG sentences with full
+`*HH` checksum validation. Corrupt sentences are rejected and reported through
+`lastError()` â€” the library never returns made-up sensor values.
+
 ## Module Reference
 
 **1136 implemented modules** across all categories:
@@ -126,12 +160,24 @@ Full module list: [`docs/modules.md`](docs/modules.md)
 No Arduino compiler required to validate:
 
 ```bash
-python tests/host/test_aaruarduino.py    # Pure-math host tests (36/36 pass)
-python tools/validate_registry.py         # 1136 modules, 1000+ target met
-python tools/gen_keywords.py              # keywords.txt for Arduino IDE
-python tools/gen_module_docs.py           # docs/modules.md
-python tests/validate/validate.py         # Structure & branding checks
+python tests/host/test_aaruarduino.py      # Pure-math host tests (36/36 pass)
+python tests/host/native/run_native_tests.py  # Native C++ driver tests (92/92 assertions)
+python tools/validate_registry.py           # 1136 modules, 1000+ target met
+python tools/check_definitions.py           # Every declared method has a definition
+python tools/check_init.py                  # Every class member has an initializer
+python tools/gen_keywords.py                # keywords.txt for Arduino IDE
+python tools/gen_module_docs.py             # docs/modules.md
+python tests/validate/validate.py           # Structure & branding checks
 ```
+
+The library is also compile-verified on real hardware targets:
+
+| Target | Result |
+|--------|--------|
+| Arduino Uno R3 (`arduino:avr:uno`) | 20/20 examples compile |
+| Arduino Mega 2560 (`arduino:avr:mega`) | 20/20 examples compile |
+| ESP32 (`esp32:esp32:esp32`, core 3.3.8) | 20/20 examples compile |
+| ESP8266 (`esp8266:esp8266:generic`, core 3.1.2) | 20/20 examples compile |
 
 ## Documentation
 
@@ -139,6 +185,7 @@ python tests/validate/validate.py         # Structure & branding checks
 |----------|-------------|
 | [Module Reference](docs/modules.md) | Full 1136-module listing with bus, API, units, boards |
 | [API Reference](docs/api-reference.md) | Complete function list, units, error codes |
+| [Driver Status](docs/driver-status.md) | How complete each hardware driver is |
 | [Board Compatibility](docs/board-compatibility.md) | Compatibility matrix for all supported boards |
 | [Pin Reference](docs/pin-reference.md) | Safe pin assignments per board |
 | [Wiring Guide](docs/wiring-guide.md) | Wiring diagrams and voltage divider circuits |

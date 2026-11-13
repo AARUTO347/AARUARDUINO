@@ -63,6 +63,13 @@ public:
     const char* errorString() const;
     static const char* errorString(AaruarduinoError e);
 
+    // ---- Shared bus setup (I2C / SPI / UART) ----
+    AaruarduinoError i2cBegin(int sda = -1, int scl = -1, uint32_t speed_hz = 400000);
+    AaruarduinoError spiBegin(int sck = -1, int miso = -1, int mosi = -1);
+    AaruarduinoError uartBegin(int uart_num, uint32_t baud, int rx = -1, int tx = -1);
+    bool i2cDevicePresent(uint8_t addr);
+    int i2cScanFirst();
+
     // ---- Ultrasonic ----
     AaruarduinoError ultrasonic(uint8_t trig_pin, uint8_t echo_pin);
     AaruarduinoError setUltrasonicTimeout(unsigned long timeout_us);

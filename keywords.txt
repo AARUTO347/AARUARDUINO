@@ -1,5 +1,5 @@
 # AARUARDUINO keywords.txt - MADE BY AARUTO
-# Auto-generated from registry/modules.csv
+# Auto-generated from registry/modules.csv and src/AARUARDUINO.h
 
 AARUARDUINO	KEYWORD1
 AARUARDUINO_BUFFER_OVERFLOW	LITERAL1
@@ -49,7 +49,9 @@ digitalSensor	KEYWORD2
 displayBacklight	KEYWORD2
 displayClear	KEYWORD2
 displayContrast	KEYWORD2
+displayFloat	KEYWORD2
 displayInvert	KEYWORD2
+displayNumber	KEYWORD2
 displayPrint	KEYWORD2
 displaySetCursor	KEYWORD2
 displayText	KEYWORD2
@@ -81,8 +83,11 @@ gpsSpeedKmph	KEYWORD2
 gpsTime	KEYWORD2
 gpsUpdate	KEYWORD2
 hallDigital	KEYWORD2
+i2cBegin	KEYWORD2
+i2cDevicePresent	KEYWORD2
 i2cScan	KEYWORD2
 i2cScanCount	KEYWORD2
+i2cScanFirst	KEYWORD2
 irDataReady	KEYWORD2
 irDecode	KEYWORD2
 irObstacle	KEYWORD2
@@ -156,6 +161,7 @@ readButton	KEYWORD2
 readCurrent	KEYWORD2
 readDHT	KEYWORD2
 readDS18B20	KEYWORD2
+readDS18B20Async	KEYWORD2
 readDS18B20F	KEYWORD2
 readDigitalSensor	KEYWORD2
 readFlame	KEYWORD2
@@ -238,6 +244,7 @@ smokeDigital	KEYWORD2
 soilMoisture	KEYWORD2
 solenoid	KEYWORD2
 soundSensor	KEYWORD2
+spiBegin	KEYWORD2
 stepper	KEYWORD2
 stepper4Wire	KEYWORD2
 stepperMove	KEYWORD2
@@ -256,6 +263,7 @@ toggleLED	KEYWORD2
 toggleRelay	KEYWORD2
 tone	KEYWORD2
 touchTTP223	KEYWORD2
+uartBegin	KEYWORD2
 ultrasonic	KEYWORD2
 ultrasonic_esp32	KEYWORD2
 ultrasonic_esp8266	KEYWORD2
@@ -268,3 +276,9 @@ waterLevel	KEYWORD2
 writePWM	KEYWORD2
 writePWMPercent	KEYWORD2
 ws2812	KEYWORD2
+ws2812Brightness	KEYWORD2
+ws2812Clear	KEYWORD2
+ws2812Fill	KEYWORD2
+ws2812Rainbow	KEYWORD2
+ws2812Set	KEYWORD2
+ws2812Show	KEYWORD2

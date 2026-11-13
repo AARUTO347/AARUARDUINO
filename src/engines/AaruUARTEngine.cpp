@@ -3,6 +3,8 @@
 //  MADE BY AARUTO
 // ============================================================
 #include "AaruUARTEngine.h"
+#include <string.h>
+#include <stdlib.h>
 
 AaruarduinoError AaruUARTEngine::beginHardware(int uart_num, uint32_t baud,
                                                int rx, int tx, uint8_t config) {
@@ -11,8 +13,18 @@ AaruarduinoError AaruUARTEngine::beginHardware(int uart_num, uint32_t baud,
     if (rx >= 0 && tx >= 0) {
 #if defined(ESP32)
         HardwareSerial* hs = new HardwareSerial(uart_num);
-        hs->begin(baud, config, rx, tx);
+        hs->begin(baud, (uint32_t)config, rx, tx);
         _hw_serial = hs;
+#else
+        // This core's hardware UART does not take arbitrary pins;
+        // use the bundled software serial instead (AVR, ESP8266, SAMD).
+#if defined(AARUARDUINO_HAS_SOFTWARE_SERIAL)
+        _hw = false;
+        _soft = new SoftwareSerial(rx, tx, false);
+        _soft->begin(baud);
+#else
+        Serial.begin(baud);
+#endif
 #endif
     } else {
         Serial.begin(baud);
@@ -24,9 +36,16 @@ AaruarduinoError AaruUARTEngine::beginHardware(int uart_num, uint32_t baud,
 AaruarduinoError AaruUARTEngine::beginSoftware(int rx, int tx, uint32_t baud,
                                                 bool invert, int buffer_size) {
     _begun = true; _hw = false; _rx = rx; _tx = tx; _baud = baud; _err = AARUARDUINO_OK;
-#if defined(ARDUINO) && !defined(ESP32) && !defined(ESP8266)
+#if defined(AARUARDUINO_HAS_SOFTWARE_SERIAL)
     _soft = new SoftwareSerial(rx, tx, invert);
     _soft->begin(baud);
+#elif defined(AARUARDUINO_HAS_HARDWARE_SERIAL)
+    // No software serial on this core - fall back to the hardware UART.
+    _hw = true;
+    _hw_serial = &Serial;
+    Serial.begin(baud);
+#else
+    _err = AARUARDUINO_UNSUPPORTED;
 #endif
     return _err;
 }
@@ -101,18 +120,44 @@ bool AaruUARTEngine::readLine(char* buf, size_t maxlen) {
     return true;
 }
 
+// Validate the trailing *HH checksum of an NMEA 0183 sentence.
 bool AaruUARTEngine::nmeaValidate(const char* sentence) {
-    return true;
+    if (!sentence || sentence[0] != '$') return false;
+    const char* star = strchr(sentence, '*');
+    if (!star || strlen(star) < 3) return false;
+
+    uint8_t sum = 0;
+    for (const char* p = sentence + 1; *p && *p != '*'; p++) {
+        sum ^= (uint8_t)(*p);
+    }
+
+    char hex[3] = {star[1], star[2], '\0'};
+    uint32_t given = (uint32_t)strtoul(hex, nullptr, 16);
+    return (uint8_t)given == sum;
 }
 
+void AaruUARTEngine::setTimeout(uint16_t ms) {
+    _timeout_ms = ms;
+#if defined(ARDUINO)
+    Stream* s = getStream();
+    if (s) s->setTimeout(ms);
+#endif
+}
+
+bool AaruUARTEngine::isBegun() const { return _begun; }
+bool AaruUARTEngine::isHardware() const { return _hw; }
+int AaruUARTEngine::getUartNum() const { return _uart_num; }
+AaruarduinoError AaruUARTEngine::lastError() const { return _err; }
+const char* AaruUARTEngine::errorString() const { return aaruarduinoErrorString(_err); }
+
 Stream* AaruUARTEngine::getStream() {
-#if defined(ARDUINO) && defined(ESP32)
+#if defined(AARUARDUINO_HAS_HARDWARE_SERIAL)
     if (_hw_serial) return _hw_serial;
     return &Serial;
-#elif defined(ARDUINO) && !defined(ESP32) && !defined(ESP8266)
+#elif defined(AARUARDUINO_HAS_SOFTWARE_SERIAL)
     if (_soft) return _soft;
     return &Serial;
 #else
-    return &Serial;
+    return nullptr;
 #endif
 }

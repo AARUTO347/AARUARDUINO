@@ -23,7 +23,27 @@ void AaruarduinoClass::begin() {
 void AaruarduinoClass::update() {
     // Non-blocking updates for drivers needing polling
     // IR remote, GPS, pulse counting handled in read/interrupt paths
+    if (_gps_setup) _gps.update();
 }
+
+// ---- Shared bus setup ----
+AaruarduinoError AaruarduinoClass::i2cBegin(int sda, int scl, uint32_t speed_hz) {
+    _err = _i2c.begin(sda, scl, speed_hz);
+    return _err;
+}
+
+AaruarduinoError AaruarduinoClass::spiBegin(int sck, int miso, int mosi) {
+    _err = _spi.begin(sck, miso, mosi);
+    return _err;
+}
+
+AaruarduinoError AaruarduinoClass::uartBegin(int uart_num, uint32_t baud, int rx, int tx) {
+    _err = _uart.beginHardware(uart_num, baud, rx, tx);
+    return _err;
+}
+
+bool AaruarduinoClass::i2cDevicePresent(uint8_t addr) { return _i2c.devicePresent(addr); }
+int AaruarduinoClass::i2cScanFirst() { return _i2c.scan(); }
 
 void AaruarduinoClass::dbg(const char* msg) {
     if (_dbg) _dbg->println(msg);
@@ -327,7 +347,11 @@ AaruarduinoError AaruarduinoClass::mpuSleep() { return _mpu.sleep(); }
 AaruarduinoError AaruarduinoClass::mpuWake() { return _mpu.wake(); }
 
 // ---- DS18B20 ----
-AaruarduinoError AaruarduinoClass::ds18b20(uint8_t pin) { return _ds.begin(pin); }
+AaruarduinoError AaruarduinoClass::ds18b20(uint8_t pin) {
+    AaruarduinoError e = _ds.begin(pin);
+    if (e == AARUARDUINO_OK) _ds.discover();
+    return e;
+}
 int AaruarduinoClass::ds18b20Count() { return _ds.deviceCount(); }
 float AaruarduinoClass::readDS18B20(int index) { _err = _ds.lastError(); return _ds.readTempC(index); }
 float AaruarduinoClass::readDS18B20F(int index) { _err = _ds.lastError(); return _ds.readTempF(index); }
@@ -403,6 +427,8 @@ AaruarduinoError AaruarduinoClass::lcd(uint8_t addr, uint8_t cols, uint8_t rows)
     return lcdI2C(addr, cols, rows);
 }
 AaruarduinoError AaruarduinoClass::max7219(uint8_t cs, uint8_t devices) {
+    // The MAX7219 sits on SPI - make sure the bus is up before the driver uses it.
+    if (!_spi.isBegun()) _spi.begin();
     AaruarduinoError e = _max7219.begin(&_spi, cs, devices);
     if (e == AARUARDUINO_OK) _display_kind = 3;
     return e;
@@ -689,7 +715,14 @@ AaruarduinoError AaruarduinoClass::stepperRelease() { _stepper.disable(); return
 // ---- GPS ----
 AaruarduinoError AaruarduinoClass::gps(int rx, int tx, uint32_t baud) {
     _gps_setup = true;
-    return _gps.begin(rx, tx, baud);
+#if defined(ESP32)
+    // UART2 keeps the USB console (UART0) free for the serial monitor.
+    _uart.beginHardware(2, baud, rx, tx);
+#else
+    // AVR / ESP8266 / SAMD: software serial handles the custom GPS pins.
+    _uart.beginSoftware(rx, tx, baud);
+#endif
+    return _gps.begin(&_uart);
 }
 void AaruarduinoClass::gpsUpdate() { if (_gps_setup) _gps.update(); }
 bool AaruarduinoClass::gpsFix() { return _gps.hasFix(); }

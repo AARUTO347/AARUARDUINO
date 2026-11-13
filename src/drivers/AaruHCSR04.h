@@ -37,10 +37,10 @@ public:
     const char* errorString() const;
 
 private:
-    bool _configured;
-    uint8_t _trig, _echo;
-    unsigned long _timeout_us;
-    AaruarduinoError _err;
+    bool _configured = false;
+    uint8_t _trig = 0, _echo = 0;
+    unsigned long _timeout_us = 0;
+    AaruarduinoError _err = AARUARDUINO_OK;
 };
 
 #endif // AARUARDUINO_HCSR04_H

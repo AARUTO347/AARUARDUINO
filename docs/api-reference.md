@@ -25,6 +25,20 @@ void loop() { AARUARDUINO.update(); }
 | `errorString(e)` | Human-readable error message |
 | `setDebugStream(Stream*)` | Enable debug output |
 
+### Shared bus setup
+
+| Function | Description |
+|---|---|
+| `i2cBegin(sda=-1, scl=-1, speedHz=400000)` | Start the I2C bus. `-1` pins use the board defaults |
+| `spiBegin(sck=-1, miso=-1, mosi=-1)` | Start the SPI bus. `-1` pins use the board defaults |
+| `uartBegin(uartNum, baud, rx=-1, tx=-1)` | Start a hardware UART |
+| `i2cDevicePresent(addr)` | `true` when a device answers at `addr` |
+| `i2cScanFirst()` | Address of the first device found, or `-1` |
+
+The bus is also started automatically by the matching device setup
+(`lcdI2C()`, `oled()`, `max7219()`, `gps()`, ...), so calling these is only
+needed for custom wiring.
+
 ## Ultrasonic (HC-SR04)
 
 `ultrasonic(trig, echo)` / `readUltrasonic()` (cm) / `readUltrasonicInches()` / `setUltrasonicTimeout(us)`
@@ -75,7 +89,14 @@ Reads: `readDigitalSensor()`, `readPIR()`, `readRadar()`, `readIR()`, `readLine(
 
 `oled(addr=0x3C, w=128, h=64)` / `lcdI2C(addr=0x27, cols=16, rows=2)` / `lcd(addr, cols, rows)` / `max7219(cs, devices=1)` / `tm1637(clk, dio)` / `ws2812(pin, numLeds)`
 
-Helpers: `displayClear()`, `displayText(line)`, `displayText(row, line)`, `displayTextAt(row, col, line)`, `displayBacklight(on)`, `displayPrint(n|f)`, `displaySetCursor(col,row)`, `displayContrast(val)`, `displayInvert(inv)`
+Helpers: `displayClear()`, `displayText(line)`, `displayText(row, line)`, `displayTextAt(row, col, line)`, `displayBacklight(on)`, `displayPrint(n|f)`, `displaySetCursor(col,row)`, `displayContrast(val)`, `displayInvert(inv)`, `displayNumber(num, leadingZeros=false)`, `displayFloat(num, decimals)`
+
+The `display*` helpers route automatically to whichever display was configured
+last (OLED, LCD1602, MAX7219 or TM1637).
+
+### WS2812 / NeoPixel
+
+`ws2812Set(index, r, g, b)` / `ws2812Fill(r, g, b)` / `ws2812Clear()` / `ws2812Rainbow(firstHue=0, hueStep=256)` / `ws2812Show()` / `ws2812Brightness(0-255)`
 
 ## Actuators
 
@@ -90,9 +111,27 @@ Motor: `motor(in1,in2,en=-1)` / `motorSpeed(-255..255)` / `motorBrake()` / `moto
 Servo: `servo(pin, minUs=544, maxUs=2400)` / `servoWrite(0-180)` / `servoWriteUs(us)` / `servoDetach()`
 Stepper: `stepper(step, dir, en=-1)` / `stepper4Wire(in1..in4)` / `stepperSetRpm(rpm)` / `stepperStep(steps)` / `stepperMove(steps)` / `stepperMoveTo(pos)` / `stepperRun()` / `stepperStop()` / `stepperRelease()`
 
-## GPS (NMEA)
+## GPS (NMEA 0183)
 
 `gps(rx, tx, baud=9600)` / `gpsUpdate()` / `gpsFix()` / `gpsLat()` / `gpsLon()` / `gpsAlt()` / `gpsSpeedKmph()` / `gpsCourse()` / `gpsSats()` / `gpsDate()` / `gpsTime()`
+
+The driver implements a real NMEA 0183 parser:
+
+| Sentence | Data used |
+|---|---|
+| GGA | UTC time, latitude, longitude, fix quality, satellites, HDOP, altitude |
+| RMC | UTC time, status, position, speed (knots), course, date |
+| GSV | satellites in view (PRN, elevation, azimuth, SNR) |
+| VTG | true track, speed over ground |
+
+Every sentence is validated against its trailing `*HH` checksum. A corrupt
+sentence is rejected and reported as `AARUARDUINO_CRC_ERROR` through
+`lastError()`; the library never returns invented coordinates.
+
+`gpsDate()` returns `YYYYMMDD` and `gpsTime()` returns `HHMMSS`.
+
+On ESP32 the GPS uses UART2 (the USB console stays free), on ESP8266 UART0,
+and on AVR/SAMD the bundled `SoftwareSerial`.
 
 ## IR Remote
 
@@ -100,7 +139,7 @@ Stepper: `stepper(step, dir, en=-1)` / `stepper4Wire(in1..in4)` / `stepperSetRpm
 
 ## Pin helpers
 
-`isValidDigitalPin(pin, needOutput)` / `isValidAnalogPin(pin)` / `isValidPwmPin(pin)` / `i2cScan(addrs, max)` / `i2cScanCount()`
+`isValidDigitalPin(pin, needOutput)` / `isValidAnalogPin(pin)` / `isValidPwmPin(pin)` / `i2cScan(addrs, max)` / `i2cScanCount()` / `i2cScanFirst()` / `i2cDevicePresent(addr)`
 
 ## Error codes
 
